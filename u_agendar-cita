@@ -32,7 +32,7 @@
                             <ul>
                                                 <li>
                                                     <div class="Menu">
-                                                        <a href="u_index.html"> <figure> <img src="./imagenes/home.png" alt="Home"></figure>
+                                                        <a href="index.html"> <figure> <img src="./imagenes/home.png" alt="Home"></figure>
                                                             <h3> inicio</h3>
                                                            
                                                             
@@ -43,7 +43,7 @@
                                         
                                             <li>
                                                 <div class="Menu">
-                                                    <a href="u_index.html"> <figure> <img src="./imagenes/servicios.png" alt="Servicios"></figure>
+                                                    <a href="u_servicios.html"> <figure> <img src="./imagenes/servicios.png" alt="Servicios"></figure>
                                                         <h3>Servicios</h3>
                                                         
                                                         </a>
@@ -52,7 +52,7 @@
                 
                                             <li>
                                                 <div class="Menu">
-                                                    <a href="u_Agendar-cita.html"><figure> <img src="./imagenes/cita.png" alt="Agendar cita"></figure>
+                                                    <a href="#"><figure> <img src="./imagenes/cita.png" alt="Agendar cita"></figure>
                                                         <h3>Agendar Cita</h3>
                                                 </a>
                                                 </div>
