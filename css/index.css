@@ -1,0 +1,143 @@
+/* HECHO POR LAURA */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+    
+}
+
+.contenedor{
+    margin: 0 auto; /* el 0, arriba y abajo */   /* el auto, izquierda y derecha */
+    margin-left: 2px;
+    max-width: 1200px; /* No puede pasar de los 1200px */
+    width: 95%;
+ 
+    
+
+    
+}
+
+.imagen-fomulario {
+    background-image: url("../imagenes/imagenPrincipal.jpg");
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    /* cover: que la imagen se adapte al cotenedor padre, osea al imagen-formulario */
+    /* flex-grow:  el contendi se haga mas grande */
+    /* flex-shrink: el contenido se ponga mas chiquito */
+    /* flex-basis: se le puede definir un ancho. O base */
+    flex: 0 0 calc(65%);
+   
+    
+   
+   
+}
+/* tablet */
+/* @media (min-width:768px) {
+       .imagen-fomulario{
+            height: auto;
+            background-position: right ;
+       }
+     
+} */
+
+.imagen-fomulario{
+    height: auto;
+    background-position: right;
+}
+
+/* pc */
+ /* @media (min-width:1200px) {
+    .imagen-fomulario{
+        background-position: center ;
+    }
+    
+ }    */
+
+.contenedor-formulario {
+    display: flex;
+
+}
+/* table o pc */
+/* @media (min-width: 600px){
+    .contenedor-formulario {
+        display: flex;
+    }
+} */
+
+
+
+.formulario {
+    padding: 50px; /* espacio en todos los lados */
+   
+}
+
+.input label .terminos-condiciones, .registrarte, .password-olvidada, a, p{
+    color: #193A6A;
+    
+}
+
+.registrate {
+    text-align: center;
+}
+
+
+.password-olvidada {
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.logo {
+    font-size: 50px;
+    text-align: center;
+   
+}
+
+
+.input {
+    /* display: block; */
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+
+.input input{
+    width: 120%;
+    padding: 10px 16px;
+    border-color: white;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 5px;
+
+}
+
+.input input[type="submit"]{
+    background-color: #193A6A;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    transition: backgroud-color .3s ease-in-out;
+    margin-top: 20px;
+}
+
+.input input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #995699;
+}
+
+.terminos-condiciones{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+}
