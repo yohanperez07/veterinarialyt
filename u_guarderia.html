@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Agenda una cita en nuestra veterinaria para el cuidado óptimo de tu mascota. ¡Programa la cita ahora y asegura la salud y bienestar de tu amigo peludo!">
     <link rel="icon" href="imagenes/icon.png">
-    <title>Formulario de Cita</title>
+    <title>Formulario de Guarderia</title>
 </head>
 <body>
 
@@ -64,13 +64,7 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br>
 
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" required><br>
-
-        <label for="fecha">Fecha de la cita:</label>
-        <input type="date" id="fecha" name="fecha" required><br>
-
-        <label for="turno">Elige tu turno:</label>
+        <label for="Hora de entrega">Hora de entrega:</label>
         <select id="turno" name="turno" required>
             <option value="">Seleccione...</option>
             <option value="8">8:00 AM</option>
@@ -82,7 +76,28 @@
             <option value="2">2:00 PM</option>
             <option value="3">3:00 PM</option>
             <option value="4">4:00 PM</option>
-            <option value="5">5:00 PM</option>
+            
+        </select><br>
+
+        label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br>
+
+
+        <label for="fecha">Fecha de la cita:</label>
+        <input type="date" id="fecha" name="fecha" required><br>
+
+        <label for="turno">Elige los dias:</label>
+        <select id="turno" name="turno" required>
+            <option value="">Seleccione...</option>
+            <option value="8">1</option>
+            <option value="9">3</option>
+            <option value="10">5</option>
+            <option value="11">7</option>
+            <option value="12">12</option>
+            <option value="13">15</option>
+            <option value="14">20</option>
+            <option value="15">Mas+</option>
+            <option value="16">Menos-/option>
         </select><br>
 
         <label for="mascota">Mascota:</label>
@@ -94,7 +109,7 @@
             <option value="perros">Perro</option>
         </select><br>
 
-        <label for="servicio">Servicio:</label>
+        <label for="servicio">Desea algun servicio en la estadia:</label>
         <select id="servicio" name="servicio" required>
             <option value="">Seleccione</option>
             <option value="Chequeos Generales">Chequeos Generales</option>
