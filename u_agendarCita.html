@@ -1,0 +1,114 @@
+<!-- HECHA POR TIARA -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agenda una cita en nuestra veterinaria para el cuidado óptimo de tu mascota. ¡Programa la cita ahora y asegura la salud y bienestar de tu amigo peludo!">
+    <link rel="icon" href="imagenes/icon.png">
+    <title>Formulario de Cita</title>
+</head>
+<body>
+
+    <header>
+        <figure class="logo-pet">
+            <a href="inicio"><img src="./imagenes/logo-petvet1.png" alt="Logo"></a>
+        </figure>
+
+            <figure class="user">
+                <a href="perfil">
+                    <img src="./imagenes/user-.png" alt="Usuario">
+                </a>
+            </figure> 
+            <h1>Agendar Cita</h1>
+
+
+
+            <nav class="nav-contenedor">
+                <ul>
+                                    <li>
+                                        <div class="Menu">
+                                            <a href="index.html">INICIO</a>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="Menu">
+                                            <a href="u_configuracion.html">CONFIGURACION</a>
+                                        </div>
+                                    </li>
+
+
+                                    <li>
+                                        <div class="Menu">
+                                            <a href="#">PERFIL</a>
+                                        </div>
+                                    </li>
+  
+                            </ul>
+                   
+    
+            </nav>
+    </header>
+
+    <main class="main-content">
+      <h2>Formulario de Cita</h2>
+    <form action="submit_form.php" method="post" accept-charset="UTF-8">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br>
+
+        <label for="fecha">Fecha de la cita:</label>
+        <input type="date" id="fecha" name="fecha" required><br>
+
+        <label for="turno">Elige tu turno:</label>
+        <select id="turno" name="turno" required>
+            <option value="">Seleccione...</option>
+            <option value="8">8:00 AM</option>
+            <option value="9">9:00 AM</option>
+            <option value="10">10:00 AM</option>
+            <option value="11">11:00 AM</option>
+            <option value="12">12:00 PM</option>
+            <option value="13">1:00 PM</option>
+            <option value="14">2:00 PM</option>
+            <option value="15">3:00 PM</option>
+            <option value="16">4:00 PM</option>
+            <option value="17">5:00 PM</option>
+        </select><br>
+
+        <label for="mascota">Mascota:</label>
+        <select id="mascota" name="mascota" required>
+            <option value="">Seleccione</option>
+            <option value="gato">Gato</option>
+            <option value="aves">Ave</option>
+            <option value="roedores">Roedor</option>
+            <option value="perros">Perro</option>
+        </select><br>
+
+        <label for="servicio">Servicio:</label>
+        <select id="servicio" name="servicio" required>
+            <option value="">Seleccione</option>
+            <option value="Chequeos Generales">Chequeos Generales</option>
+            <option value="Higiene">Higiene</option>
+            <option value="Vacunas"></option>
+            <option value="Nutrición">Nutrición</option>
+        </select><br>
+
+        <label for="motivo">Motivo de la cita:</label>
+        <textarea id="motivo" name="motivo" rows="4" cols="50" maxlength="400" required></textarea><br>
+
+        <input type="submit" value="Enviar">
+    </form>  
+    </main>
+    
+</body>
+</html>
