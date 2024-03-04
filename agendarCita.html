@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda tu cita</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="imagenes/logo.png">
+    <link rel="stylesheet" href="css/agendarCita.css">
+    
+    <a href="inicio.html"><img src="imagenes/logo.png" alt="logo" width="160" height="100" class="logo"></a>
+    
+</head>
+
+<body>
+    <!-- HECHO POR LAURA -->
+    <header class="header">
+        <nav>
+            <ul class="menu">
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="#">CONFIGURACIÓN</a></li>
+                <li><a href="#">MI PERFIL
+                    <img src="imagenes/lapiz.png" width="23" height="23"></a></li>
+            </ul>
+        </nav>
+       <img src="imagenes/usuario.jpg" alt="usuario" class="usuario">
+
+    </header>
+   
+   
+    <main>
+        <h1>
+            <p class="titulo">AGENDA TU  CITA </p>
+        </h1>
+        <form class="formulario">
+        <div class="inputs">
+            <input type="text" name="nombre" placeholder="Nombre" class="tamaño-50" required>
+            <input type="text" namw="apellidos" placeholder="Apellidos" class="tamaño-50" required>
+
+            <input type="email" name="correo" placeholder="Email" class="tamaño-50" required>
+            <input type="tel" name="Telefono" placeholder="Teléfono" class="tamaño-50" required>
+
+            <input type="date" class="tamaño-50" required>
+            
+            <select name="Mascota" id="Mascota" class="tamaño-40" required>
+                <option value=""> Mascota</option>
+                <option value="dsc">Perro</option>
+                <option value="pw">Exótico</option>
+                <option value="pw">Gato</option>
+            </select>
+            <select  class="tamaño"  name="Servicios" id="Servicios"  required>
+                <option value="">Servicios</option>
+                <option value="dsc">Chequeos Generales</option>
+                <option value="pw">Higiene</option>
+                <option value="pw">Vacunas</option>
+                <option value="pw">Nutrición</option>
+            </select>
+
+            
+            <select class="tamaño-100" name="horario" id="horario"  required>
+                <option value="">  Horario </option>
+                <optgroup label="Mañana">
+                    <option value="1">9:00am - 9:30am</option>
+                    <option value="1">9:30am - 10:00am</option>
+                    <option value="1">10:00am - 10:30am</option>
+                    <option value="1">10:30am - 11:00am</option>
+                    <option value="1">11:00am - 11:30am</option>
+                    <option value="1">12:00am - 12:30am</option>
+                </optgroup>
+                <optgroup>
+                    <optgroup label="Tarde">
+                    <option value="fh">2:00pm - 2:30pm</option>
+                    <option value="ml">2:30pm - 3:00pm</option>
+                    <option value="py">3:00pm - 3:30pm</option>
+                    <option value="gh">3:30pm - 4:00pm</option>
+                    <option value="html">4:00pm - 4:30pm</option>
+                    <option value="css">4:30pm - 5:00pm</option>
+                    <option value="js">5:00pm - 5:45pm</option>
+                </optgroup>
+            </select>
+
+
+            <textarea class="mensaje" placeholder="   Motivo de la cita...."></textarea>
+            <input type="button" value="Enviar" class="enviar">
+        </div>
+        </form>
+    </main>
+</body>
+</html>
