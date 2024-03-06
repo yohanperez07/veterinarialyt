@@ -1,42 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="En esta pagina podra editar su perfil">
+    <title>Editar perfil</title>
 </head>
 <!-- Hecho por yohan -->
 <body>
-    <header>
+       <header class="header">
         <figure>
-            <img src="imagenes/logo-petvet1.png" alt="logo">
-
+        <img src="imagenes/logo.png" alt="logo" width="190" height="170" class="logo">
         </figure>
-        <h1>Editar perfil de ususario</h1>
+        <nav>
+            
+            <ul class="menu">
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="u_configuracion.html">CONFIGURACIÓN</a></li>
+                <li><a href="u.perfil.html">PERFIL</a><img src="./imagenes/usuario.jpg" width="30" height="30"  alt="registrate"></li>
+                
+            </ul>
+        </nav>
     </header>
+    <h1>Editar perfil de usuario</h1>
     <main class="contenido principal">
-        <figure>
+        <div class="agregar">
+            <figure>
             <img src="./imagenes/usuario.jpg" alt="perfil">
         </figure>
 
         <figure>
-            <input type="submit" src="Cambiar foto de perfil">
+            <input type="file" src="Cambiar foto">
         </figure>
 
-        <form >
-            <h2>Editar tus datos</h2>
+        </div>
+        
+        <h2>Editar tus datos</h2>
+        <div class="Editar-izquierdo">
+              <form >
+            
             <label for="nuevo"> Nuevo nombre </label>
             <input type="text" id="nuevo">
 
+            <label for="tele">Telefono</label>
+            <input type="tel" id="tele">
+
+           
+        </form>
+        </div>
+        <div class="Editar-derecho">
             <label for="fecha">Fecha de Nacimiento</label>
             <input type="cal" id="fecha">
 
             <label for="sex">Sexo</label>
-            <section>
+            <select>
                 <option value="fem">Femenino</option>
                 <option value="mas">Masculino</option>
-            </section>
-        </form>
+            </select>
+
+
+        </div>
+
+     
         <input type="submit" value="Editar perfil">
         
 
