@@ -95,8 +95,8 @@ h2{
 }
 
 
-section{
-    padding-top: 390px; /* Tamaño de la img de fondo */
+section, .fondo{
+    padding-top: 200px; /* Tamaño de la img de fondo */
     background: url(../imagenes/fondeSection2.jpg);/* img de fondo */
     background-size: cover; /* Para que la img se adapte a su posicion normal */ 
     background-attachment: fixed;  /* esto es para mantener fijo el efecto defondo, que es la img para desplazarla. */
