@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HECHO POR LAURA */
+
+.header {
+    display: flex;/*poder mover los menus */
+    justify-content: space-between;/*  colacarlas a la izquierda en linas */
+    align-items: center;/* centrar los menus */
+    font-size: 17px; /* Tamaño de letra */
+}
+
+
+.logo {
+    height: 120px;
+    margin-left: 20px;/* Despegar un pocp */
+    cursor: pointer; /*Presenta la manita cuando estes en el logo */
+}
+
+.header .menu {
+    list-style: none; /* Quitarle los puntos negros de la lista */
+    padding-right: 20px; /* Espacio para la derecha, despegarl */
+}
+
+.header .menu li {
+    display: inline; /* Poner los menus en lineas */
+    padding: 10px; /* Espacios entre los menus */
+}
+
+.header .menu li a:hover {
+    color: rgb(70, 113, 160); /* Darle efecto a los menus con color */
+}
+
+
+.header .menu a {
+    color: #193A6A;/* Color azul para los menus */
+    font-weight: bold;/* Las letras en negritas */
+    text-decoration: none;/* Quitarle la rayita de abajo de los enlaces */
+}
+
+.header .lapiz {
+    margin-left: 10px;/* Despegar un poco de los menus */
+}
+
+
+.titulo {
+    padding-top: 90px;  /*darle espacio de arria */
+    text-align: center; /* centrarlo */
+    color: #193A6A; /* color azul */
+}
+
+
+.formulario {
+    width: 95%; /* El 95% de espacio */
+    max-width: 1100px;/* Y que no pase de 1100 */
+    margin: auto;/* para centra automáticamente el formaulario */
+    padding-top: 25px;/*darle  espacio de arria */
+}
+
+.inputs {
+    display: flex; /*para que el contenedor se ponga  flexible */
+    flex-wrap: wrap; /* para colocar los formaularios en varias líneas */
+    justify-content: space-between; /*  para separar los formulatios */
+}
+
+input {
+    margin-bottom: 15px;/* Espacio de abajo para separar los inputs */
+    padding: 15px;/* espacio entre el los inputs o relleno */
+    background-color: #eee;/* darle color de fondo a los formularios */
+    border: none; /* quitarle las lineas negras que trean */
+    border-radius: 5px; /* y darle un poco de forma redonda en los lados */
+}
+
+ select {
+     background-color: #eee; /* darle color de fondo a los select  */
+     border: none; /* quitarle las lineas negras que trean */
+     border-radius: 5px; /* y darle un poco de forma redonda en los lados */
+ }
+
+ .tamaño-50 {
+     width: 48%; /* tamaño de los formularios */
+ }
+
+ .tamaño-40 {
+     width: 48%;/* tamaño de select Mascota*/
+     margin-bottom: 16px; /* espacio de abjao */
+ }
+
+ .tamaño {
+     width: 48%;/* tamaño de select Servicios */
+     margin-bottom: 15px;/* espacio de abjao */
+ }
+
+ .tamaño-100 {
+     width: 48%; /* tamaño de select Horarios */
+     padding: 15px; /* espacio o relleno */
+     margin-bottom: 15px; /* espacio de abjao */
+ }
+
+  textarea {
+      margin-top: 20px; /* espacio de arriba */
+      width: 90%;/*   tamaño del cuadro*/
+      resize: none;/* no darle la opcion al usuario de que lo haga mas grande el cuadro  */
+      min-height: 350px;/* Espacio minimo haca arriba */
+      background-color: #eee;/* darle color de fondo */
+      border: none;/* quitarle las lineas negras que trean */
+  }
+
+  .mensaje {
+      padding-top: 15px; /* espacio de arriba del texto de adentro */
+  }
+
+  .enviar {
+      margin-top: 35px; /* espacio de arriba */
+      width: 15%; /*  tamaño del cuadro */
+      margin-left: 10%;/* espacio del lado ixquierdo */
+
+  }
+
+  .enviar {
+      background-color: #193A6A; /* color de fondo azul */
+      color: white;/* color de la letra blanco */
+      font-weight: bold;/* en negrita */
+      font-size: 17px; /* tamano de las letras */
+      transition: all .1s;/* transicionde 1s */ /* margin-left: 800px; */
+  }
+
+  .enviar:hover {
+      cursor: pointer;/* presente la manita */
+      background-color: #eee;/* fondo blanco */
+      color: #193A6A;/* letra azul */
+
+  }
