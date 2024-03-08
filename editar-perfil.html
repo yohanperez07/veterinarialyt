@@ -4,66 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="En esta pagina podra editar su perfil">
     <title>Editar perfil</title>
+    <link rel="stylesheet" href="./css/estilos-perfil.css">
 </head>
 <!-- Hecho por yohan -->
 <body>
-       <header class="header">
-        <figure>
-        <img src="imagenes/logo.png" alt="logo" width="190" height="170" class="logo">
-        </figure>
-        <nav>
+    <div class="Cuerpo-editar">
+         <header>
+        <figure class="logo-perfil"><img src="./imagenes/logo.png" alt="logo-perfil"></figure>
             
-            <ul class="menu">
-                <li><a href="inicio.html">INICIO</a></li>
-                <li><a href="u_configuracion.html">CONFIGURACIÓN</a></li>
-                <li><a href="u.perfil.html">PERFIL</a><img src="./imagenes/usuario.jpg" width="30" height="30"  alt="registrate"></li>
-                
-            </ul>
-        </nav>
-    </header>
-    <h1>Editar perfil de usuario</h1>
-    <main class="contenido principal">
-        <div class="agregar">
-            <figure>
-            <img src="./imagenes/usuario.jpg" alt="perfil">
-        </figure>
+            <div class="logo-nav">
+                <nav>
+                    <a href="u.perfil.html">Volver</a>
+                </nav>
+                <h1>Editar perfil de usuario</h1>
 
-        <figure>
-            <input type="file" src="Cambiar foto">
-        </figure>
-
-        </div>
+            </div>
         
-        <h2>Editar tus datos</h2>
-        <div class="Editar-izquierdo">
-              <form >
-            
-            <label for="nuevo"> Nuevo nombre </label>
-            <input type="text" id="nuevo">
+      </header>
+    
+    <main class="main">
+       <div class="contenido-principal" >
+           <div class="agregar">
+             <figure class="foto">
+             <img src="./imagenes/usuario.jpg" alt="perfil" width="150" height="150">
+           </figure>
+  
+             <figure>
+               <input type="file" src="Cambiar foto">
+           </figure>
+ 
+           </div>
+         
+           <h2>Editar tus datos</h2>
+           <div class="Editar-izquierdo">
+                 <form >
+              
+               <label for="nuevo"> Nuevo nombre </label>
+               <input type="text" id="nuevo">
 
-            <label for="tele">Telefono</label>
-            <input type="tel" id="tele">
+               <label for="tele">Telefono</label>
+               <input type="tel" id="tele">
 
            
-        </form>
+            </form>
+           </div>
+            <div class="Editar-derecho">
+               <label for="fecha">Fecha de Nacimiento</label>
+               <input type="cal" id="fecha">
+ 
+               <label for="sex">Sexo</label>
+               <select>
+                   <option value="fem">Femenino</option>
+                   <option value="mas">Masculino</option>
+               </select>
+                 <div clas="Boton">
+                  
+                     <input type="submit" value="Editar perfil">
+ 
+            </div>
+ 
+ 
+            </div>
         </div>
-        <div class="Editar-derecho">
-            <label for="fecha">Fecha de Nacimiento</label>
-            <input type="cal" id="fecha">
-
-            <label for="sex">Sexo</label>
-            <select>
-                <option value="fem">Femenino</option>
-                <option value="mas">Masculino</option>
-            </select>
-
-
-        </div>
-
+    
      
-        <input type="submit" value="Editar perfil">
+          
         
-
     </main>
+    </div>
 </body>
 </html>

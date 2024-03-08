@@ -1,0 +1,89 @@
+/* Esta parte esta siendo trabajada por yohan */
+
+/* tamaño de caja */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    height: 900px;
+    width: 1300px;
+      justify-content: center;
+      align-items: center;
+    
+
+}
+/* Aqui se le agrego el  y su posicion al contenedor principal */
+.Cuerpo-editar {
+    
+      display: flex;
+      width: 890px;
+      height: 850px;
+      background-color: #fff;
+      flex-direction: column;
+}
+/* tamaño del logo*/
+[alt*="logo-perfil"]{
+    width: 230px;
+    height: 110px;
+   
+}
+/* Al logo para volver a la pagina del perfil de usuario */
+.logo-nav{
+    background-color: #193A6A;
+    display: flex;
+    justify-content: space-around; /*Para separar el contenido del contenedor logo-nav  */
+}
+.logo-nav a:link{
+    text-decoration: none;
+    
+}
+
+.logo-nav a{
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    height: 43px;
+  
+   
+}
+/* Estilos aplicados a H1 */
+.logo-nav h1{
+    color: #fff;
+    font-size: 36px;
+    align-items: center;
+
+}
+/* Estilos aplicados al contenido principal de editar perfil */
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   width: 890px;
+}
+.contenido-principal{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 600px;
+}
+
+/* Centrar la imagen al centro y el editar fot */
+.agregar {
+    display:flex ;
+    align-items: center;
+    flex-direction: column;
+    
+
+}
+
+
+
+
+
+
