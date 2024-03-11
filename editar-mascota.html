@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/estilos-perfil.css">
 </head>
 <body>
-    <div class="Cuerpo-editar">
+    
         <header>
             <figure class="logo-perfil"><img src="./imagenes/logo.png" alt="logo-perfil"></figure>
             
@@ -21,65 +21,65 @@
             </div>
         
         </header>
-        <main class="main">
+        <main class="main-editar">
             <div  class="contenido-principal" >
                 <div class="agregar">
             <figure class="foto">
             <img src="./imagenes/perfil-masco.png" alt="perfil">
         </figure>
-
-        <figure>
-            <input type="file" src="Cambiar foto">
-        </figure>
-
-        </div>
-        <h2>Datos de la Mascota</h2>
-        <div  class="Editar-izquierdo">
+        <div class="foto-edit">
             <form>
-                <label for="nom">Nombre nuevo</label>
-                <input type="text" id="nom">
-                <label for="peso">Peso</label>
-                <input type="text" id="peso">
-                <label for="sexo">Sexo</label>
-                <select name="sexo" id="sexo">
-                   <option value="Macho">Macho</option>
-                   <option value="hembra">Hembra</option>
-             
-                </select>
-                </form>
-
-        
-        </div>
-        <div class="editar-derecha">
-              <form>
-                <label for="edad">edad</label>
-                <input type="number" id="edad">
-                <label for="raza">Raza</label>
-                <input type="text" id="raza">
-                
-                <label for="color">Color</label>
-                <input type="text" id="color">
-                
-               
-                </form>
+                <label for="foto">Cambiar foto</label>
+                <input type="file" id="foto">
+            </form>
 
         </div>
-          <div clas="Boton">
+
+     
+
+        </div>
+        <h2>Edita los datos de la Mascota</h2>
+        <div class="lados">
+            <div  class="editar-izquierda">
+                <form>
+                    <label for="nom">Nombre nuevo</label><br>
+                    <input type="text" id="nom"><br>
+                    <label for="peso">Peso</label><br>
+                    <input type="text" id="peso"><br>
+                    <label for="sexo">Sexo</label><br>
+                    <select name="sexo" id="sexo"><br>
+                       <option value="Macho">Macho</option>
+                       <option value="hembra">Hembra</option>
+                 
+                    </select>
+                    </form>
+    
+            
+            </div>
+            <div class="editar-derecha">
+                  <form>
+                    <label for="edad">edad</label><br>
+                    <input type="number" id="edad"><br>
+                    <label for="raza">Raza</label><br>
+                    <input type="text" id="raza"><br>
+                    
+                    <label for="color">Color</label><br>
+                    <input type="text" id="color"> <br>
+                    
+                   
+                    </form>
+    
+            </div>
+        </div>
+
+       
+          <div class="Boton">
             <input type="submit" value="Editar perfil">
 
           </div>
             </div>
         </main>
           
-      
-   
-    
-    
-    </div>  
-   
-    
-   
-    
-    
+       
 </body>
 </html>

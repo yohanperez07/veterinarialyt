@@ -8,7 +8,7 @@
 </head>
 <!-- Hecho por yohan -->
 <body>
-    <div class="Cuerpo-editar">
+    
          <header>
         <figure class="logo-perfil"><img src="./imagenes/logo.png" alt="logo-perfil"></figure>
             
@@ -22,55 +22,59 @@
         
       </header>
     
-    <main class="main">
+    <main class="main-editar">
        <div class="contenido-principal" >
            <div class="agregar">
              <figure class="foto">
              <img src="./imagenes/usuario.jpg" alt="perfil" width="150" height="150">
            </figure>
   
-             <figure>
-               <input type="file" src="Cambiar foto">
-           </figure>
+           <form class="foto-edit">
+            <label for="foto">Cambiar foto</label>
+            <input type="file" id="foto">
+        </form>
+
  
            </div>
          
            <h2>Editar tus datos</h2>
-           <div class="Editar-izquierdo">
-                 <form >
-              
-               <label for="nuevo"> Nuevo nombre </label>
-               <input type="text" id="nuevo">
+           <div class="lados">
+            <div class="editar-izquierda">
+                <form >
+             
+              <label for="nuevo"> Nuevo nombre </label><br>
+              <input type="text" id="nuevo"><br>
 
-               <label for="tele">Telefono</label>
-               <input type="tel" id="tele">
+              <label for="tele">Telefono</label><br>
+              <input type="tel" id="tele"><br>
 
-           
-            </form>
+          
+           </form>
+          </div>
+           <div class="editar-derecha">
+              <label for="fecha">Fecha de Nacimiento</label><br>
+              <input type="cal" id="fecha"><br>
+
+              <label for="sex">Sexo</label><br>
+              <select>
+                  <option value="fem">Femenino</option>
+                  <option value="mas">Masculino</option>
+              </select>
+
            </div>
-            <div class="Editar-derecho">
-               <label for="fecha">Fecha de Nacimiento</label>
-               <input type="cal" id="fecha">
- 
-               <label for="sex">Sexo</label>
-               <select>
-                   <option value="fem">Femenino</option>
-                   <option value="mas">Masculino</option>
-               </select>
-                 <div clas="Boton">
+           </div>
+            <div class="Boton">
                   
-                     <input type="submit" value="Editar perfil">
- 
-            </div>
- 
- 
-            </div>
+                <input type="submit" value="Editar perfil">
+
+             </div>
+
         </div>
     
      
           
         
     </main>
-    </div>
+   
 </body>
 </html>
