@@ -1,0 +1,151 @@
+/* HECHO POR TIARA */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    width: 700px;
+    height: 600px; 
+    /* Esto es el tamano y el ancho que quiero que tenga la pagina */  
+}
+
+
+
+.encabezado{
+    color: #193A6A;
+    font-size: 26px; /* Tamano de las letras */
+    font-weight: 600; /* para el grueso de la letras */
+    /* margin: auto; */
+    color: #193A6A; /* color de letras */
+    padding-bottom: 8px; /* espacio en la parte de abajo */
+    border-bottom: 2px solid #ED9B51; /* este lo use para hacer la rayita   */
+    margin-left: 8px; /* espacio al lado izquierdo */
+
+}
+
+.logo {
+    width: 275px;/*  */
+    height: auto;/*  */
+    /* medidas del logo */
+}
+
+.box {
+    margin: 0 200px;/*  */
+}
+
+main {
+    border: 1px solid white;/*  borde del elemento para que tenga 1 píxel de ancho, sea sólido (sin puntos ni rayas) y de color blanco. */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/* efecto de sombra  */
+    margin-top: 100px;/* margen superior, abajo */
+    margin-left: 100px;/*  margen izquierdo */
+    width: 800px;/* ancho */
+    height: 500px;/* altura */
+}
+
+
+h1 {
+    background-color: #193A6A; /* Color de fondo */
+   
+    width: 1500px; /* El tamano que quiero que llegue el color de fondo */
+    color: #fff; /* Color de la letra */
+    text-align: center; /* Para poner el texto en el medio */
+
+}
+
+
+label {
+    color: #193A6A;  /* Color de las letras */
+    font-weight: 600;/* para el grueso de la letras */
+}
+
+
+.span {
+    color: black;  /* aqui pongo la parte de aceptar los términos y condiciones de seguridad en negro */
+    font-weight: lighter;  /* y aqui pongo un grueso mas ligero */
+}
+
+
+.form-1{
+   margin-left: 20px; /* para separarlo de la esquina */
+   margin-top: 18px;/* para bajarlo un poco */
+}
+
+
+.form-input {
+    display: flex;/* para que sea flexible */
+    width: 45%;/* el ancho que quiero que tenga, en este caso use el porciento porque era mas efeciente */
+    padding: 10px;/* el tamano de los input */
+}
+
+
+.form-2{
+    position: relative;/* para poder mover el elemento */
+    left: 400px;/* para mover a la izquierda */
+    bottom: 306px;/* para mover arriba */
+}
+
+
+
+  
+.boton {
+    display: flex;/*para que sea flexible  */
+    flex-direction: column;/* para ponerlo en una columna */
+    align-items: center;/* mover al centro  */
+    position: relative;/* para mover el elemento */
+    bottom: 200px;/* mover hacia arriba  */
+  
+}
+
+
+.ancho {
+    /* hice esta clase para poder darle estilo al boton de continuar */
+    width: 250px;/* el ancho del boton */
+    border-radius: 20px;/* para redondear un poco el boton */
+}
+
+
+.registrate-1 {
+   /* este tiene el mismo estilos que el de boton, solo que con menos de bottom para que quede debajo de el boton continuar */
+    display: flex;/* para que sea flexible  */
+    flex-direction: column;/* para ponerlo en una columna */
+    align-items: center;/* mover al centro */
+    position: relative;/* para mover el elemento */
+    bottom: 185px;/* mover hacia arriba  */
+}
+
+.link {
+    /* este tiene el mismo estilos que el de boton, solo que con menos de bottom para que quede debajo de el aceptar las politicas*/
+    display: flex;/* para que sea flexible  */
+    flex-direction: column;/* para ponerlo en una columna */
+    align-items: center;/* mover al centro */
+    position: relative;/* para mover el elemento */
+    bottom: 200px;/*mover hacia arriba  */
+}
+
+
+button {
+    background-color: #193A6A;/* color del fondo del boton */
+    color: white;/* color de letra del boton  */
+    border: none;/* elimina el borde alrededor del botón */
+    border-radius: 5px;/* para redondearlo un poco */
+    padding: 10px;/* spacio entre el texto y los bordes del botón */
+    cursor: pointer;/*  cambia el cursor a una mano al pasar el cursor sobre el botón, lo que indica que se puede hacer clic en él.*/
+    
+}
+
+button:hover {
+    transform: translateY(-5px);/* para mover el elemento 5 píxeles hacia arriba a lo largo del eje Y.  */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);/* sombra al boton de . */
+    background-color: #1F57A9;/* color de fondo caundo to tocan */
+}
+
+a {
+    color: #193A6A;/* color del link */
+}
+
+

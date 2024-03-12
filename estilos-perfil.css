@@ -1,0 +1,133 @@
+/* Esta parte esta siendo trabajada por yohan */
+
+/* tamaño de caja */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+            
+}
+.logo-perfil img{
+    height: 150px;
+    width: 300px;
+    margin-left:20px ;
+    
+    
+}
+ /* Al logo para volver a la pagina del perfil de usuario */
+.logo-nav{
+    background-color: #193A6A;
+    display: flex;
+    justify-content: space-around; /*Para separar el contenido del contenedor logo-nav  */
+}
+.logo-nav a:link{
+    text-decoration: none;
+    
+}
+/*Diseño aplicado al header/nav */
+.logo-nav a{
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    height: 43px;  
+}
+
+.logo-nav  h1{
+    display: flex;
+    width: 700px;/*Se puso este ancho para poder centrarlo  */
+    color: #fff;
+    font-size: 36px;
+   
+}
+
+.main-editar{
+    display: flex;
+    justify-content: center;
+   }
+.contenido-principal{
+    margin: 15px;
+    border-radius: 3px;
+    box-shadow:0px 2px 3px 0px; ;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.agregar{
+    height: 300px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.agregar img{
+    border-radius: 60%;
+    width: 200px;
+    height: 200px;
+    border: solid #fff;
+    box-shadow: 0px 2px 6px 0px;
+}
+.agregar input{
+    display: none;
+}
+
+.agregar .foto-edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #193A6A;
+    color: #fff;
+    width: 200px;
+    margin-top: 20px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.contenido-principal h2{
+   width: 750px;
+   color: #193A6A;
+
+}
+.lados{
+    margin-top: 30px;
+    width: 600px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.lados label{
+    margin-left: 20px;
+    font-size: 15px;
+    color: #193A6A;
+}
+.lados label,input,select{
+    margin: 10px;
+    height: 30px;
+    width: 200px;
+    
+}
+.Boton input{
+    background-color: #193A6A;
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
