@@ -3,107 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="Aqui se mostrara informacion del perfil">
+    <link rel="stylesheet" href="./css/perfil.css">
     <title>Perfil</title>
 </head>
 <!-- hecho por yohan -->
 <body>
-    <header class="header">
-        <figure>
-              <a href="inicio.html"><img src="imagenes/logo.png" alt="logo" width="160" height="100" class="logo"></a>
-        </figure>
+    <header>
+        <div class="conte-header">
+            <figure class="logo">
+            <img src="imagenes/logo.png" alt="logo" width="190" height="170"></figure>
+        
         <nav>
             <ul class="menu">
-                <li><a href="inicio.html">INICIO</a></li>
-                <li><a href="u_configuracion.html">CONFIGURACIÓN</a></li>
+                <li class="opciones"><a href="inicio.html"><img src="./imagenes/home-fondo.png" alt=""></a></li>
+                <li class="opciones"><a href="u_configuracion.html"><img src="./imagenes/confi.png" alt=""></a></li>
             </ul>
         </nav>
-      
+
+        </div>
+   
+        <h1>Mi perfil de usuario</h1>
+
 
     </header>
-      
-    </header>
+    
     <main>
-        <div class="primera-colum">
-            <figure>
+        <div class="general">
+        <div class="columna">
+            <div class="parte-alta">
+                 <figure>
                 <img src="./imagenes/usuario.jpg" alt="usuario">
 
             </figure>
-            <h2>Maria Perez</h2>
-            <a href="editar-perfil.html">Editar perfil</a>
+            <div class="edit">
+                <h2>Maria perez</h2>
+                <a href="editar-perfil.html">Editar perfil</a>
 
-            <table>
-                <ul>
-                    <li>Nombre  completo</li>
-                    <li>Maria perez</li>
+            </div>
+            
+
+            </div >
+           
+
+            
+               <div  class="listas">
+                 <ul>
+                    <li class="cont">Nombre  completo</li>
+                    <li class="cont2">Maria perez</li>
 
                 </ul>
                 <ul>
-                    <li>Fecha de nacimiento</th>
-                    <li>10/5/2000</td>
+                    <li class="cont">Fecha de nacimiento</li>
+                    <li class="cont2">10/5/2000</li>
 
                 </ul>
                     
                 <ul>
-                    <li>Telefono</li>
-                    <li>+1(829)-459-5049</li>
+                    <li class="cont">Telefono</li>
+                    <li class="cont2">+1(829)-459-5049</li>
 
                 </ul>
 
                 <ul>
-                    <li>Edad</li>
-                    <li>20 Años</li>
+                    <li class="cont">Edad</li>
+                    <li class="cont2">20 Años</li>
                 </ul>
                 <ul>
-                    <li>Sexo</ul>
-                    <li>Femenino</ul>
+                    <li class="cont">Sexo</li>
+                    <li class="cont2">Femenino</li>
                 </ul>
-            </table>
+               </div>
+           
 
             
         </div>
-        <div class="Segunda-colum">
-            <figure>
+        <div class="columna">
+            <div class="parte-alta">
+                  <figure>
                 <img src="./imagenes/perfil-masco.png" alt="usuario">
 
             </figure>
-            <h2>Maria Perez</h2>
-            <a href="editar-mascota.html">Editar perfil</a>
+              <div class="edit">
+                <h2>Rocky</h2>
+                <a href="editar-mascota.html">Editar perfil</a>
 
-            <table>
+            </div>
+            
+            </div>
+            <div class="listas">
                 <ul>
-                    <li>Raza</li>
-                    <li>Golden retriever</li>
+                    <li class="cont">Raza</li>
+                    <li class="cont2">Golden retriever</li>
                 </ul>
         
                 <ul>
-                    <li>Peso</li>
-                    <li>25kg</li>
+                    <li class="cont">Peso</li>
+                    <li class="cont2">25kg</li>
                 </ul>
                 <ul>
-                    <li>Edad</li>
-                    <li>20 Años</li>
+                    <li class="cont">Edad</li>
+                    <li class="cont2">20 Años</li>
                 </ul>
                 <ul>
-                    <li>Sexo</li>
-                    <li>Hembra</li>
+                    <li class="cont">Sexo</li>
+                    <li class="cont2">Hembra</li>
                 </ul>
                 <ul>
-                    <li>Color</li>
-                    <li>marro</li>
+                    <li class="cont">Color</li>
+                    <li class="cont2">marron</li>
                 </ul>
-            </table>
 
+
+
+            </div>
+
+
+        </div>
+        <div class="columna">
+              <div class="parte-alta">
+            <figure><img src="./imagenes/perfil-masco.png" alt="masco"></figure>
+             <div class="edit"><a href="#">Agregar mascota</a></div></div>
+
+          </div>
+        </div>
             
-        </div>
-        <div class="agregar">
-            <figure>
-                <img src="./imagenes/perfil-masco.png" alt="">
-            </figure>
-            <input type="submit" value="Agregar mascota">
 
-        </div>
+    </main>   
 
-    </main>
-    
+
+       
 </body>
 </html>
