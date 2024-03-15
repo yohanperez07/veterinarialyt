@@ -8,6 +8,8 @@
 }
 body{
     height: 900px;
+    display: flex;
+    flex-direction: column;
 }
 .conte-header{
     height: 120px;
@@ -48,8 +50,6 @@ h1{
 }
 /* Estilos del cuerpo  */
 .general {
-    /* display: grid;
-    grid-template-columns: 500px 500px 500px; */
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -57,7 +57,6 @@ h1{
     /* background-color: brown; */
 }
 .general .columna {
-    /* background-color: rgb(106, 114, 111); */
     width: 400px;
     margin: 20px;
 
@@ -89,7 +88,8 @@ h1{
     color: #000;
 
 }
-/* Use el selector de atributos porque no dectectaba el  "editar-mascota.html"*/
+
+
 .edit a {
     display: flex;
     align-items: center;
@@ -115,7 +115,7 @@ li{
 }
 .cont{
     color: #193A6A;
-    font-size: 30px;
+    font-size: 25px;
     margin: 10px 10px 10px 0;
 }
 .cont2{
@@ -123,6 +123,126 @@ li{
     font-size: 25px;
     border-bottom: solid 2px #3f3b3b;
 }
+
+/* parte de editar perfil de las mascotas y el perfil */
+
+
+/* Esta parte esta siendo trabajada por yohan  */
+
+
+.logo-perfil img{
+    height: 150px;
+    width: 300px;
+    margin-left:20px ;
+    
+}
+ /* Al logo para volver a la pagina del perfil de usuario */
+.logo-nav{
+    background-color: #193A6A;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /*Para separar el contenido del contenedor logo-nav  */
+}
+.logo-nav a:link{
+    text-decoration: none;
+    
+}
+/*Diseño aplicado al header/nav */
+.logo-nav a:hover{
+    color: rgb(79, 162, 235);
+}
+.logo-nav a{
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    height: 43px;  
+}
+
+.logo-nav  h1{
+    display: flex;
+    width: 700px;/*Se puso este ancho para poder centrarlo  */
+    color: #fff;
+    font-size: 36px;
+   
+}
+
+.main-editar{
+    display: flex;
+    justify-content: center;
+   }
+.contenido-principal{
+    margin: 15px;
+    border-radius: 3px;
+    box-shadow:0px 2px 3px 0px; ;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.agregar{
+    height: 300px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.agregar img{
+    border-radius: 60%;
+    width: 200px;
+    height: 200px;
+    border: solid #fff;
+    box-shadow: 0px 2px 6px 0px;
+}
+.agregar input{
+    display: none;
+}
+
+.agregar .foto-edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #193A6A;
+    color: #fff;
+    width: 200px;
+    margin-top: 20px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.contenido-principal h2{
+   width: 750px;
+   color: #193A6A;
+
+}
+.lados{
+    margin-top: 30px;
+    width: 600px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.lados label{
+    margin-left: 20px;
+    font-size: 15px;
+    color: #193A6A;
+}
+.lados label,input,select{
+    margin: 10px;
+    height: 30px;
+    width: 200px;
+    
+}
+.Boton input{
+    background-color: #193A6A;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/*Estilos de la configuracion  */
+
 
 
 
