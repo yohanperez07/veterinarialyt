@@ -132,3 +132,7 @@ a {
 }
 
 
+.a-2{
+    color: #fff; /* color de la letra  */
+    text-decoration: none/* para quitarle la rayita  */
+}
