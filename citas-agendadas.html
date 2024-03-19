@@ -5,20 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="Esta pagina podra ver sus citas pendiente">
     <title>Citas pendientes</title>
+    <link rel="stylesheet" href="./css/estilos-yohan.css">
 </head>
 <!-- Hecho por yohan -->
-<body>
+<body >
     <header>
       
-        <figure class="logo-pet">
+        <figure class="logo">
             <a href="inicio"><img src="./imagenes/logo.png" alt="Logo"></a>
         </figure>
 
-            <h1>Agendar Cita</h1>
+            
 
 
 
-            <nav class="nav-contenedor">
+            <nav class="menu-nav">
+                
+                 <h1 class="agendadas">Citas agendadas</h1>
+
                 <ul>
                                     <li>
                                         <div class="Menu">
@@ -35,7 +39,7 @@
 
                                     <li>
                                         <div class="Menu">
-                                            <a href="./u.perfil.html">PERFIL <img src="./imagenes/usuario.jpg" alt="usuario" width="100" height="100"></a>
+                                            <a href="./u.perfil.html">PERFIL </a>
                                         </div>
                                     </li>
   
@@ -46,10 +50,14 @@
    
      </header>
     <main class="con-agendadas">
-        <a href="#Citas.html"><h2>Registra nueva cita </h2>
-        </a>
-        <table>
-            <tr>
+        <div class="agen">
+            <a href="agendarCita.html" >Registra nueva cita</a>
+
+        </div>
+        
+        <table >
+            <thead>
+            <tr >
                 <th>Fecha</th>
                 <th>hora</th>
                 <th>Servicios</th>
@@ -57,22 +65,47 @@
                 <th>Acciones</th>
 
             </tr>
-            <tr>
+
+            </thead>
+            <tbody>
+                 <tr>
                 <td>dd/mm/aa</td>
                 <td>8:00 Am</td>
                 <td>Chequeo General</td>
                 <td>Perro</td>
-                <td><input type="submit" value="Editar"><input type="submit" value="Eliminar"> </td>
+                <td><a href="#" class="verde">Editar Citas</a> <a href="#" class="roja">Eliminar cita</a></td>
             </tr>
-            <tr>
+            <tr class="gris" >
                 <td>dd/mm/aa</td>
                 <td>8:00 Am</td>
                 <td>Chequeo General</td>
                 <td>Perro</td>
-                <td><input type="submit" value="Editar"><input type="submit" value="Eliminar"> </td>
+                <td><a href="#" class="verde">Editar Citas</a> <a href="#" class="roja">Eliminar cita</a></td>
             </tr>
+              <tr>
+                <td>dd/mm/aa</td>
+                <td>9:00 Am</td>
+                <td>Chequeo General</td>
+                <td>gato</td>
+                <td><a href="#" class="verde">Editar Citas</a> <a href="#" class="roja">Eliminar cita</a></td>
+            </tr>
+             <tr class="gris">
+                <td>dd/mm/aa</td>
+                <td>9:00 Am</td>
+                <td>Chequeo General</td>
+                <td>gato</td>
+                <td><a href="#" class="verde">Editar Citas</a> <a href="#" class="roja">Eliminar cita</a></td>
+            </tr>
+        
+
+            </tbody>
+           
          
+           
+            
         </table>
+            
+           
     </main>
     
 </body>

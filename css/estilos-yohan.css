@@ -1,5 +1,6 @@
 /* Esta parte esta siendo trabajada por yohan */
 
+
 /* tamaño de caja */
 *{
     box-sizing: border-box;
@@ -10,6 +11,7 @@ body{
     height: 900px;
     display: flex;
     flex-direction: column;
+    background-color: #fff;
 }
 .conte-header{
     height: 120px;
@@ -32,15 +34,21 @@ header .logo img{
     
     
 }
-.menu li{
-    list-style: none;  /* Quitarle los puntos negros de la lista */   
+.menu {
+    list-style: none;  /* Quitarle los puntos negros de la lista */ 
 }
 .menu .opciones{
     width: 900px;
     height: 80px;
     justify-content: center;
 }
-h1{
+.edit a:hover{
+    background:linear-gradient(#193A6A,#255bad) ;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.titulo{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,8 +96,6 @@ h1{
     color: #000;
 
 }
-
-
 .edit a {
     display: flex;
     align-items: center;
@@ -124,7 +130,7 @@ li{
     border-bottom: solid 2px #3f3b3b;
 }
 
-/* parte de editar perfil de las mascotas y el perfil */
+/* parte de editar perfil de las mascotas y el perfil------------------------------------------------------------ */
 
 
 /* Esta parte esta siendo trabajada por yohan  */
@@ -148,7 +154,12 @@ li{
     
 }
 /*Diseño aplicado al header/nav */
-.logo-nav a:hover{
+.menu,.logo-nav a{
+    color: #fff;
+    text-decoration: none;
+
+}
+.menu,.logo-nav a:hover{
     color: rgb(79, 162, 235);
 }
 .logo-nav a{
@@ -197,7 +208,7 @@ li{
     box-shadow: 0px 2px 6px 0px;
 }
 .agregar input{
-    display: none;
+    display: none;/*Utlizado para ocultar informacion del input de cambiar foto  */
 }
 
 .agregar .foto-edit{
@@ -239,9 +250,102 @@ li{
     background-color: #193A6A;
     color: #fff;
     border-radius: 10px;
+    border: none;
 }
 
-/*Estilos de la configuracion  */
+/*Estilos de la parte superiorcitas agendadas  -----------------------------------------------------------------------------*/
+
+ .menu-nav{
+    background-color: #193A6A;
+    display: flex;
+    height: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-nav ul{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.menu-nav li{
+    display: flex;
+    margin: 10px;
+    
+}
+.agendadas{
+    color: #fff;
+    font-size: 30px;
+
+}
+.Menu a:link{
+    text-decoration: none;
+
+}
+.Menu a{
+    color: #fff;
+    font-size: 16px;
+}
+.Menu a:hover{
+    color: #2b69c5;
+}
+/* Cuerpo de Citas agendadas --------------------------------------------------------------------------------*/
+
+.agen,a:link{
+    text-decoration: none;
+    
+}
+.agen a:hover{
+    color: #2b69c5;
+}
+
+.agen a{
+    background-color: #193A6A;
+    border-radius:10px 10px 10px 10px;
+    color: #fff;
+    font-size: 30px;
+    float: right;
+    text-align: center;
+    margin: 15px 80px 0 ;
+    width: 300px;
+}
+table{
+
+    text-align: center;
+    margin: 70px 0 0 50px;
+    font-size: 20px;
+    width: 90%;
+    border-collapse: collapse;/*Fusionar los bordes  */
+
+}
+th{
+    color: #fff;
+}
+th,td{
+    padding: 20px;
+}
+thead{
+    background-color: #193A6A;
+}
+tbody .gris{
+    background-color: #D9D9D9;
+}
+.verde{
+   color: #4AD818;
+   font-weight: 900;
+}
+.roja{
+    border-left: solid 2px #302e2e;
+    padding-left: 6px;
+   color:#FF0000 ;
+   font-weight: 900;
+}
+.verde:hover{
+     color: #3d911e;
+}
+.roja:hover{
+    color:#a80a0a ;
+
+}
 
 
 
