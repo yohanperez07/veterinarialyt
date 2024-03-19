@@ -347,6 +347,106 @@ tbody .gris{
 
 }
 
+/* Estilos de listado de mascotas y usurarios ------------------------------------------------------------------*/
+.body-listados{
+    height: 100%;
+}
+
+
+.alto-admi {
+    width: 99%;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+ .a-hed {
+    width: 250px;/* tamano del logo  */ 
+} 
+
+.text-pag-b {
+    background-color: #102544;
+    padding: 6px;
+    
+}
+
+
+.text-pag-a {
+    color: #fff;
+    margin-top: -35px;
+    margin-left: 1150px;
+}  
+
+.alto-admi .botones {
+    display: flex;
+   justify-content: end;
+   width: 98%;
+  margin: 0 10px;
+  margin-top: -80px;
+}
+
+.icons {
+    width: 40px;
+    height: 37px;
+}
+
+.tamano-uno {
+    width: 100%;
+    height: 100%;
+}
+
+.tamano-dos {
+    width: 100%;
+    height: 100%;
+}
+
+.icons img {
+    width: 35px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+
+.icons img:hover {
+    transform: scale(1.2);
+}
+
+
+.galeria {
+    display: flex;
+    justify-content: center; 
+    margin: 90px 0;
+    padding: 30px;
+}
+
+.galeria article {
+    display: inline-block;
+    margin-right: 50px;
+    
+}
+
+.galeria article img {
+    width: 250px; 
+    height: auto; 
+   
+}
+
+.galeria article img:hover {
+    transform: scale(1.1);
+}
+
+.pie {
+    text-align: center;
+    color: #102544;
+}
+
+.tabla{
+    margin-top: 90px;
+}
+
+
+
+
 
 
 
