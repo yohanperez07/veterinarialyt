@@ -16,6 +16,12 @@
     cursor: pointer; /*Presenta la manita cuando estes en el logo */
 }
 
+.hed-s .usuario{
+    margin-bottom: 3px;
+    margin-left: 5px; /* Despegar un poco de los menus */
+    border-radius: 50%;
+}
+
 
 .hed-s  .log {
     width: 250px;/* tamano del logo  */
