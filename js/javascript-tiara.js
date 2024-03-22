@@ -14,3 +14,6 @@ document.getElementById("botonEnviar")
     //   que en este caso seria enviar el formulario de reistro
     }
   });
+
+
+  
