@@ -1,9 +1,6 @@
 /* Esta parte esta siendo trabajada por yohan */
 
-@font-face {
-    font-family: FrederickatheGreat-Regular;
-    src: url(../fuentes/Abhaya_Libre.zip);
-}
+
 /* tamaño de caja */
 *{
     box-sizing: border-box;
@@ -12,57 +9,53 @@
 }
 body{
     
-    height: 900px;
+    height: 850px;
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #fff;
 }
-/* header de perfil */
-.conte-header{
-    height: 120px;
-     display: flex;
-    justify-content: space-between;/*separa el logo del menu de la pagina de cada lado  */
-}
-header .logo img{
+
+.logo img{
     /* tamaños del las imagenes de el logo */
      height: 120px;
-    width: 250px;
+    width: 230px;
     margin-left:20px ;    
      cursor: pointer;  /*Presenta la manita cuando estes en el logo */ 
 
 }
-.menu {
+.nav-perfil{
+    background-color:#193A6A;
+    height: 50px;
     display: flex;
-    align-items: center;/* centra el menu  */
-    justify-content: space-around;/*Para separar el espacio entre menus  */
-    height: 150px;
-    width: 300px;/*Tamano del contendor de las imagenes del menu  */
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
     
-    
 }
-.menu {
-    list-style: none;  /* Quitarle los puntos negros de la lista */ 
+.menu a{
+    color: #fff;
+    margin-right: 30px;
+
 }
-.menu .opciones{
-    height: 80px;
+.menu,.logo-nav,a:hover{
+    color: #ED9B51;
+    cursor: pointer;
 }
+.nav-perfil h1{
+    font-size: 27px;
+    margin-left: 10px;
+    color: #fff;
+}
+
 .edit a:hover{
     /* a acercar el puntero a ediat cita muestra  */
     background:linear-gradient(#193A6A,#255bad) ;
    
 }
-
-.titulo{
-    /* Estilos del titulos de la pagina de perfil */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    background-color:  #193A6A;
-    height: 50px;
-}
-/* Estilos del cuerpo   de editar perfil-----------------------------------------------------------------------------------------*/
 .general{
 /* estilos aplicados al contendor que contiene el 
 contenido principal del la pagina de perfil */
@@ -163,9 +156,7 @@ li{
     text-decoration: none;
 
 }
-.menu,.logo-nav a:hover{
-    color: #ED9B51;
-}
+
 .logo-nav a{
     color: #fff;
     font-size: 25px;
@@ -502,14 +493,9 @@ tbody .gris{
 }
 .conten-codigo span{
     font-weight: 800;
-    /* color: rgb(6, 101, 209); */
 }
 .codigos{
-    
-    /* display: flex;
-    flex-direction: column; */
     width: 100%;
-    /* background-color: #255bad; */
 }
 .div-cod{
     display: flex;
@@ -524,7 +510,23 @@ tbody .gris{
     padding-right: 37px;
    
 }
+ /* Diseno pantallas grandes ----------------------------------------------------------------------------------------------------------- */
+@media (max-width: 900px){
+  body{
+    height: 1000px;
+    /* background-color: #0040f0; */
+  }
+  .logo img{
+    width: 30%;
+    height: 20%;
+  }
+  
+
+  
+   
+   
+
+    
 
 
-
-
+}
