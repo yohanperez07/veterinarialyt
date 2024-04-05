@@ -2,32 +2,244 @@
 /* HECHO POR TIARA */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap'); */
 
-/* u_registroMascotas.html y  u_registrousuario.html  */
+/* a_administrador.html */
+
+@import "reset.css";
+
 
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
+    font-family: "Abhaya Libre", serif;
+} 
 
 header {
-    display: flex;/* flexible */
-    width: 500px;/* ancho del header */
-    height: auto;/* un alto auto */
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    font-family: "Abhaya Libre", serif;
+}
+
+.a-hed {
+    width: 250px;/* tamano del logo  */
+    height: auto; 
+} 
+
+.text-pag-b {
+    background-color: #102544;
+    padding: 10px;
+    
+}
+
+.text-pag-a {
+    color: #fff;
+    margin-top: -30px;
+    margin-left: 1290px;
+    width: 100%;
+}  
+
+
+
+.alto-admi .botones {
+    display: flex;
+   justify-content: end;
+   width: 98%;
+  margin: 0 10px;
+  margin-top: -80px;
+}
+
+.icons {
+    width: 40px;
+    height: 37px;
+}
+
+.tamano-uno {
+    width: 100%;
+    height: 100%;
+}
+
+.tamano-dos {
+    width: 100%;
+    height: 100%;
+}
+
+.icons img {
+    width: 35px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
 }
 
 
-.p-hed {
+.icons img:hover {
+    transform: scale(1.2);
+}
+
+
+.galeria {
+    display: flex;
+    justify-content: center; 
+    margin: 90px 0;
+    padding: 50px;
+}
+
+.galeria article {
+    display: inline-block;
+    margin-right: 50px;
+    
+}
+
+.galeria article img {
+    width: 220px; 
+    height: auto; 
+    transition: all 0.5s ease;
+}
+
+.galeria article img:hover {
+    transform: scale(1.1);
+}
+
+.pie {
+    text-align: center;
+    color: #102544;
+    font-size: 18px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
+}
+
+
+/* a_gestionSesion */
+
+/* u_configuracion */
+
+.c-hed .logo {
+    width: 250px;/* tamano del logo  */
+    height: auto; 
+} 
+
+.infor {
+    background-color: #193A6A;
+    padding: 10px;
+}
+
+
+
+
+
+/* u_info_general.html */
+
+.hed-i .logo {
+    width: 250px; /* tamaño del logo */
+    height: auto;
+  }
+  
+  .hed-i h1 {
+    background-color: #193A6A;
+    padding: 10px;
+    font-size: 27px;
+    color: white; /* Agrega color de texto blanco para el título */
+  }
+  
+  .center {
+    text-align: center;
+    margin: 20px;
+    max-width: 1100px;
+    margin-left: 200px;
+    margin-top: 100px;
+  }
+  
+  hr {
+    border-top: 2px solid #ED9B51;
+    margin: 20px 0;
+    width: 70px;
+    margin-left: 510px;
+    margin-top: 9px;
+  }
+  
+  .center h2 {
+    padding: 10px;
+    color: #193A6A;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  .center p {
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  .navegacion {
+    margin-left: 1050px;
+    margin-top: -45px;
+  }
+  
+  .navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navegacion .item {
+    float: left;
+    position: relative;
+  }
+  
+  .navegacion .item a {
+    /* background-color: #193A6A; */
+    color: #fff;
+    padding: 12px 22px;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s; 
+  }
+  
+  .navegacion .despliegue {
+    display: none;
+    position: absolute;
+    background-color: #193A6A;
+    z-index: 1;
+    min-width: 160px; /* Agrega esta línea para evitar que las letras se bajen */
+  }
+  
+  .navegacion .despliegue a {
+    padding: 12px 16px; /* Agrega esta línea para ajustar el padding de los enlaces del submenú */
+    text-decoration: none;
+    display: block;
+    /* background-color: #2b69c5; */
+    transition:  0.3s; 
+  }
+  
+  .navegacion .item:hover .despliegue {
+    display: block;
+  }
+ 
+  
+  .navegacion .item a:hover {
+    background-color: #2b69c5;
+    color: #fff;
+  }
+
+
+  
+.navegacion .despliegue a:hover {
+    background-color: #2b69c5; /* Cambia el color de fondo de los enlaces del submenú al pasar el cursor */
+  }
+
+
+
+/* u_registroMascotas.html y  u_registrousuario.html  */
+
+.r-hed {
 
     font-size: 15px;/* el tamano de letra */
     font-weight: 600;/* el grosor de la letra */
 }
 
-.p-hed, img {
+.r-hed, img {
     width: 250px;/* tamano del logo  */
     height: auto;/* alto de logo */ 
 }
@@ -38,6 +250,8 @@ header {
  width: 1366px;/*ancho de la letra para que el background llegue hasta el final de la pagina  */
  height: auto;/* alto automatico */
  text-align: center;/* para poner la letra en el medio  */
+ font-size: 26px;
+ padding: 7px;
 
 }
 
@@ -70,7 +284,7 @@ label {
 
 .span {
     color: black;/* para ponerle color a Acepto los términos y condiciones de seguridad */
-    font-weight: lighter;/* fuente de la leta  */
+    font-weight: 500;/* fuente de la leta  */
 }
 
 .form-1{
@@ -81,16 +295,32 @@ label {
 
 .form-2 {
     margin-left: 400px;/* para mover a la izquierda */
-    margin-top: -284px;/* para mover arriba */
-    width: 45%;/* ancho de los inputs */
-   
+    margin-top: -274px;/* para mover arriba */
+    width: 45%;/* ancho de los inputs */ 
 }
 
 
-.form-input {
+.form-input_pe {
+    display: flex;/* para que sea flexible */
+    width: 50%;/* el ancho que quiero que tenga, en este caso use el porciento porque era mas efeciente */
+    padding: 8px;/* el tamano de los input */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.seleccion {
+     display: flex;/* para que sea flexible */
+     margin-left: 200px;
+    
+}
+
+
+.form-input, [type*="radio"] {
     display: flex;/* para que sea flexible */
     width: 100%;/* el ancho que quiero que tenga, en este caso use el porciento porque era mas efeciente */
     padding: 8px;/* el tamano de los input */
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .boton {
@@ -105,10 +335,11 @@ label {
 }
 
 .ancho {
-    padding: 8px;/* cantidad de espacio del elmento  */
+    padding: 7px;/* cantidad de espacio del elmento  */
     width: 250px; /* el ancho del boton */
     border-radius: 20px;/* para redondear un poco el boton */
     border: none;/* para quitarle el bordde */
+    font-size: 15px;
 }
 
 .link {
@@ -119,6 +350,7 @@ label {
 button {
     background-color: #193A6A;/* color del boton  */
     color:#fff;/* color de letra del boton */
+    transition: all 0.3s ease;
 }
 
 button:hover {
@@ -127,12 +359,147 @@ button:hover {
     background-color: #1F57A9;/* color de fondo cuando lo tocan */
 }
 
-a {
+.a-1 {
     color: #193A6A; /* color del link */
 }
-
 
 .a-2{
     color: #fff; /* color de la letra  */
     text-decoration: none/* para quitarle la rayita  */
 }
+
+
+/* u_servicios.html */
+
+.hed-s  .logo {
+    width: 250px;/* tamano del logo  */
+    height: auto;
+}
+
+.hed-s h1 {
+    background-color: #193A6A;
+    padding: 10px;
+    font-size: 23px;
+   
+}
+
+.menu  {
+    display: flex;
+    height: 40px;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -85px;
+    margin-left: 1000px;
+}
+
+.menu li {
+    display: flex;
+    margin: 10px;
+}
+
+.links{
+    color:#fff;
+    font-size: 30px;
+}
+
+.menu a:link{
+    text-decoration: none;
+}
+
+
+.menu a{
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.menu a:hover{
+    color: #2b69c5;
+}
+
+.border {
+    border: 1px solid #fff;
+    margin: 60px;
+    background-color: #193A6A;
+    height: 500px;
+}
+
+.move {
+   margin-left: 600px;
+   margin-top: -411px;
+}
+
+.move-dos {
+    margin-top: 40px;
+    margin-left: 60px;
+}
+.move-dos h3 {
+    color: #193A6A
+}
+
+.color {
+   background-color:#fff;
+   width: 470px;
+   height: 180px;
+   border-radius: 15px;
+  
+}
+
+.photo img {
+    background-color: #fff;
+    
+}
+
+.photo article {
+    padding: 12px;
+    
+} 
+
+
+.photo-ancho img {
+    width: 150px;
+     margin-left: 20px;
+}
+
+.photo-ancho-dos img {
+    width: 100px;
+    margin-left: 20px;
+}
+
+.photo-ancho-tres img {
+    width: 110px;
+    margin-left: 20px;
+}
+
+.title {
+   margin-bottom: 10px; /*para que el h3 este sepado del p */
+   margin-left: 130px;
+   margin-top: -50px;
+   color: #193A6A;
+   font-size: 20px;
+  
+}
+
+
+.clave {
+  margin-bottom: -25px; 
+  padding: 0 50px; 
+  width: 80%; 
+  margin-left: 80px;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.letra {
+  font-size: 16px;
+}
+
+
+
+
+
