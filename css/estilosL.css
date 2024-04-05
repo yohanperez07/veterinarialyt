@@ -7,6 +7,84 @@
     box-sizing: border-box;
 }
 
+
+/* PAG DE INICIO */
+
+h2{
+   text-align: center;  /* Centrar el texto (Los mejores amigo de tu mejor amigo) */
+   font-size: 40px; /* Tamaño de las letras */
+   color: #193A6A; /* Color de las letras */
+}
+
+.panel{
+    display: flex; /*mover las img en el centro */
+    justify-content: space-evenly; /* colocarlas en lineas y con espacios  */
+    padding-top: 20px; /* Espacio hacia arriba */
+    margin-bottom: 100px; /* Espacio hacia abajo */
+    /* flex-wrap: wrap; */
+}
+
+
+.SegundaParte{
+    padding: 4px 5%; /* Ajuntando de los lados */
+    padding-top: 10px;  /* Espacio hacia arriba */
+}
+
+.imagen-panel{
+    text-align: center; /* Los parrafos se centren con las img */
+    font-size: 20px; /* Tamaño de las letras */
+    color: #193A6A;  /* Color de las letras */
+    font-weight: bold; /* Poner las letras en negrita */
+    padding-top: 10px;  /* Espacio hacia arriba para la sombra */
+    padding-bottom: 10px;  /* Espacio de abajo para la sombra */
+    border: 1px solid;
+}
+
+
+
+section, footer{
+    padding-top: 360px; /* Tamaño de la img de fondo */
+    background: url(../imagenes/fondo2.jpg);/* img de fondo */
+    background-size: cover; /* Para que la img se adapte a su posicion normal */ 
+    background-attachment: fixed;  /* esto es para mantener fijo el efecto defondo, que es la img para desplazarla. */
+    position: relative; /* permiten desplazar la img desde su posición original sin afectar el diseño de los demas elementos en la página. */
+  
+}
+
+
+footer {
+    height: 400px;  /* espacio de arriba */
+    padding: 30px 30px; /* relleno de los lados */
+}
+
+
+
+.box-icons{
+    padding-top: 180px; /* Espacio de arriba */
+    display: flex; /*poder mover los iconos y letras al centro */
+    justify-content: space-evenly;/* colocarlas en lineas y con espacios  */
+    padding-bottom: 40px;/* Espacio hacia abajo */
+}
+
+
+.content{
+    text-align: center; /* poner los iconos centrados */
+}
+
+.content h4{
+    color: #19396a;  /* letras azules */
+    padding-top: 9px;  /* Espacio hacia arriba */ 
+}
+
+.bx {
+    font-size: 40px;/* Tamaño de los iconos */
+}
+
+
+/* PAGINA DE AGENDAR CITA Y GUARDERIA */
+
+
+
 /* HEADER */
 
  .logo{
@@ -18,12 +96,12 @@
 
 .hed-s .usuario{
     margin-bottom: 3px;
-    margin-left: 5px; /* Despegar un poco de los menus */
+    margin-left: -10px; /* Despegar un poco de los menus */
     border-radius: 50%;
 }
 
 
-.hed-s  .log {
+.hed-s  .logo {
     width: 250px;/* tamano del logo  */
     height: auto;
 }
@@ -33,23 +111,31 @@
     padding: 8px;
 }
 
+.hed-s .Recuperar {
+    background-color: #193A6A;
+    padding: 8px;
+    text-align: center;
+}
+
+
+
 .menu  {
     display: flex;
     height: 40px;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .menu ul {
     display: flex;
     justify-content: space-around;
-       margin-top: -90px;
-    margin-left: 1000px;
+    margin-top: -90px;
+    margin-left: 950px;
+    align-items: center
 }
 
 .menu li {
-     display: flex;
+    display: flex;
     margin: 10px;
 }
 
@@ -101,6 +187,7 @@ h1 {
 }
 
 
+
 label {
     color: #193A6A;/* color de la letra  */
     font-weight: 600;/* grosor de la letra  */
@@ -133,15 +220,11 @@ label {
 textarea {
     margin-top: 15px;  /* espacio de arriba */
     width: 98%; /*   tamaño del cuadro*/
-    resize: none;
-     /* no darle la opcion al usuario de que lo haga mas grande el cuadro  */
+    resize: none;/* no darle la opcion al usuario de que lo haga mas grande el cuadro  */
     min-height: 140px; /* Espacio minimo haca arriba */
-   border: 1px solid;
-   /* border: none; */
+   border: 1px solid;/* border: none; */
   
-
 }
-
 
 
 .ancho {
@@ -182,3 +265,131 @@ a {
     color: #fff; /* color de la letra  */
     text-decoration: none/* para quitarle la rayita  */
 }
+
+.imagen-panel {
+    transition: transform 0.3s ease;
+}
+
+.imagen-panel:hover {
+    transform: scale(1.1);
+}
+
+/* RECUPERAR- CUENTA */
+
+.cont{
+    padding: 30px;/* cantidad de espacio del elmento  */
+    margin: 40px  auto;/* maren del elemento 20px arriba y abajo y auto a la izquierda y derecha */
+    border: 1px solid;/* un borde alrededor del elemento*/
+    border-radius: 20px;
+    width: 55%;/*  ancho del elemento */
+    height: 370px;/*altura del elemento  */
+}
+
+h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h5{
+    border-bottom: 3px solid #ED9B51;
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.ip{
+    border-radius: 7px;
+    margin-top: 15px;/* margen superior */
+     /* border-color: white; */
+     display: flex;/* para que sea flexible */
+     width: 95%;
+     padding: 13px;/* el tamano de los input */
+     margin-bottom: 45px;
+    border: 1px solid;
+
+}
+.botones{
+    display: flex;
+    justify-content: space-around;
+  
+   
+}
+
+.btn{
+    text-align: end;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+
+.enlace1{
+    color: black;
+    margin-right: 40px;
+    text-decoration: none;
+    border-radius: 5px;
+   
+}
+
+.enlace2{
+    margin-right: 30px;
+    text-decoration: none;
+    border-radius: 5px;
+   
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY CELULAR*/
+
+@media screen and (max-width: 600px) {
+
+   
+
+    .box{
+        max-width: 100%;
+    }
+
+   
+
+    html{
+        width: 90%;
+    }
+    
+
+    .hed-s{
+        font-size: 14px;
+    }
+
+    .panel {
+        display: flex;/* flexibilidad */
+        flex-direction: column; /* poner las img en filas */
+        align-items: center; /* Centrar las rayita */
+    }
+
+    .imagen-panel {
+        margin-bottom: 3px; /* Añadir espacio entre paneles */
+    }
+
+    .content {
+        margin-bottom: 10px;
+        padding: 10px; 
+        text-align: center;
+    }
+
+
+
+}
+ 
+

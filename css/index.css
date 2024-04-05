@@ -5,12 +5,15 @@
 }
 
 /* HECHO POR LAURA */
+ body{
+    background-color: #fcfaf6;
+ }
 
 .contenedor {
     margin: 0 auto; /* el 0, arriba y abajo */   /* el auto, izquierda y derecha */
     margin-left: 1px; /* Que la imagen cubra todo el espacio hacia la izquierda */
     max-width: 1200px; /* No puede pasar de los 1200px */
-    width: 100%;  /* el 100% de la imagen */
+    width: 300%;  /* el 100% de la imagen */
 }
 
 .imagen-fomulario {
@@ -19,7 +22,8 @@
     background-size: cover; /* cover: que la imagen se adapte al cotenedor padre, osea al imagen-formulario */
     flex: 65%; /* flex es la la propiedad resumida que indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. 
     Puse 65% para que cubra ese espacio y los 35 que quedan para el formulario,*/
-    margin-bottom: -150px; /* para que quede ajustada haci abajo */
+    margin-bottom: -150px; 
+    /* para que quede ajustada haci abajo */
 }
 
 
@@ -35,39 +39,47 @@
 
 
 .formulario {
-   
-    padding: 70px; /* para que el formulario tenga el espacio de todos los lados */
+    margin-left: 30px;
+    margin-top: 70px;
+    padding: 5px; /* para que el formulario tenga el espacio de todos los lados */
 }
 
 .input label, .inicio, a{
-    color: #193A6A; /* color de letra para el usuario la contraseña y el iniciaio de seccion azul */
+    /* color: #193A6A; */
+    color: rgb(81, 79, 79);
+    /* color de letra para el usuario la contraseña y el iniciaio de seccion azul */
     text-decoration: none; /* Quitarle el enlace (la rayita que sale debajo) */
     
 }
 
 
-
 .input {
     font-size: 20px; /* Tamano de letra */
     font-weight: bold;  /* letra en negrita */
-    margin: 20px 0; /* Espacio arriba, abajo y izquierda de las letras  */
+    margin: 20px 10px; /* Espacio arriba, abajo y izquierda de las letras  */
 }
 
 .input input{
-    width: 135%;  /* Ancho de los cuadritos */
+    width: 130%;  /* Ancho de los cuadritos */
     padding: 10px 16px; /* espacio de los cuadros y de lo que esta dentro */
-    border-color: white;  /* bordes color blanco */
-    border-radius: 5px;  /* bordes redondos en las esquinas */
+    /* border-color: white;  */
+     /* bordes color blanco */
+    /* border-radius: 5px;  */
+     /* bordes redondos en las esquinas */
     margin-top: 5px; /* Espacio de arriba entre los cuadros */
 
 }
 
 
 .iniciarSeccion{
-     padding: 10px 130px; /* espacio de los cuadros y de lo que esta dentro */
-     border-radius: 5px; /* bordes redondos en las esquinas */
+    cursor: pointer;
+    text-align: center;
+     width: 124%;
+     padding: 16px 130px; /* espacio de los cuadros y de lo que esta dentro */
+     border-radius: 10px; /* bordes redondos en las esquinas */
      background-color: #193A6A;  /* Fondo color azul */
-     margin-right: -100px;  /* Para centrar el cuadrito con los demas */
+     margin-left: 10px;
+       /* Para centrar el cuadrito con los demas */
 }
 
  .iniciarSeccion a{
@@ -76,17 +88,30 @@
 
 .registrate {
     text-decoration: none; /* Quitarle el enlace (la rayita que sale debajo) */
-    margin-top: 20px; /* Espacio de arriba, para que no quede tan pegado de (INICIAR SECCION) */
+    margin-top: 25px; /* Espacio de arriba, para que no quede tan pegado de (INICIAR SECCION) */
+    color: rgb(81, 79, 79);
+    /* color: gray; */
     margin-bottom: 10px; /* Espacio de abajo para que no quede tan pegado de (¿Olvidaste tu contraseña?) */
 }
 
-.password-olvidada {
+.password-olvidada, a {
+    color: #193A6A;
+    font-size: 16px;
+    margin-top: 20px;
     text-decoration: none;  /* Quitarle el enlace (la rayita que sale debajo) */
+}
+
+.logo{
+    margin-bottom: -50px;
+    margin-left: 20%;
 }
 
 
 
-
-
+@media screen and (max-width: 600px) {
+    .contenedor {
+        width: 10%;
+    }
+}
 
 
