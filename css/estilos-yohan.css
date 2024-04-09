@@ -212,12 +212,19 @@ tbody .gris{
     margin-top: 90px;
 }
 /* pagina de codigo de verificacion--------------------------------------------------------------------------- */
+.logos img{
+     width: 250px;/* tamano del logo  */
+    height: auto;
+}
 .head-recu{
     display: flex;
     flex-direction: column;
 }
 
 .head-recu h1{
+    display: flex;
+    align-items: center;
+    height: 50px;
     background-color: #193A6A;
     color: #fff;
     
@@ -228,48 +235,101 @@ tbody .gris{
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: #302e2e;
+   
 }
 .conten-recu{
-    background-color: #3d911e;
-    border: solid 1px #000;
+    border: solid 2px #000;
     display: flex;
     flex-direction: column;
-    width: 60%;
-    height: 400px;
-    margin-top: 30px;
-    border-radius: 30px;
-}
-.codigo-conten{
-    border: solid 1px #000;
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    height: 400px;
-    margin-top: 30px;
+   width: 55%;
+    height: 370px;
+    margin-top: 40px;
     border-radius: 30px;
 }
 
-/* .conten-codigo{
+.conten-alto {
+   height: 25%;
+    border-bottom: solid  #ED9B51;
+}
+
+.conten-alto p,h3{
     font-size: 22px;
+    font-weight: 700;
+    margin:20px 0 0 30px;
+}
+.conten-alto a{
+    text-decoration: none;
+}
+.div-cod{
+    height: 50px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.div-cod input{
+    width: 10%;
+    height: 100% ;
+    border-radius: 17%;
  
+
+}
+/* pagina del codigo de verificacion */
+.nueva-con{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+ 
+
+}
+.nueva-con .crea-con{
+    display: flex;
+    height: 80px;
+    align-items: center;
+     border-bottom: solid  #ED9B51;
+
+}
+.nueva-con .crea-con h3{
+    font-size: 29px;
     
+
 }
-.conten-codigo p,span{
-    margin: 20px 0 0 30px;
+.con-contras{
+    height: 200px;
+     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
 }
-.conten-codigo span{
-     font-weight: 800;
+.con-contras label{
+   
+    font-size: 22px;
+    font-weight: 800;
+    text-align: center;
 }
-.conten-codigo span a{
-    color: #0040f0;
-    font-size:22px ;
-    
+.con-contras input{
+    margin-top: 10px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+     border-radius: 5px  5px  5px  5px;
+    width: 25%;
 }
-.conten-codigo{
-    border-bottom:solid 3px #ED9B51;
-    width: 100%;
-    /* height: 00px; */
+.con-contras a{
+    color: #fff;
+    border-radius: 10px  10px  10px  10px;
+    width: 20%;
+    text-align: center;
+    background-color: #193A6A;
+
+    margin-top: 15px;
+    font-size: 25px;
+    text-decoration: none;
+}
+.con-contras a:hover{
+    color: #ED9B51;
+}
 
 
 
