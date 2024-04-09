@@ -9,7 +9,7 @@
 }
 body{
     
-    height: 850px;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,6 @@ body{
 }
 .nav-perfil h1{
     font-size: 27px;
-    margin-left: 10px;
     color: #fff;
 }
 
@@ -56,223 +55,18 @@ body{
     background:linear-gradient(#193A6A,#255bad) ;
    
 }
-.general{
-/* estilos aplicados al contendor que contiene el 
-contenido principal del la pagina de perfil */
-    display: flex;
-    width: 100%;
-    height: 600px;
-    
-}
-.general .columna {
-    /* tamaño de las culumnas */
-    width: 400px;
-    margin: 20px;/* margen de cada columna  */
-
-}
-/* estilos a la parte alta donde se puede editar el perfil ver su foto y el nombre */
-.parte-alta {
-    margin-top: 30px;
-    display: flex;
-    justify-content:space-around;
-    justify-content: center;
-}
-.parte-alta .edit{
-    margin-left: 15px; /*Hacer que se aleje del la foto de perfil  */
-    display: flex;
-    flex-direction: column;/*Para hacer que el nombre y editar perfil se coloquene en columna  */
-    justify-content: center;/* Para hacer que quede centrado con la imagen */
-}
-/* Estilos de la imagen del perfil */
-.parte-alta img{
-    /* Estilos de la foto del perfil del usuario y su mascota */
-    border-radius: 60%;
-    width: 150px;
-    height: 150px;
-    border: solid #fff;
-    box-shadow: 0px 2px 6px 0px;
-    
-}
-.edit h2{
-    font-family:FrederickatheGreat-Regular;
-    font-size: 30px;/*Tamaño de los nombre del usuario y la mascota  */
-    color: #000;
-
-}
-.edit a {
-    /* diseño de el enlace de la pagina de editar perfil */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 15px;
-    width: 130px;
-    height: 35px;
-    color: #fff;
-    background-color: #193A6A;
-    border-radius:20px 20px 20px 20px;
-
-}
-li{
-    /* Lista de los datos del usuario y las mascota  */
-    list-style: none;
-}
-.listas{
-    /* estilos de las lista de datos de usuario y mascota */
-    margin-top: 10px;
-    display: flex;
-    margin-left:100px ;
-    flex-direction: column;
-
-}
-.cont{
-    color: #193A6A;
-    font-size: 25px;
-    margin: 10px 10px 10px 0;
-}
-.cont2{
-    color: #000;
-    font-size: 25px;
-    border-bottom: solid 2px #3f3b3b;
-}
-
-/* parte de editar perfil de las mascotas y el perfil------------------------------------------------------------ */
 
 
-/* Esta parte esta siendo trabajada por yohan  */
-
-
-.logo-nav{
-    background-color: #193A6A;
-    display: flex;
-    justify-content: space-around; /*Para separar el contenido del contenedor logo-nav  */
-}
-.logo-nav a:link{
-    text-decoration: none;
-    
-}
-
-.menu,.logo-nav a{
-    color: #fff;
-    text-decoration: none;
-
-}
-
-.logo-nav a{
-    color: #fff;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    height: 43px;  
-}
-
-.logo-nav  h1{
-    display: flex;
-    width: 700px;/*Se puso este ancho para poder centrarlo  */
-    color: #fff;
-    font-size: 36px;
-   
-}
-
-.main-editar{
-    /* centrar el contendor al centro de la pagina */
-    display: flex;
-    justify-content: center;
-}
-.contenido-principal{
-    /* estilos del contenido al centro de la  */
-    margin: 15px;
-    border-radius: 3px;
-    box-shadow:0px 2px 3px 0px; ;
-    width: 800px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.con-per{
-    height: 550px;
-} 
-/* .agregar{
-    height: 300px;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-} */
-
-.agregar img{
-    /* estilos de la imagen de de cambiar foto de perfil */
-    border-radius: 60%;
-    width: 200px;
-    height: 200px;
-    border: solid #fff;
-    box-shadow: 0px 2px 6px 0px;
-}
-.agregar input{
-    display: none;/*Utlizado para ocultar informacion del input de cambiar foto  */
-}
-
-.agregar .foto-edit{
-    /* Estilos de cambiar foto */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #193A6A;
-    color: #fff;
-    width: 200px;
-    margin-top: 20px;
-    height: 35px;
-    font-size: 20px;
-    border-radius: 15px;
-}
-.contenido-principal h2{
-    width: 80%;
-    text-align: center;
-   
-    margin-top: 10px;
-   color: #193A6A;
-  border-bottom: solid 2px #ED9B51;
-
-}
-.lados{ 
-    /* hacer que los contenidos esten del formulario
-    esten divididos */
-    margin-top: 30px;
-    width: 600px;
-    height: 200px;
-    display: flex;
-    justify-content: space-around;
-    
-}
-.lados label{
-     text-transform: uppercase;
-    font-weight:800 ;
-    font-size: 14px;
-    color: #193A6A;
-}
-.lados label,input,select{
-    margin: 10px;
-    height: 30px;
-    width: 300px;
-    
-}
-.Boton {
-    width: 200px;
-    height: 30px;
-    background-color: #193A6A;
-    color: #fff;
-    border-radius: 10px;
-    border: none;
-}
-
-/*Estilos de la parte superiorcitas agendadas  -----------------------------------------------------------------------------*/
+/*Estilos de la parte superior citas agendadas  -----------------------------------------------------------------------------*/
 
  .menu-nav{
     background-color: #193A6A;
     display: flex;
     height: 40px;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-}
+} 
+
 .menu-nav ul{
     display: flex;
     justify-content: space-around;
@@ -301,29 +95,31 @@ li{
 }
 /* Cuerpo de Citas agendadas --------------------------------------------------------------------------------*/
 
-.agen,a:link{
+.agen a:link{
+    color: #153564;
     text-decoration: none;
+    font-weight: 600;
     
 }
-.agen a:hover{
-    color: #2b69c5;
+.agen {
+    font-size: 27px;
+    height: 50px;
+    padding: 20px 0 20px 30px;
+   
+    
 }
 
-.agen a{
-    background-color: #193A6A;
-    border-radius:10px 10px 10px 10px;
-    color: #fff;
-    font-size: 30px;
-    float: right;
-    text-align: center;
-    margin: 15px 80px 0 ;
-    width: 300px;
+.con-tabla{
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
+
+
 table{
-
-    text-align: center;
-    margin: 70px 0 0 50px;
     font-size: 20px;
+    text-align: center;
     width: 90%;
     border-collapse: collapse;/*Fusionar los bordes  */
 
@@ -359,76 +155,37 @@ tbody .gris{
 }
 
 /* Estilos de listado de mascotas y usurarios ------------------------------------------------------------------*/
-.body-listados{
-    height: 100%;
-}
 
 
-.alto-admi {
-    width: 99%;
-    color: #fff;
-    font-size: 16px;
-}
 
 
  .a-hed {
-    width: 250px;/* tamano del logo  */ 
-} 
-
-.text-pag-b {
-    background-color: #102544;
-    padding: 6px;
-    
-}
-
-
-.text-pag-a {
-    color: #fff;
-    margin-top: -35px;
-    margin-left: 1150px;
-}  
-
-.alto-admi .botones {
+  
     display: flex;
-   justify-content: end;
-   width: 98%;
-  margin: 0 10px;
-  margin-top: -80px;
+    justify-content: space-between;
+    
+} 
+.botones-lis{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+   
 }
 
-.icons {
-    width: 40px;
-    height: 37px;
-}
-
-.tamano-uno {
-    width: 100%;
-    height: 100%;
-}
-
-.tamano-dos {
-    width: 100%;
-    height: 100%;
-}
-
-.icons img {
-    width: 35px;
+.botones-lis .icons img{
+      width: 45px;
     margin: 0 10px;
     transition: all 0.3s ease;
 }
 
-
-.icons img:hover {
-    transform: scale(1.2);
-}
-
-
-.galeria {
+.titulo-listas{
+    background-color: #193A6A;
+    color: #fff;
     display: flex;
-    justify-content: center; 
-    margin: 90px 0;
-    padding: 30px;
+    justify-content: space-between;
+    align-items: center;
 }
+
 
 .galeria article {
     display: inline-block;
@@ -454,15 +211,34 @@ tbody .gris{
 .tabla{
     margin-top: 90px;
 }
-/* pagina de codigo de verificacion --------------------------------------------------------------------------- */
-.codigo-body{
-    height: 100%;
+/* pagina de codigo de verificacion--------------------------------------------------------------------------- */
+.head-recu{
+    display: flex;
+    flex-direction: column;
 }
- .codigo-main{
+
+.head-recu h1{
+    background-color: #193A6A;
+    color: #fff;
+    
+}
+.main-recu{
+    width: 100%;
+    height: 490px;
     display: flex;
     justify-content: center;
-    width: 100%;
+    align-content: center;
+    background-color: #302e2e;
+}
+.conten-recu{
+    background-color: #3d911e;
+    border: solid 1px #000;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
     height: 400px;
+    margin-top: 30px;
+    border-radius: 30px;
 }
 .codigo-conten{
     border: solid 1px #000;
@@ -473,6 +249,18 @@ tbody .gris{
     margin-top: 30px;
     border-radius: 30px;
 }
+
+/* .conten-codigo{
+    font-size: 22px;
+ 
+    
+}
+.conten-codigo p,span{
+    margin: 20px 0 0 30px;
+}
+.conten-codigo span{
+     font-weight: 800;
+}
 .conten-codigo span a{
     color: #0040f0;
     font-size:22px ;
@@ -481,52 +269,12 @@ tbody .gris{
 .conten-codigo{
     border-bottom:solid 3px #ED9B51;
     width: 100%;
-}
-.conten-codigo p{
-    margin: 30px 0 30px 30px ;
-    font-size: 30px;
-}
-.codigos h3{
-    font-size: 23px;
-    margin: 30px 0 30px 30px ;
-
-}
-.conten-codigo span{
-    font-weight: 800;
-}
-.codigos{
-    width: 100%;
-}
-.div-cod{
-    display: flex;
-    justify-content: center;
-
-}
-.codigo{
-    width: 70px;
-    height: 60px;
-    margin: 25px;
-    border-radius: 10px;
-    padding-right: 37px;
-   
-}
- /* Diseno pantallas grandes ----------------------------------------------------------------------------------------------------------- */
-@media (max-width: 900px){
-  body{
-    height: 1000px;
-    /* background-color: #0040f0; */
-  }
-  .logo img{
-    width: 30%;
-    height: 20%;
-  }
-  
-
-  
-   
-   
-
-    
+    /* height: 00px; */
 
 
-}
+
+
+
+
+
+/*Diseno pantallas grandes ----------------------------------------------------------------------------------------------------------- */
