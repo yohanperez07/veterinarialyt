@@ -1,106 +1,400 @@
 
-/* HECHO POR LAURA */
+/* HECHO POR TIARA */
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap'); */
+
+/* a_administrador.html */
+
+@import "reset.css";
+
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Abhaya Libre", serif;
+} 
+
+header {
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    font-family: "Abhaya Libre", serif;
+}
+
+.a-hed {
+    width: 250px;/* tamano del logo  */
+    height: auto; 
+} 
+
+.text-pag-b {
+    background-color: #102544;
+    padding: 10px;
+    
+}
+
+.text-pag-a {
+    color: #fff;
+    margin-top: -30px;
+    margin-left: 1290px;
+    width: 100%;
+}  
+
+
+
+.alto-admi .botones {
+    display: flex;
+   justify-content: end;
+   width: 98%;
+  margin: 0 10px;
+  margin-top: -80px;
+}
+
+.icons {
+    width: 40px;
+    height: 37px;
+}
+
+.tamano-uno {
+    width: 100%;
+    height: 100%;
+}
+
+.tamano-dos {
+    width: 100%;
+    height: 100%;
+}
+
+.icons img {
+    width: 35px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
 }
 
 
-/* PAG DE INICIO */
-
-h2{
-   text-align: center;  /* Centrar el texto (Los mejores amigo de tu mejor amigo) */
-   font-size: 40px; /* Tamaño de las letras */
-   color: #193A6A; /* Color de las letras */
-}
-
-.panel{
-    display: flex; /*mover las img en el centro */
-    justify-content: space-evenly; /* colocarlas en lineas y con espacios  */
-    padding-top: 20px; /* Espacio hacia arriba */
-    margin-bottom: 100px; /* Espacio hacia abajo */
-    /* flex-wrap: wrap; */
+.icons img:hover {
+    transform: scale(1.2);
 }
 
 
-.SegundaParte{
-    padding: 4px 5%; /* Ajuntando de los lados */
-    padding-top: 10px;  /* Espacio hacia arriba */
+.galeria {
+    display: flex;
+    justify-content: center; 
+    margin: 90px 0;
+    padding: 50px;
 }
 
-.imagen-panel{
-    text-align: center; /* Los parrafos se centren con las img */
-    font-size: 20px; /* Tamaño de las letras */
-    color: #193A6A;  /* Color de las letras */
-    font-weight: bold; /* Poner las letras en negrita */
-    padding-top: 10px;  /* Espacio hacia arriba para la sombra */
-    padding-bottom: 10px;  /* Espacio de abajo para la sombra */
-    border: 1px solid;
+.galeria article {
+    display: inline-block;
+    margin-right: 50px;
+    
 }
 
-
-
-section, footer{
-    padding-top: 360px; /* Tamaño de la img de fondo */
-    background: url(../imagenes/fondo2.jpg);/* img de fondo */
-    object-fit: cover;
-    background-size: cover; /* Para que la img se adapte a su posicion normal */ 
-    background-attachment: fixed;  /* esto es para mantener fijo el efecto defondo, que es la img para desplazarla. */
-    position: relative; /* permiten desplazar la img desde su posición original sin afectar el diseño de los demas elementos en la página. */
-  
+.galeria article img {
+    width: 220px; 
+    height: auto; 
+    transition: all 0.5s ease;
 }
 
-
-footer {
-    height: 400px;  /* espacio de arriba */
-    padding: 30px 30px; /* relleno de los lados */
+.galeria article img:hover {
+    transform: scale(1.1);
 }
 
-
-
-.box-icons{
-    padding-top: 180px; /* Espacio de arriba */
-    display: flex; /*poder mover los iconos y letras al centro */
-    justify-content: space-evenly;/* colocarlas en lineas y con espacios  */
-    padding-bottom: 40px;/* Espacio hacia abajo */
+.pie {
+    text-align: center;
+    color: #102544;
+    font-size: 18px;
+    font-family: "Abhaya Libre", serif;
+    font-weight: 700;
 }
 
 
-.content{
-    text-align: center; /* poner los iconos centrados */
+/* a_gestionSesion */
+
+/* u_configuracion */
+
+.c-hed .logo {
+    width: 250px;/* tamano del logo  */
+    height: auto; 
+} 
+
+.infor {
+    background-color: #193A6A;
+    padding: 10px;
 }
 
-.content h4{
-    color: #19396a;  /* letras azules */
-    padding-top: 9px;  /* Espacio hacia arriba */ 
-}
-
-.bx {
-    font-size: 40px;/* Tamaño de los iconos */
-}
-
-
-/* PAGINA DE AGENDAR CITA Y GUARDERIA */
 
 
 
-/* HEADER */
 
- .logo{
+/* u_info_general.html */
+
+.hed-i .logo {
+    width: 250px; /* tamaño del logo */
     height: auto;
-    width: 170px;
-    margin-left: 20px;
-    cursor: pointer; /*Presenta la manita cuando estes en el logo */
+  }
+  
+  .hed-i h1 {
+    background-color: #193A6A;
+    padding: 10px;
+    font-size: 27px;
+    color: white; /* Agrega color de texto blanco para el título */
+  }
+  
+  .center {
+    text-align: center;
+    margin: 20px;
+    max-width: 1100px;
+    margin-left: 200px;
+    margin-top: 100px;
+  }
+  
+  hr {
+    border-top: 2px solid #ED9B51;
+    margin: 20px 0;
+    width: 70px;
+    margin-left: 510px;
+    margin-top: 9px;
+  }
+  
+  .center h2 {
+    padding: 10px;
+    color: #193A6A;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  
+  .center p {
+    padding: 20px;
+    text-align: justify;
+  }
+  
+  .navegacion {
+    margin-left: 1050px;
+    margin-top: -45px;
+  }
+  
+  .navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navegacion .item {
+    float: left;
+    position: relative;
+  }
+  
+  .navegacion .item a {
+    /* background-color: #193A6A; */
+    color: #fff;
+    padding: 12px 22px;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s; 
+  }
+  
+  .navegacion .despliegue {
+    display: none;
+    position: absolute;
+    background-color: #193A6A;
+    z-index: 1;
+    min-width: 160px; /* Agrega esta línea para evitar que las letras se bajen */
+  }
+  
+  .navegacion .despliegue a {
+    padding: 12px 16px; /* Agrega esta línea para ajustar el padding de los enlaces del submenú */
+    text-decoration: none;
+    display: block;
+    /* background-color: #2b69c5; */
+    transition:  0.3s; 
+  }
+  
+  .navegacion .item:hover .despliegue {
+    display: block;
+  }
+ 
+  
+  .navegacion .item a:hover {
+    background-color: #2b69c5;
+    color: #fff;
+  }
+
+
+  
+.navegacion .despliegue a:hover {
+    background-color: #2b69c5; /* Cambia el color de fondo de los enlaces del submenú al pasar el cursor */
+  }
+
+
+
+/* u_registroMascotas.html y  u_registrousuario.html  */
+
+.r-hed {
+
+    font-size: 15px;/* el tamano de letra */
+    font-weight: 600;/* el grosor de la letra */
 }
 
-.hed-s .usuario{
-    margin-bottom: 3px;
-    margin-left: -10px; /* Despegar un poco de los menus */
-    border-radius: 50%;
+.r-hed, img {
+    width: 250px;/* tamano del logo  */
+    height: auto;/* alto de logo */ 
 }
 
+.text{
+ background-color: #193A6A;/* fondo del header */
+ color: #fff;/* color de la letra */
+ width: 1366px;/*ancho de la letra para que el background llegue hasta el final de la pagina  */
+ height: auto;/* alto automatico */
+ text-align: center;/* para poner la letra en el medio  */
+ font-size: 26px;
+ padding: 7px;
+
+}
+
+
+.encabezado {
+   color: #193A6A;/* color de el tituolo de el formulario */
+   font-size: 26px;/* tamano de la letra  */
+   font-weight: 700;/* ancho de la letra para que el background llegue hasta el final de la pagina */
+   padding-bottom: 9px;/* agrega algo de espacio a la izquierda del elemento */
+   border-bottom: 2px solid #ED9B51;/* borde inferior al elemento */
+   margin-left: 8px;/* agrega algo de espacio a la izquierda del element */
+   /* margin-left: 8px; */
+}
+
+.box {
+   
+    border: 1px solid #E6E6E6;/*  borde del elemento para que tenga 1 píxel de ancho, sea sólido (sin puntos ni rayas) y de color blanco. */
+    padding: 30px;/* cantidad de espacio del elmento  */
+    margin: 20px  auto;/* maren del elemento 20px arriba y abajo y auto a la izquierda y derecha */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/* efecto de sombra  */
+    border: 5px;/* un borde alrededor del elemento*/
+    width: 60%;/*  ancho del elemento */
+    height: 480px;/*altura del elemento  */
+}
+
+label {
+    color: #193A6A;/* color de la letra  */
+    font-weight: 600;/* grosor de la letra  */
+    font-size: 15px;/* tamano de la letra */
+}
+
+.span {
+    color: black;/* para ponerle color a Acepto los términos y condiciones de seguridad */
+    font-weight: 500;/* fuente de la leta  */
+}
+
+.for-conten{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    /* background-color: #193A6A; */
+
+}
+
+.form-1{
+    /* margin-left: 5px ;margen izquierdo */
+    /* margin-top: 15px;margen superior */
+    width: 45%;
+    /* ancho de los inputs */
+    
+}
+
+.form-2 {
+    /* margin-left: 400px;para mover a la izquierda */
+    /* margin-top: -274px;para mover arriba */
+    width: 45%;
+    /* ancho de los inputs  */
+}
+
+
+.form-input_pe {
+    display: flex;/* para que sea flexible */
+    width: 50%;/* el ancho que quiero que tenga, en este caso use el porciento porque era mas efeciente */
+    padding: 8px;/* el tamano de los input */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.seleccion {
+     /* para que sea flexible */
+     display: flex;
+     /* align-content: start; */
+     /* background-color: #1F57A9; */
+     width: 200px;
+     /* background-color: #193A6A; */
+    align-items: center;
+     padding:5px 0 30px 0;
+     /* border: solid 1px ; */
+
+    
+}
+[type*="radio"]{
+   height: 20px;
+
+}
+
+
+.form-input, [type*="radio"] {
+    display: flex;/* para que sea flexible */
+    width: 100%;/* el ancho que quiero que tenga, en este caso use el porciento porque era mas efeciente */
+    padding: 8px;/* el tamano de los input */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.boton {
+    margin-top: 80px;/* margen superior */
+    margin-left: 270px;/* margen izquierdo  */
+
+}
+
+.registrate-1 {
+    margin-top: 9px;/* margen superios  */
+    margin-left: 220px;/* margen izquierdo */
+}
+
+.ancho {
+    padding: 7px;/* cantidad de espacio del elmento  */
+    width: 250px; /* el ancho del boton */
+    border-radius: 20px;/* para redondear un poco el boton */
+    border: none;/* para quitarle el bordde */
+    font-size: 15px;
+}
+
+.link {
+    margin-top: 3px;/* margen superior */
+    text-align: center;/* texto en el medio */
+}
+
+button {
+    background-color: #193A6A;/* color del boton  */
+    color:#fff;/* color de letra del boton */
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-5px);/* para mover el elemento 5 píxeles hacia arriba a lo largo del eje Y.  */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);/* sombra al boton de continuar */
+    background-color: #1F57A9;/* color de fondo cuando lo tocan */
+}
+
+.a-1 {
+    color: #193A6A; /* color del link */
+}
+
+.a-2{
+    color: #fff; /* color de la letra  */
+    text-decoration: none/* para quitarle la rayita  */
+}
+
+
+/* u_servicios.html */
 
 .hed-s  .logo {
     width: 250px;/* tamano del logo  */
@@ -109,30 +403,24 @@ footer {
 
 .hed-s h1 {
     background-color: #193A6A;
-    padding: 8px;
+    padding: 10px;
+    font-size: 23px;
+   
 }
-
-.hed-s .Recuperar {
-    background-color: #193A6A;
-    padding: 8px;
-    text-align: center;
-}
-
-
 
 .menu  {
     display: flex;
     height: 40px;
     justify-content: space-around;
     align-items: center;
+
 }
 
 .menu ul {
     display: flex;
     justify-content: space-around;
-    margin-top: -90px;
-    margin-left: 950px;
-    align-items: center
+    margin-top: -85px;
+    margin-left: 1000px;
 }
 
 .menu li {
@@ -141,7 +429,7 @@ footer {
 }
 
 .links{
-     color:#fff;
+    color:#fff;
     font-size: 30px;
 }
 
@@ -156,241 +444,92 @@ footer {
     transition: all 0.3s ease;
 }
 .menu a:hover{
-    color: #ED9B51;
+    color: #2b69c5;
 }
-
-h1 {
-
-    color:#fff;
-}
-
-/* MAIN */
-
-.encabezado {
-   color: #193A6A;/* color de el tituolo de el formulario */
-   font-size: 26px;/* tamano de la letra  */
-   font-weight: 750;/* ancho de la letra para que el background llegue hasta el final de la pagina */
-   padding-bottom: 9px;/* agrega algo de espacio a la izquierda del elemento */
-   border-bottom: 2px solid #ED9B51;/* borde inferior al elemento */
-   margin-left: -25px;/* agrega algo de espacio a la izquierda del element */
-   margin-right: -30px;
-   margin-top: 40px;
-}
-
-.box {
-    border: 1px solid #E6E6E6;/*  borde del elemento para que tenga 1 píxel de ancho, sea sólido (sin puntos ni rayas) y de color blanco. */
-    padding: 30px;/* cantidad de espacio del elmento  */
-    margin: 30px  auto;/* maren del elemento 20px arriba y abajo y auto a la izquierda y derecha */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/* efecto de sombra  */
-    border: 5px;/* un borde alrededor del elemento*/
-    width: 90%;/*  ancho del elemento */
-    height: 650px;/*altura del elemento  */
-}
-
-
-
-label {
-    color: #193A6A;/* color de la letra  */
-    font-weight: 600;/* grosor de la letra  */
-    font-size: 15px;/* tamano de la letra */
-}
-
-
-
-.form-1{
-    margin-left: 10px ;/* margen izquierdo */
-    margin-top: 15px;/* margen superior */
-    width: 530px;/* ancho de los inputs */
-}
-
-.form-2 {
-    margin-left: 600px;/* para mover a la izquierda */
-    margin-top: -280px;/* para mover arriba */
-    width: 530px;/* ancho de los inputs */
-   
-}
-
-.form-input {
-    /* border-color: white; */
-    display: flex;/* para que sea flexible */
-    width: 100%;/* el ancho que quiero que tenga, en este caso use el porciento porque era mas efeciente */
-    padding: 8px;/* el tamano de los input */
-}
-
-
-textarea {
-    margin-top: 15px;  /* espacio de arriba */
-    width: 98%; /*   tamaño del cuadro*/
-    resize: none;/* no darle la opcion al usuario de que lo haga mas grande el cuadro  */
-    min-height: 140px; /* Espacio minimo haca arriba */
-   border: 1px solid;/* border: none; */
-  
-}
-
-
-.ancho {
-    padding: 8px;/* cantidad de espacio del elmento  */
-    width: 100px; /* el ancho del boton */
-    border-radius: 5px;/* para redondear un poco el boton */
-    border: none;/* para quitarle el bordde */
-}
-
-
-.link {
-    margin-top: 3px;/* margen superior */
-    text-align: center;/* texto en el medio */
-}
-
-
-button {
-    display: block; /* colocar el botton debajo */
-    background-color: #193A6A;/* color del boton  */
-    color:#fff;/* color de letra del boton */
-}
-
-
-button:hover {
-    transform: translateY(-2px);/* para mover el elemento 5 píxeles hacia arriba a lo largo del eje Y.  */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);/* sombra al boton de continuar */
-    background-color: #1F57A9;/* color de fondo cuando lo tocan */
-    cursor: pointer; /* presente la manita */
-}
-
-
-a {
-    color: #193A6A; /* color del link */
-}
-
-
-.a-2{
-    color: #fff; /* color de la letra  */
-    text-decoration: none/* para quitarle la rayita  */
-}
-
-.imagen-panel {
-    transition: transform 0.3s ease;
-}
-
-.imagen-panel:hover {
-    transform: scale(1.1);
-}
-
-/* RECUPERAR- CUENTA */
-
-.cont{
-    padding: 30px;/* cantidad de espacio del elmento  */
-    margin: 40px  auto;/* maren del elemento 20px arriba y abajo y auto a la izquierda y derecha */
-    border: 1px solid;/* un borde alrededor del elemento*/
-    border-radius: 20px;
-    width: 55%;/*  ancho del elemento */
-    height: 370px;/*altura del elemento  */
-}
-
-h3{
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-h5{
-    border-bottom: 3px solid #ED9B51;
-    margin-left: -30px;
-    margin-right: -30px;
-    margin-bottom: 20px;
-}
-
-p{
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.ip{
-    border-radius: 7px;
-    margin-top: 15px;/* margen superior */
-     /* border-color: white; */
-     display: flex;/* para que sea flexible */
-     width: 95%;
-     padding: 13px;/* el tamano de los input */
-     margin-bottom: 45px;
-    border: 1px solid;
-
-}
-.botones{
+/* cambio yohan */
+.border {
     display: flex;
-    justify-content: space-around;
+    border: 1px solid #fff;
+    margin: 60px;
+    background-color: #193A6A;
+    height: 500px;
+}
+.photo{
+    display: flex;
+    align-items: center;
+}
+
+/* .move {
+   margin-left: 600px;
+   margin-top: -411px;
+}
+
+.move-dos {
+    margin-top: 40px;
+    margin-left: 60px;
+} */
+.move-dos h3 {
+    color: #193A6A
+}
+
+.color {
+   background-color:#fff;
+   width: 470px;
+   height: 180px;
+   border-radius: 15px;
   
-   
 }
 
-.btn{
-    text-align: end;
-    margin-right: 10px;
-    font-size: 25px;
-}
-
-
-.enlace1{
-    color: black;
-    margin-right: 40px;
-    text-decoration: none;
-    border-radius: 5px;
-   
-}
-
-.enlace2{
-    margin-right: 30px;
-    text-decoration: none;
-    border-radius: 5px;
-   
-}
-
-
-
-
-
-
-
-
-
-/* MEDIA QUERY CELULAR*/
-
-@media screen and (max-width: 600px) {
-
-   
-
-    .box{
-        max-width: 100%;
-    }
-
-   
-
-    html{
-        width: 90%;
-    }
+.photo img {
+    background-color: #fff;
     
-
-    .hed-s{
-        font-size: 14px;
-    }
-
-    .panel {
-        display: flex;/* flexibilidad */
-        flex-direction: column; /* poner las img en filas */
-        align-items: center; /* Centrar las rayita */
-    }
-
-    .imagen-panel {
-        margin-bottom: 3px; /* Añadir espacio entre paneles */
-    }
-
-    .content {
-        margin-bottom: 10px;
-        padding: 10px; 
-        text-align: center;
-    }
-
-
-
 }
- 
+
+.photo article {
+    padding: 12px;
+    
+} 
+
+
+.photo-ancho img {
+    width: 150px;
+     margin-left: 20px;
+}
+
+.photo-ancho-dos img {
+    width: 100px;
+    margin-left: 20px;
+}
+
+.photo-ancho-tres img {
+    width: 110px;
+    margin-left: 20px;
+}
+
+.title {
+   margin-bottom: 10px; /*para que el h3 este sepado del p */
+   margin-left: 130px;
+   margin-top: -50px;
+   color: #193A6A;
+   font-size: 20px;
+  
+}
+
+
+.clave {
+  margin-bottom: -25px; 
+  padding: 0 50px; 
+  width: 80%; 
+  margin-left: 80px;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.letra {
+  font-size: 16px;
+}
+
+
+
+
 
