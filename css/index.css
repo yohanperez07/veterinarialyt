@@ -5,9 +5,10 @@
 }
 
 /* HECHO POR LAURA */
- body{
+
+ /* body{
     background-color: #fcfaf6;
- }
+ } */
 
 .contenedor {
     margin: 0 auto; /* el 0, arriba y abajo */   /* el auto, izquierda y derecha */
@@ -34,13 +35,14 @@
 
 .contenedor-formulario {
     display: flex; 
+    margin-bottom: 90px;
     /*para que el contenedor se ponga  flexible y este en su lugar */
 }
 
 
 .formulario {
     margin-left: 30px;
-    margin-top: 70px;
+    margin-top: 30px;
     padding: 5px; /* para que el formulario tenga el espacio de todos los lados */
 }
 
@@ -104,6 +106,9 @@
 .logo{
     margin-bottom: -50px;
     margin-left: 20%;
+    margin-bottom: 15px;
+     width: 350px;
+    height: auto; 
 }
 
 
@@ -112,6 +117,8 @@
     .contenedor {
         width: 10%;
     }
+
+    
 }
 
 
