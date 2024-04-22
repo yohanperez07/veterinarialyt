@@ -31,23 +31,25 @@ figure{
 }
 /* Estilos de perfil del usuario ------------------------------------------------------------------------*/
 .alto-perfil{
-  color: #fff;
-  display: flex;
-  align-items: center;
-  background-color: #102544;
+     color: #fff;
+     display: flex;
+     align-items: center;
+     background-color: #102544;
+     height: 60px;
 }
-.alto-perfil .flecha {
-   
+ .alto-perfil .flecha {
     margin-left:100px ;
     width: 50px;
     height: 50px;
-}
+ } 
 .alto-perfil h1{
     display: flex;
     justify-content: center;
+    transform: translate(-52px);
     width: 100%;
     font-size: 40px;
-}
+ 
+} 
 .main-editar{
     display: flex;
     justify-content: center;
@@ -58,24 +60,26 @@ figure{
 .contenido-perfil{
      margin-top: 25px;
     border-radius: 3px;
+    height: 100%;
     box-shadow:0px 2px 3px 0px; ;
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
 
 }
 .agregar{
+    height: 50%;
     display: flex;
-    height: inherit;
     align-items: center;
     flex-direction: column;
 }
 .agregar img{
      border-radius: 60%;
-    width:30%;
-    height: 60%;
+    width:22%;
+    height: 50%;
     border: solid #fff;
     box-shadow: 0px 2px 6px 0px;
+
 }
 .agregar h2{
     display: flex;
@@ -98,7 +102,8 @@ label{
     border-radius: 15px;
 }
 .info-perfil{
-    width: 100%;
+    /* margin: 0; */
+    /* background-color: #4AD818; */
     display: flex;
     justify-content: space-between;
 
@@ -112,10 +117,10 @@ label{
 li{
      list-style: none;
      width: 80%;
-     font-size: 20px;
+     font-size: 23px;
 }
 .ajustes{
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .titulos-azul{
@@ -466,11 +471,15 @@ tbody .gris{
 /*Diseno pantallas grandes ----------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 600px){
+    body{
+        background-color: #ED9B51;
+    }
    
     .logo img{
         width: 60%;
         margin-bottom: 20px;
     }
+    /* tabla de citas agendadas, listado de usuarios y registro de usuarios */
     .menu-nav,ul{
         flex-direction: column;
         align-items: start;
@@ -505,14 +514,21 @@ tbody .gris{
     th,td{
          padding: 10px;
     }
+    /* diseño de perfil de usuario */
+    .contenido-perfil {
+        width: 90%;
+        background-color: #193A6A;
+    }
 
 }
 
 @media screen and (min-width:601px) and (max-width:900px){
+
     .logo img{
         width: 50%;
         margin-bottom: 20px;
     }
+    /* tabla de citas agendadas, listado de usuarios y registro de usuarios */
     .Menu a{
        font-size: 13px;
       
@@ -543,6 +559,41 @@ tbody .gris{
          
         
     }
+     /* diseño de perfil de usuario */
+    .contenido-perfil {
+        width: 80%;
+       
+    }
+    .agregar img {
+        height: 45%;
+        width: 30%;
+
+    }
+    .alto-perfil h1{
+        font-size: 30px;
+    }
+     .alto-perfil .flecha {
+        width: 6%;
+        /* height: 100%; */
+     }
+     li{
+     list-style: none;
+     width: 80%;
+     font-size: 17px;
+    }
+    .ajustes{
+    font-size: 15px;
+    }
+    label{
+        font-size: 17px;
+        width: 150px;
+    }
+    .agregar h2{
+        font-size: 25px;
+    }
+
+
+     
   
     
 
