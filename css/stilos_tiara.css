@@ -17,6 +17,7 @@
 .a-hed{
     width: 150px;
 }
+
 header {
     color: #fff;
     font-size: 20px;
@@ -28,10 +29,10 @@ body {
     font-family: "Abhaya Libre", serif;
 }
 
-/* .a-hed  {
+.a-hed  {
     width: 150px; /* Tamaño del logo */
-    /* height: auto;
-} */ */
+    height: auto;
+}
 
 .logo {
     width: 100px;
@@ -122,10 +123,6 @@ body {
 }
 
 
-/* a_gestionSesion */
-
-/* u_configuracion */
-
 
 
 /* u_info_general.html */
@@ -143,17 +140,15 @@ body {
 }
 
 .navegacion {
-    margin-left: 1050px;
+  display: flex;
+  justify-content: end;
     margin-top: -45px;
 }
 
 .navegacion ul {
     list-style: none;
     margin: 0;
-    padding: 0;
-    background-color: #193A6A; /* Fondo azul oscuro */
-    border-radius: 5px; /* Bordes redondeados */
-   
+    padding: 0;   
 }
 
 .navegacion .item {
@@ -202,8 +197,8 @@ body {
     height: 43px;
 }
 
-
-   .modal {
+ 
+.modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -263,23 +258,25 @@ body {
 }
 
 .center {
+    display: flex;
     text-align: center;
-    margin: 20px;
-    max-width: 1100px;
-    margin-left: 200px;
-    margin-top: 100px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    /* justify-content: center; */
+    
 }
   
-hr {
-    border-top: 2px solid #ED9B51;
-    margin: 20px 0;
-    width: 70px;
-    margin-left: 510px;
-    margin-top: 9px;
+.center hr {
+ border-top: 2px solid #ED9B51;
+margin: 9px 0 20px 537px;
+width: 70px;
+    
 }
   
   
 .center h2 {
+    text-align: center;
     padding: 10px;
     color: #193A6A;
     font-size: 22px;
@@ -287,12 +284,13 @@ hr {
 }
   
 .center p {
-    padding: 20px;
     text-align: justify;
+    margin: 0 10%;
+    max-width: 1200px;
+    padding: 20px;
 }
   
 
-  
 
 
 
@@ -327,9 +325,9 @@ hr {
    font-weight: 700;/* ancho de la letra para que el background llegue hasta el final de la pagina */
    padding-bottom: 9px;/* agrega algo de espacio a la izquierda del elemento */
    border-bottom: 2px solid #ED9B51;/* borde inferior al elemento */
-   margin-left: 8px;/* agrega algo de espacio a la izquierda del element */
-   /* margin-left: 8px; */
+   margin-left: 8px;
 }
+   
 
 .box {
     border: 1px solid #E6E6E6;/*  borde del elemento para que tenga 1 píxel de ancho, sea sólido (sin puntos ni rayas) y de color blanco. */
@@ -680,7 +678,6 @@ button:hover {
     .galeria article {
         margin-right: 80px;
         margin-bottom: 30px; /* Agregar margen inferior para evitar superposición */
-        /*width: calc(33.33% - 20px);  Establecer un ancho del 33.33% para mostrar 3 elementos por línea */
         box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
     }
 

@@ -9,6 +9,7 @@
     <title>Guarderia</title>
     <link rel="icon" href="imagenes/icon.png">
     <link rel="stylesheet" href="css/estilosL.css">
+     <Script src="js/codigoparacerrarsesion.js"></Script>
      <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
@@ -23,29 +24,31 @@
         <h1><a href="u.perfil.html"><img src="imagenes/usuario.jpg" width="30" height="30" class="usuario"></a>
             <a class="maria" href="u.perfil.html">MARIA PEREZ</a>
            </h1>
-
-            <nav>
-                <div class="menu">
-                <ul>
-                    <li>
-                         <a class="links" href="inicio.html">INICIO</a>
-                       
-                    </li>
-
-                    <li>
-                        <a class="links"  href="u_configuracion.html">CONFIGURACION</a>
-                      
-                    </li>
-
-
-    
-                </ul>
-
-                   </div>
-    
+ <div class="navegacion">
+                    <ul>
+                        <li class="item"><a href="inicio.html">INICIO</a></li>
+                        <li class="item"><a href="u_servicios.html">SERVICIOS</a></li>
+                        <li class="item"><a href="#">ADOPCION</a></li>
+                        <li class="item">
+                            <a href="#">CONFIGURACIÓN</a>
+                            <ul class="despliegue">
+                                <li><a href="u_info_general.html">Información general</a></li>
+                                <li><a href="#" id="cerrarSesion">Cerrar Sesión</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-            </div>
+        </div>
     </header>
+
+    <div id="miModal" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar">&times;</span>
+            <p>¿Estás seguro de que deseas cerrar sesión?</p>
+            <button id="confirmarCerrarSesion">Confirmar</button>
+        </div>
+    </div>
      
 
    <div class="box">

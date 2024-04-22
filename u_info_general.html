@@ -8,6 +8,7 @@
     <title>Pagina de información general</title>
     <link rel="icon" href="imagenes/icon.png">
     <link rel="stylesheet" href="css/stilos_tiara.css">
+    <Script src="js/codigoparacerrarsesion.js"></Script>
     
    
 </head>
@@ -19,8 +20,9 @@
             <nav>
                 <div class="navegacion">
                     <ul>
-                        <li class="item"><a href="#">INICIO</a></li>
-                        <li class="item"><a href="u.perfil.html">PERFIL</a></li>
+                        <li class="item"><a href="inicio.html">INICIO</a></li>
+                        <li class="item"><a href="u_servicios.html">SERVICIOS</a></li>
+                        <li class="item"><a href="#">ADOPCION</a></li>
                         <li class="item">
                             <a href="#">CONFIGURACIÓN</a>
                             <ul class="despliegue">
@@ -77,40 +79,6 @@
             </section>
         </div>
     </main>
-
-    <script>
-        // Obtener el modal
-        var modal = document.getElementById("miModal");
-    
-        // Obtener el botón que abre el modal
-        var btn = document.getElementById("cerrarSesion");
-    
-        // Obtener el elemento <span> que cierra el modal
-        var span = document.getElementsByClassName("cerrar")[0];
-    
-        // Cuando el usuario haga clic en el botón, abrir el modal
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-    
-        // Cuando el usuario haga clic en <span> (x), cerrar el modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-    
-        // Cuando el usuario haga clic fuera del modal, cerrarlo
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    
-        // Confirmar cerrar sesión
-        document.getElementById("confirmarCerrarSesion").onclick = function() {
-            // Redirigir a la página index.html
-            window.location.href = "index.html";
-        }
-    </script>
 
    
 </body>
