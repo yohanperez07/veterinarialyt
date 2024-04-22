@@ -1,12 +1,14 @@
 <!-- hecho por yohan -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil de usuario</title>
     <link rel="stylesheet" href="./css/estilos-yohan.css">
+    <script src="./js/javascript-yohan.js"></script>
+    <link rel="icon" href="./imagenes/icon.png">
 </head>
 <body>
     <header >
@@ -25,17 +27,17 @@
 
            <div class="agregar">
 
-             <figure >
-             <img class="foto" src="./imagenes/usuario.jpg" class="img-perfil" alt="perfil" width="150" height="150">
-           </figure>
-
-
+            
+             <img class="foto"  src="./imagenes/usuario.jpg" class="img-perfil" alt="perfil" width="150" height="150">
+          
+           
            <form class="foto-edit">
 
-            <label  class="agg" for="agg-foto"><img src="./imagenes/camara.png" alt=""></label>
-            <input type="file" id="foto">
+            <label  class="agg" for="agg-foto">Cambiar foto </label>
+            <input type="file" id="agg-foto">
 
         </form>
+
         <h2>MARIA PEREZ</h2>
            </div>
             
@@ -44,27 +46,27 @@
                 <div class="izquier-perfil">
                     <ul>
                     
-                        <li>Nombre</li>
-                        <li>Maria perez</li>
-                        <li>TELEFONO</li>
-                        <li>+1 809-335-5543</li>
-                        <li>CORREO</li>
-                        <li>Maria perez123@gmail.com</li>
-                        <li>Direccion</li>
-                        <li>Lorem ipsum dolor sit.</li>
+                        <li class="titulos-azul">Nombre</li>
+                        <li class="cont-info " ><span class="nombre" onclick="nom(this)"  >Maria  </span><span ><img  src="./imagenes/edit.png" alt="editar"></span></li>
+                        <li class="titulos-azul">TELEFONO</li>
+                        <li  class="cont-info"><span >+1 809-335-5543</span> <span><img src="./imagenes/edit.png" alt="editar"></span></li>
+                        <li class="titulos-azul">CORREO</li>
+                        <li class="cont-info ajustes">Maria perez123@gmail.com</li>
+                        <li class="titulos-azul">Direccion</li>
+                        <li class="cont-info ajustes" >Lorem ipsum dolor sit. <span><img src="./imagenes/edit.png" alt="editar"></span></li>
                     
                     </ul>
                 </div>
                  <div class="derecha-perfil">
                     <ul>
-                        <li>APEllIDO</li>
-                        <li> perez</li>
-                        <li>SEXO</li>
-                        <li>F</li>
-                        <li>FECHA DE NACIMIENTO</li>
-                        <li>17/56/2021</li>
-                        <li>MASCOTA</li>
-                        <li>Perro</li>
+                        <li class="titulos-azul">APEllIDO</li>
+                        <li class="cont-info"> Perez </span> <span><img src="./imagenes/edit.png" alt="editar"></span></li>
+                        <li class="titulos-azul">SEXO</li>
+                        <li class="cont-info">F <span><img src="./imagenes/edit.png" alt="editar"></span></li>
+                        <li class="titulos-azul">EDAD</li>
+                        <li class="cont-info"> <span onclick="NuevaEdad(this)">25</span><span><img src="./imagenes/edit.png" alt="editar"></span></li>
+                        <li class="titulos-azul">MASCOTA</li>
+                        <li class="cont-info">Perro <span><img src="./imagenes/edit.png" alt="editar"></span></li>
                     </ul>
                    
                 </div>
