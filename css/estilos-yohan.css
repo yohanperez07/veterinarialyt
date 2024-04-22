@@ -15,66 +15,151 @@ body{
     flex-direction: column;
     background-color: #fff;
 }
+figure{
+      height: 25%;
+      width:45% ;
+     
+}
 
 .logo img{
     /* tamaños del las imagenes de el logo */
-     height: 120px;
-    width: 230px;
+     height: 40%;
+    width: 40%;
     margin-left:20px ;    
      cursor: pointer;  /*Presenta la manita cuando estes en el logo */ 
 
 }
-.nav-perfil{
-    background-color:#193A6A;
+/* Estilos de perfil del usuario ------------------------------------------------------------------------*/
+.alto-perfil{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  background-color: #102544;
+}
+.alto-perfil .flecha {
+   
+    margin-left:100px ;
+    width: 50px;
     height: 50px;
+}
+.alto-perfil h1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 40px;
+}
+.main-editar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 680px;
+    margin-bottom: 30px;
+}
+.contenido-perfil{
+     margin-top: 25px;
+    border-radius: 3px;
+    box-shadow:0px 2px 3px 0px; ;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.agregar{
+    display: flex;
+    height: inherit;
+    align-items: center;
+    flex-direction: column;
+}
+.agregar img{
+     border-radius: 60%;
+    width:30%;
+    height: 60%;
+    border: solid #fff;
+    box-shadow: 0px 2px 6px 0px;
+}
+.agregar h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 30px;
+    width: 60%;
+    border-bottom: solid 2px #ED9B51;
+}
+label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #193A6A;
+    color: #fff;
+    width: 200px;
+    margin-top: 20px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.info-perfil{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
 }
-.menu{
+.derecha-perfil,.izquier-perfil{
+    width: 50%;
+    margin: 0 20px 0 40px;
+
+}
+
+li{
+     list-style: none;
+     width: 80%;
+     font-size: 20px;
+}
+.ajustes{
+    font-size: 17px;
+}
+
+.titulos-azul{
+    color: #193A6A;
+
+}
+.cont-info{
     display: flex;
-    justify-content: space-around;
-    
-}
-.menu a{
-    color: #fff;
-    margin-right: 30px;
+    justify-content: space-between;
+    border-bottom:solid 2px #000;
+    margin: 5px 0 10px 0;
 
 }
-.menu,.logo-nav,a:hover{
-    color: #ED9B51;
-    cursor: pointer;
-}
-.nav-perfil h1{
-    font-size: 27px;
-    color: #fff;
+
+input{
+    display: none;
 }
 
-.edit a:hover{
-    /* a acercar el puntero a ediat cita muestra  */
-    background:linear-gradient(#193A6A,#255bad) ;
-   
-}
 
 
 /*Estilos de la parte superior citas agendadas  -----------------------------------------------------------------------------*/
 
- .menu-nav{
+.menu-nav{
     background-color: #193A6A;
     display: flex;
     height: 40px;
     justify-content: space-between;
     align-items: center;
 } 
+.menu-nav img{
+    width: 40px;
+    height: 30px;
+    border-radius:50% ;
+}
 
 .menu-nav ul{
     display: flex;
     justify-content: space-around;
-    
+   
 }
 .menu-nav li{
+     /* width:10%; */
+     margin-right: 20px;
     display: flex;
-    margin: 10px;
     
 }
 .agendadas{
@@ -95,18 +180,51 @@ body{
 }
 /* Cuerpo de Citas agendadas --------------------------------------------------------------------------------*/
 
-.agen a:link{
-    color: #153564;
-    text-decoration: none;
-    font-weight: 600;
-    
+
+.usr a{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+
 }
+
+.usr img{
+    margin-right: 10px;
+}
+
 .agen {
+    color: #193A6A;
     font-size: 27px;
     height: 50px;
     padding: 20px 0 20px 30px;
-   
+    display: flex;
+    justify-content: space-between;
+
     
+} 
+
+.con-agendadas .a-fondo{
+    display: flex;
+    justify-content: end;
+    font-size: 27px;
+    margin: 20px 90px;
+    text-decoration: none;
+    color: #193A6A;
+    font-weight: 800;
+
+}
+
+.con-agendadas a{
+    text-decoration: none;
+}
+
+.con-agendadas .a-fondo:hover{
+    color: #ED9B51;
+}
+.con-agendadas h1{
+   color: #193A6A;
+   font-size: 35px;
+   margin: 20px 0 -20px 30px;
 }
 
 .con-tabla{
@@ -119,38 +237,51 @@ body{
 
 table{
     font-size: 20px;
+    margin-top: 20px;
     text-align: center;
     width: 90%;
     border-collapse: collapse;/*Fusionar los bordes  */
 
 }
+
 th{
     color: #fff;
 }
+
 th,td{
     padding: 20px;
 }
+
 thead{
     background-color: #193A6A;
 }
+
 tbody .gris{
     background-color: #D9D9D9;
 }
+
 .verde{
    color: #4AD818;
    font-weight: 900;
 }
+
 .roja{
     border-left: solid 2px #302e2e;
     padding-left: 6px;
    color:#FF0000 ;
    font-weight: 900;
 }
+
 .verde:hover{
-     color: #3d911e;
+    color: #4AD818;
+    border-bottom: solid 2px #4AD818;
+    
 }
+
 .roja:hover{
-    color:#a80a0a ;
+    color:#FF0000 ;
+      border-bottom: solid 2px #FF0000;
+    
 
 }
 
@@ -159,12 +290,13 @@ tbody .gris{
 
 
 
- .a-hed {
+.a-hed {
   
     display: flex;
     justify-content: space-between;
     
 } 
+
 .botones-lis{
     display: flex;
     justify-content: space-around;
@@ -208,14 +340,13 @@ tbody .gris{
     color: #102544;
 }
 
-.tabla{
-    margin-top: 90px;
-}
+
 /* pagina de codigo de verificacion--------------------------------------------------------------------------- */
 .logos img{
      width: 250px;/* tamano del logo  */
     height: auto;
 }
+
 .head-recu{
     display: flex;
     flex-direction: column;
@@ -332,9 +463,88 @@ tbody .gris{
 }
 
 
-
-
-
-
-
 /*Diseno pantallas grandes ----------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 600px){
+   
+    .logo img{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    .menu-nav,ul{
+        flex-direction: column;
+        align-items: start;
+        height: 110px;
+      
+    }
+    .menu-nav ul{
+        height: 150px;
+        margin-top: 15px;
+      
+        
+    }
+    .menu-nav li,h1{
+        margin: 0 0 10px px;
+
+    }
+    .con-tabla{
+        margin-top: 0;
+    }
+    
+    table{
+        width: 90%;
+        font-size: 10px;
+
+    }
+    .agen{
+    
+    font-size: 15px;
+         
+        
+    }
+    th,td{
+         padding: 10px;
+    }
+
+}
+
+@media screen and (min-width:601px) and (max-width:900px){
+    .logo img{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .Menu a{
+       font-size: 13px;
+      
+    }
+    .menu-nav ul{
+     margin-right: 10px;
+      
+        
+    }
+    .con-agendadas h1 {
+        font-size: 24px;
+       
+    }
+
+    .con-tabla{
+        margin-top: 0;
+    }
+    
+    table{
+        width: 95%;
+        font-size: 12px;
+
+    }
+    .agen{
+    
+    
+    margin-bottom: 10px;
+         
+        
+    }
+  
+    
+
+    
+}
