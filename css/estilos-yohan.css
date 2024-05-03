@@ -21,7 +21,7 @@ figure{
       width:45% ;
      
 }
-.logo {
+.logo, .logo img{
     /* tamaños del las imagenes de el logo */
      height: 40%;
     width: 40%;
@@ -206,7 +206,7 @@ figure{
 
 
 
-/* .alto-perfil{
+.alto-perfil{
      color: #fff;
      display: flex;
      align-items: center;
@@ -225,7 +225,7 @@ figure{
     transform: translate(-30px);
     text-align: center;
  
-}  */
+} 
 .main-editar{
     display: flex;
     justify-content: center;
