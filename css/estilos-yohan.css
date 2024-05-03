@@ -34,20 +34,20 @@ figure{
      color: #fff;
      display: flex;
      align-items: center;
+     width: 100%;
      background-color: #102544;
      height: 60px;
 }
  .alto-perfil .flecha {
-    margin-left:100px ;
+    margin-left:30px ;
     width: 50px;
     height: 50px;
  } 
 .alto-perfil h1{
-    display: flex;
-    justify-content: center;
-    transform: translate(-52px);
-    width: 100%;
     font-size: 40px;
+    width: 100%;
+    transform: translate(-30px);
+    text-align: center;
  
 } 
 .main-editar{
@@ -62,13 +62,12 @@ figure{
     border-radius: 3px;
     height: 100%;
     box-shadow:0px 2px 3px 0px; ;
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-direction: column;
 
 }
 .agregar{
-    height: 50%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -468,17 +467,55 @@ tbody .gris{
 }
 
 
-/*Diseno pantallas grandes ----------------------------------------------------------------------------------------------------------- */
+/*Diseño pantallas de telefono----------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 600px){
-    body{
-        background-color: #ED9B51;
+     .logo img{
+        width: 90%;
     }
    
-    .logo img{
-        width: 60%;
-        margin-bottom: 20px;
+     /* diseño de perfil de usuario-------------------------------------------- */
+    .contenido-perfil {
+        width: 80%;
+        height: 90%;
+       
     }
+    .agregar img {
+        height: 45%;
+        width: 45%;
+
+    }
+    .alto-perfil h1{
+        font-size: 20px;
+    }
+
+     .alto-perfil .flecha {
+        width: 50%;
+        height: 30px;
+     }
+    
+
+     li{
+     list-style: none;
+     font-size: 10px;
+    }
+    .ajustes{
+    font-size: 10px;
+    }
+    label{
+        font-size: 15px;
+        width: 120px;
+    }
+    .agregar h2{
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
     /* tabla de citas agendadas, listado de usuarios y registro de usuarios */
     .menu-nav,ul{
         flex-direction: column;
@@ -515,12 +552,14 @@ tbody .gris{
          padding: 10px;
     }
     /* diseño de perfil de usuario */
-    .contenido-perfil {
-        width: 90%;
-        background-color: #193A6A;
-    }
+   
 
 }
+
+
+
+
+/* tabletas y pantallas medianas */
 
 @media screen and (min-width:601px) and (max-width:900px){
 
@@ -566,14 +605,14 @@ tbody .gris{
     }
     .agregar img {
         height: 45%;
-        width: 30%;
+        width: 27%;
 
     }
     .alto-perfil h1{
-        font-size: 30px;
+        font-size: 40px;
     }
      .alto-perfil .flecha {
-        width: 6%;
+        width: 35%;
         /* height: 100%; */
      }
      li{
