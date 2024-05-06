@@ -82,7 +82,10 @@ figure{
      padding: 0 20px 0 20px;
      font-size: 20px;
 } 
-.nav-alto li:hover{}
+.nav-alto li:hover{
+    color: #000;
+}
+/* =------------------------------------------------------------------------ */
 
 .navegacion .despliegue{
     display: none;
