@@ -14,15 +14,11 @@
     font-family: "Abhaya Libre", serif;
 }
 
-.a-hed{
-    width: 150px;
-}
 
 header {
     color: #fff;
     font-size: 20px;
     width: 100%;
-    font-family: "Abhaya Libre", serif;
 }
 
 body {
@@ -51,7 +47,7 @@ body {
 .text-pag-a {
     display: flex;
     color: #fff;
-    margin-top: -30px;
+    /* margin-top: -30px; */
     font-size: 18px;
     justify-content: flex-end;
     width: 100%;
@@ -63,7 +59,7 @@ body {
     display: flex;
     justify-content: end;
     width: 99%;
-    margin-top: -80px;
+    margin-top: -5rem;
 }
 
 .icons {
@@ -93,9 +89,11 @@ body {
     display: flex;
     justify-content: center; /* Centrar horizontalmente */
     flex-wrap: wrap; /* Permitir que los elementos se ajusten en varias líneas */
-    margin: 60px;
-    padding: 50px;
+    margin-top: 100px;
+    /* margin: 60px;
+    padding: 50px; */
 }
+
 
 
 .galeria article {
@@ -105,7 +103,7 @@ body {
 }
 
 .galeria article img {
-    width: 220px;
+    width: 200px;
     height: auto;
     transition: all 0.5s ease;
 }
@@ -120,6 +118,7 @@ body {
     font-size: 18px;
     font-family: "Abhaya Libre", serif;
     font-weight: 700;
+    /* text-align: center; */
 }
 
 
@@ -215,14 +214,14 @@ body {
     font-size: 18px;
     color: #fff;
     margin: 15% auto;
-    padding: 30px; /* Más padding */
-    border: none; /* Sin borde */
+    padding: 30px; 
+    border: none;
     width: 30%;
-    max-width: 500px; /* Ancho máximo */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra */
+    max-width: 500px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
     text-align: center;
-    position: relative; /* Para posicionar el botón de cerrar */
+    position: relative; 
 }
 
 .cerrar {
@@ -230,15 +229,15 @@ body {
     float: right;
     font-size: 28px;
     font-weight: bold;
-    position: absolute; /* Posición absoluta */
-    top: 10px; /* Distancia desde la parte superior */
-    right: 20px; /* Distancia desde la derecha */
-    cursor: pointer; /* Cambiar el cursor al pasar sobre él */
+    position: absolute; 
+    top: 10px; 
+    right: 20px; 
+    cursor: pointer; 
 }
 
 .cerrar:hover,
 .cerrar:focus {
-    color: #ddd; /* Cambiar el color al pasar sobre él */
+    color: #ddd; 
     text-decoration: none;
 }
 
@@ -250,7 +249,7 @@ body {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 20px; /* Espacio superior */
+    margin-top: 20px; 
 }
 
 #confirmarCerrarSesion:hover {
@@ -298,21 +297,21 @@ width: 70px;
 
 .r-hed {
 
-    font-size: 15px;/* el tamano de letra */
-    font-weight: 600;/* el grosor de la letra */
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .r-hed, img {
-    width: 250px;/* tamano del logo  */
-    height: auto;/* alto de logo */ 
+    width: 250px;
+    height: auto; 
 }
 
 .text{
- background-color: #193A6A;/* fondo del header */
- color: #fff;/* color de la letra */
- width: 1366px;/*ancho de la letra para que el background llegue hasta el final de la pagina  */
- height: auto;/* alto automatico */
- text-align: center;/* para poner la letra en el medio  */
+ background-color: #193A6A;
+ color: #fff;
+ width: 1366px;
+ height: auto;
+ text-align: center;
  font-size: 26px;
  padding: 7px;
 
@@ -320,67 +319,67 @@ width: 70px;
 
 
 .encabezado {
-   color: #193A6A;/* color de el tituolo de el formulario */
-   font-size: 26px;/* tamano de la letra  */
-   font-weight: 700;/* ancho de la letra para que el background llegue hasta el final de la pagina */
-   padding-bottom: 9px;/* agrega algo de espacio a la izquierda del elemento */
-   border-bottom: 2px solid #ED9B51;/* borde inferior al elemento */
+   color: #193A6A;
+   font-size: 26px;
+   font-weight: 700;
+   padding-bottom: 9px;
+   border-bottom: 2px solid #ED9B51;
    margin-left: 8px;
 }
    
 
 .box {
-    border: 1px solid #E6E6E6;/*  borde del elemento para que tenga 1 píxel de ancho, sea sólido (sin puntos ni rayas) y de color blanco. */
-    padding: 30px;/* cantidad de espacio del elmento  */
-    margin: 20px  auto;/* maren del elemento 20px arriba y abajo y auto a la izquierda y derecha */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/* efecto de sombra  */
-    border: 5px;/* un borde alrededor del elemento*/
-    width: 60%;/*  ancho del elemento */
-    height: 480px;/*altura del elemento  */
+    border: 1px solid #E6E6E6;
+    padding: 30px;
+    margin: 20px  auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px;
+    width: 60%;
+    height: 480px;
 }
 
 label {
-    color: #193A6A;/* color de la letra  */
-    font-weight: 600;/* grosor de la letra  */
-    font-size: 15px;/* tamano de la letra */
+    color: #193A6A;
+    font-weight: 600;
+    font-size: 15px;
 }
 
 .span {
-    color: black;/* para ponerle color a Acepto los términos y condiciones de seguridad */
-    font-weight: 500;/* fuente de la leta  */
+    color: black;
+    font-weight: 500;
 }
 
 .form-1{
-    margin-left: 5px ;/* margen izquierdo */
-    margin-top: 15px;/* margen superior */
-    width: 45%;/* ancho de los inputs */
+    margin-left: 5px ;
+    margin-top: 15px;
+    width: 45%;
 }
 
 .form-2 {
-    margin-left: 400px;/* para mover a la izquierda */
-    margin-top: -274px;/* para mover arriba */
-    width: 45%;/* ancho de los inputs */ 
+    margin-left: 400px;
+    margin-top: -274px;
+    width: 45%;
 }
 
 
 .form-input_pe {
-    display: flex;/* para que sea flexible */
-    width: 50%;/* el ancho que quiero que tenga, en este caso use el porciento porque era mas efeciente */
-    padding: 8px;/* el tamano de los input */
+    display: flex;
+    width: 50%;
+    padding: 8px;
     font-size: 16px;
     font-weight: bold;
 }
 
 .seleccion {
-    display: flex;/* para que sea flexible */
+    display: flex;
     margin-left: 200px; 
 }
 
 
 .form-input, [type*="radio"] {
-    display: flex;/* para que sea flexible */
-    width: 100%;/* el ancho que quiero que tenga, en este caso use el porciento porque era mas efeciente */
-    padding: 8px;/* el tamano de los input */
+    display: flex;
+    width: 100%;
+    padding: 8px;
     font-size: 16px;
     font-weight: bold;
 }
