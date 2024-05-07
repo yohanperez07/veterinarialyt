@@ -297,21 +297,21 @@ width: 70px;
 
 .r-hed {
 
-    font-size: 15px;/* el tamano de letra */
-    font-weight: 600;/* el grosor de la letra */
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .r-hed, img {
-    width: 250px;/* tamano del logo  */
-    height: auto;/* alto de logo */ 
+    width: 250px;
+    height: auto; 
 }
 
 .text{
- background-color: #193A6A;/* fondo del header */
- color: #fff;/* color de la letra */
- width: 1366px;/*ancho de la letra para que el background llegue hasta el final de la pagina  */
- height: auto;/* alto automatico */
- text-align: center;/* para poner la letra en el medio  */
+ background-color: #193A6A;
+ color: #fff;
+ width: 1366px;
+ height: auto;
+ text-align: center;
  font-size: 26px;
  padding: 7px;
 
@@ -319,11 +319,11 @@ width: 70px;
 
 
 .encabezado {
-   color: #193A6A;/* color de el tituolo de el formulario */
-   font-size: 26px;/* tamano de la letra  */
-   font-weight: 700;/* ancho de la letra para que el background llegue hasta el final de la pagina */
-   padding-bottom: 9px;/* agrega algo de espacio a la izquierda del elemento */
-   border-bottom: 2px solid #ED9B51;/* borde inferior al elemento */
+   color: #193A6A;
+   font-size: 26px;
+   font-weight: 700;
+   padding-bottom: 9px;
+   border-bottom: 2px solid #ED9B51;
    margin-left: 8px;
 }
    
@@ -363,9 +363,9 @@ label {
 
 
 .form-input_pe {
-    display: flex;/* para que sea flexible */
-    width: 50%;/* el ancho que quiero que tenga, en este caso use el porciento porque era mas efeciente */
-    padding: 8px;/* el tamano de los input */
+    display: flex;
+    width: 50%;
+    padding: 8px;
     font-size: 16px;
     font-weight: bold;
 }
