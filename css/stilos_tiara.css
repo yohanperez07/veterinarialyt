@@ -97,6 +97,11 @@ body {
     padding: 50px;
 }
 
+.foto {
+    width: 150px;
+    height: 150px;
+   margin: 30px;
+}
 
 .galeria article {
     display: inline-block;
