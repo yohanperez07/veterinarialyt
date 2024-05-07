@@ -99,3 +99,52 @@
     /* justify-content: center; */
     
 }
+
+
+
+/* 777777 5555 --------------------------------------- */
+.hed-i h1 {
+    background-color: #193A6A;
+    padding: 10px;
+    font-size: 27px;
+    color: white; /* Agrega color de texto blanco para el título */
+}
+
+.conten-header{
+    
+    background-color: #193A6A;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.conten-header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.foto-nom{
+
+    width: 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.foto-nom img{
+    border-radius: 50%;
+}
+.nombre{
+    font-size: 15px;
+}
+.nav-alto .lista-menu{
+    font-size: 5px;
+    /* display: flex;
+    color: #fff; */
+    /* background-color: #4AD818; */
+    /* width: 900px;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative; */
+}

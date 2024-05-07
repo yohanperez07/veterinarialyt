@@ -16,6 +16,10 @@ body{
     flex-direction: column;
     background-color: #fff;
 }
+a{
+    text-decoration: none;
+    color: #fff;
+}
 figure{
       height: 24%;
       width:45% ;
@@ -33,86 +37,111 @@ figure{
 
 /* header ------------------------------------------------------------------------------- */
 
+.header-yohan{
+    width: 100%;
 
-
-/* u_info_general.html */
-.hed-i h1 {
-    background-color: #193A6A;
-    padding: 10px;
-    font-size: 27px;
-    color: white; /* Agrega color de texto blanco para el título */
 }
-
 .conten-header{
-    
-    background-color: #193A6A;
     height: 50px;
+    background-color: #193A6A;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-
-.conten-header a{
+.nav-alto{
+    /* background-color: #ED9B51; */
+    width: 50%;
+    /* height: 50px; */
+}
+summary{
     color: #fff;
-    text-decoration: none;
+    width: 220px;
 }
-
-.foto-nom{
-    /* background-color: #302e2e; */
-    width: 14%;
+.lista-menu{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-evenly;
-}
-.foto-nom img{
-    border-radius: 50%;
-}
-.nombre{
-    font-size: 15px;
-}
-.nav-alto ul{
-    display: flex;
-    justify-content: space-around;
-
-
-}
-.nav-alto li {
-    text-decoration: none;
-     padding: 0 20px 0 20px;
-     font-size: 20px;
-} 
-.nav-alto li:hover{
-    color: #000;
-}
-/* =------------------------------------------------------------------------ */
-
-.navegacion .despliegue{
-    display: none;
-}
-
-.navegacion .item:hover  .despliegue {
-    display: block;
-    position: absolute;
-}
-
-.navegacion .item a:hover {
-    background-color: #2b69c5;
-    height: 43px;
 }
 
 .despliegue{
-    color: #fff;
-    margin-top: 5px;
-}
-
-.desple{
+    /* transform: translateX(-50px); */
+    border-radius: 5px ;
+    margin-top: 15px;
+    width: 210px;
+    height: 100px;
+    display: flex;
     position: absolute;
-    /* width: 100%; */
-    /* margin-top: 10px; */
+    flex-direction: column;
     background-color: #193A6A;
+    
+}
+.desplegados{
+    font-size: 20px;
+    height: 100%;
+    /* background-color: #302e2e; */
+    text-align: center;
 
 }
+/* .conten-header{
+    background-color: #193A6A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.lista-menu{
+    background-color: #bac2b7;
+
+
+    display: flex;
+    height: 50px;
+    align-items: center;
+     justify-content: space-around;
+
+}
+.item {
+    color: #fff;
+    font-size: 18px;
+}
+
+.confi{
+    width: 170px;
+}
+
+
+
+.despliegue{
+    transform: translateX(-50px);
+    margin-top: 15px;
+    width: 180px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    background-color: #102544;
+    
+}
+.despliegue a{
+    padding: 10px 10px 10px;
+ 
+
+} */
+
+
+
+/* =------------------------------------------------------------------------ */
+
+
+
+/* .navegacion .item:hover {
+
+    background-color: #2b69c5;
+    height: 43px;
+} */
+
+
+
 
 
 
@@ -151,7 +180,7 @@ figure{
 
 
 
-/* Estilos de perfil del usuario ------------------------------------------------------------------------*/
+/* Estilos de perfil del usuario------------------------------------------------------------------------*/
 
 
 
