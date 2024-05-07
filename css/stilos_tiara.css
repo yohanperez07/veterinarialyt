@@ -93,15 +93,12 @@ body {
     display: flex;
     justify-content: center; /* Centrar horizontalmente */
     flex-wrap: wrap; /* Permitir que los elementos se ajusten en varias líneas */
-    margin: 60px;
-    padding: 50px;
+    margin-top: 100px;
+    /* margin: 60px;
+    padding: 50px; */
 }
 
-.foto {
-    width: 150px;
-    height: 150px;
-   margin: 30px;
-}
+
 
 .galeria article {
     display: inline-block;
@@ -110,7 +107,7 @@ body {
 }
 
 .galeria article img {
-    width: 220px;
+    width: 200px;
     height: auto;
     transition: all 0.5s ease;
 }
@@ -125,6 +122,7 @@ body {
     font-size: 18px;
     font-family: "Abhaya Libre", serif;
     font-weight: 700;
+    /* text-align: center; */
 }
 
 
