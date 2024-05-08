@@ -35,9 +35,9 @@ figure{
 }
 
 
-/* header ------------------------------------------------------------------------------- */
+/* estilos del header trabajado por yohan ------------------------------------------------------------------------------- */
 
-.header-yohan{
+.header-alto{
     width: 100%;
 
 }
@@ -49,136 +49,71 @@ figure{
     align-items: center;
 }
 .nav-alto{
-    /* background-color: #ED9B51; */
-    width: 50%;
-    /* height: 50px; */
+    width: 45%;
+}
+
+.foto-nom{
+    display: flex;
+    align-items: center;
+    width: 15%;
+    justify-content: space-evenly;
+
+}
+.foto-nom img{
+    border-radius: 50%;
+
 }
 summary{
     color: #fff;
-    width: 220px;
+    width: 200px;
 }
 .lista-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.lista-menu .item{
+    font-size: 17px;
+    padding: 12px;
+}
+ .item:hover{
+      background-color:  #2b69c5;
+    height: 50px; 
+}
+.desplegados:hover{
+    background-color:  #2b69c5;
+
+}
+.nombre:hover{
+    color: #ED9B51;
+}
 
 .despliegue{
-    /* transform: translateX(-50px); */
     border-radius: 5px ;
     margin-top: 15px;
     width: 210px;
-    height: 100px;
+    height: 80px;
     display: flex;
     position: absolute;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #193A6A;
     
 }
-.desplegados{
-    font-size: 20px;
-    height: 100%;
-    /* background-color: #302e2e; */
-    text-align: center;
-
-}
-/* .conten-header{
-    background-color: #193A6A;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-
-}
-
-.lista-menu{
-    background-color: #bac2b7;
-
-
-    display: flex;
-    height: 50px;
-    align-items: center;
-     justify-content: space-around;
-
-}
-.item {
-    color: #fff;
+.desplegados {
+   
     font-size: 18px;
-}
-
-.confi{
-    width: 170px;
-}
-
-
-
-.despliegue{
-    transform: translateX(-50px);
-    margin-top: 15px;
-    width: 180px;
+    width: 100%;
+    height: 40px;
     display: flex;
-    position: absolute;
-    flex-direction: column;
-    background-color: #102544;
-    
-}
-.despliegue a{
-    padding: 10px 10px 10px;
+    align-items: center;
  
-
-} */
-
-
-
-/* =------------------------------------------------------------------------ */
-
-
-
-/* .navegacion .item:hover {
-
-    background-color: #2b69c5;
-    height: 43px;
-} */
-
-
-
-
-
-
-
-/* 
-.navegacion .despliegue {
-    display: none;
-    position: absolute;
-    background-color: #193A6A;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
 }
- */
+.desplegados a{
+       margin-left: 10px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /* Estilos de perfil del usuario------------------------------------------------------------------------*/
 
