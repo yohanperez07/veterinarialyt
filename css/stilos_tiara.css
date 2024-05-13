@@ -62,15 +62,18 @@ a{
     border-radius: 50%;
 
 }
+
 summary{
     color: #fff;
     width: 200px;
 }
+
 .lista-menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .lista-menu .item{
     font-size: 17px;
     padding: 12px;
@@ -134,9 +137,7 @@ summary{
     height: auto;
 }
 
-.logo {
-    width: 100px;
-}
+
 
 .text-pag-b {
     display: flex;
@@ -194,8 +195,7 @@ summary{
     justify-content: center; /* Centrar horizontalmente */
     flex-wrap: wrap; /* Permitir que los elementos se ajusten en varias líneas */
     margin-top: 100px;
-    /* margin: 60px;
-    padding: 50px; */
+    
 }
 
 
@@ -489,18 +489,18 @@ label {
 }
 
 .boton {
-    margin-top: 80px;/* margen superior */
-    margin-left: 270px;/* margen izquierdo  */
+    margin-top: 80px;
+    margin-left: 270px;
 
 }
 
 .registrate-1 {
-    margin-top: 9px;/* margen superios  */
-    margin-left: 220px;/* margen izquierdo */
+    margin-top: 9px;
+    margin-left: 220px;
 }
 
 .ancho {
-    padding: 7px;/* cantidad de espacio del elmento  */
+    padding: 7px;
     width: 250px; /* el ancho del boton */
     border-radius: 20px;/* para redondear un poco el boton */
     border: none;/* para quitarle el bordde */
@@ -668,6 +668,7 @@ button:hover {
 /* Media queries */
 
 /* a_administrador */
+
 /* Media queries para dispositivos móviles */
 @media (max-width: 600px) {
     .a-hed {
@@ -690,13 +691,6 @@ button:hover {
         font-size: 18px;
     }
 
-    .text-pag-a {
-        justify-content: flex-end;
-        margin-top: -23px;
-        width: 100%;
-        font-size: 15px;
-    }
-
     .alto-admi .botones {
         margin-top: -115px;
     }
@@ -705,68 +699,10 @@ button:hover {
         margin-left: 20px;
     }
 
-    hr {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .navegacion {
-        margin-left: 20px;
-        margin-top: 20px;
-    }
-
-    .form-1,
-    .form-2 {
-        margin-left: 20px;
-        width: 90%;
-    }
-
-    .seleccion {
-        margin-left: 0;
-    }
-
-    .boton {
-        margin-left: 20px;
-    }
-
-    .registrate-1 {
-        margin-left: 20px;
-    }
-
-    .menu ul {
-        margin-left: 20px;
-    }
-
-    .border {
-        margin: 20px;
-        height: auto;
-    }
-
-    .move {
-        margin-left: 20px;
-        margin-top: 20px;
-    }
-
-    .move-dos {
-        margin-left: 20px;
-    }
-
-    .color {
-        width: 90%;
-        margin-left: 20px;
-    }
-
-    .title {
-        margin-left: 20px;
-    }
-
-    .clave {
-        margin-left: 20px;
-    }
 }
 
 /* Media queries para tabletas */
-@media (min-width: 601px) and (max-width: 900px) {
+@media (min-width: 601px) and (max-width: 1000px) {
     .a-hed {
         width: 30%;
         height: 30%;
@@ -774,14 +710,10 @@ button:hover {
 
     .galeria {
         display: flex;
-        justify-content: center; /* Centrar horizontalmente */
-        flex-wrap: wrap; /* Permitir que los elementos se ajusten en varias líneas */
     }
 
     .galeria article {
-        margin-right: 80px;
-        margin-bottom: 30px; /* Agregar margen inferior para evitar superposición */
-        box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
+       margin: 37px;
     }
 
     .text-pag-a {
@@ -792,64 +724,34 @@ button:hover {
     .center {
         margin-left: 50px;
     }
-
-    .navegacion {
-        margin-left: 50px;
-    }
-
-    .form-1,
-    .form-2 {
-        width: 45%;
-    }
-
-    .seleccion {
-        margin-left: 50px;
-    }
-
-    .boton {
-        margin-left: 50px;
-    }
-
-    .registrate-1 {
-        margin-left: 50px;
-    }
-
-    .menu ul {
-        margin-left: 50px;
-    }
-
-    .border {
-        margin: 30px;
-    }
-
-    .move {
-        margin-left: 300px;
-    }
-
-    .move-dos {
-        margin-left: 30px;
-    }
-
-    .color {
-        width: 400px;
-    }
-
-    .title {
-        margin-left: 50px;
-    }
-
-    .clave {
-        margin-left: 50px;
-    }
+    
 }
 
 /* Media queries para pantallas de escritorio */
 @media (min-width: 901px) and (max-width: 1200px) {
-    
+    .a-hed {
+        width: 100%;
+        height: 100%;
+    }
+
+    .galeria {
+        display: flex;
+    }
+
+    .galeria article {
+       margin: 100px;
+    }
+
+    .text-pag-b {
+        width: 100%;
+    }
+
+    .center {
+        margin-left: 50px;
+    }
+   
 }
 
-@media (min-width: 1201px) {
-    /* Estilos para pantallas de escritorio grandes aquí */
-}
+
 
 
