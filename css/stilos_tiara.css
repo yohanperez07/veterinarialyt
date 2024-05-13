@@ -312,13 +312,12 @@ width: 70px;
 
 /* u_registroMascotas.html y  u_registrousuario.html  */
 
-.r-hed {
-
+.styles-header {
     font-size: 15px;
     font-weight: 600;
 }
 
-.r-hed, img {
+.styles-header, img {
     width: 250px;
     height: auto; 
 }
