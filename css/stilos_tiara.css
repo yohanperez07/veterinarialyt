@@ -26,8 +26,13 @@ body {
 }
 
 
-/* estilos del header trabajado por yohan ------------------------------------------------------------------------------- */
 
+
+/* estilos del header trabajado por yohan ------------------------------------------------------------------------------- */
+a{
+    text-decoration: none;
+    color: #fff;
+}
 .header-alto{
     width: 100%;
 
@@ -47,10 +52,13 @@ body {
     display: flex;
     align-items: center;
     width: 15%;
+    font-size: 18px;
     justify-content: space-evenly;
 
 }
 .foto-nom img{
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
 
 }
