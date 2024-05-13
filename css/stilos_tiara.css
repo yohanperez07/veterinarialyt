@@ -26,29 +26,30 @@ body {
 }
 
 
-
-
 /* estilos del header trabajado por yohan ------------------------------------------------------------------------------- */
-a{
+a {
     text-decoration: none;
     color: #fff;
 }
-.header-alto{
+
+.header-alto {
     width: 100%;
 
 }
-.conten-header{
+
+.conten-header {
     height: 50px;
     background-color: #193A6A;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nav-alto{
+
+.nav-alto {
     width: 45%;
 }
 
-.foto-nom{
+.foto-nom {
     display: flex;
     align-items: center;
     width: 15%;
@@ -56,36 +57,38 @@ a{
     justify-content: space-evenly;
 
 }
-.foto-nom img{
+ 
+.foto-nom img {
     height: 30px;
     width: 30px;
     border-radius: 50%;
 
 }
 
-summary{
+summary {
     color: #fff;
     width: 200px;
 }
 
-.lista-menu{
+.lista-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.lista-menu .item{
+.lista-menu .item {
     font-size: 17px;
     padding: 12px;
 }
- .item:hover{
-      background-color:  #2b69c5;
+ .item:hover {
+     background-color:  #2b69c5;
     height: 50px; 
 }
-.desplegados:hover{
-    background-color:  #2b69c5;
 
+.desplegados:hover {
+    background-color:  #2b69c5;
 }
+
 .nombre:hover{
     color: #ED9B51;
 }
@@ -112,52 +115,18 @@ summary{
     align-items: center;
  
 }
-.desplegados a{
-       margin-left: 10px;
+.desplegados a {
+    margin-left: 10px;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.a-hed  {
-    width: 150px; /* Tamaño del logo */
-    height: auto;
-}
-
-
 
 .text-pag-b {
     display: flex;
-    
     background-color: #102544;
     padding: 10px;
     width: 100%;
-    height: 100%;
     font-size: 25px;
 }
-
-.text-pag-a {
-    display: flex;
-    color: #fff;
-    /* margin-top: -30px; */
-    font-size: 18px;
-    justify-content: flex-end;
-    width: 100%;
-}
-
 
 
 .alto-admi .botones {
@@ -173,13 +142,6 @@ summary{
     height: 37px;
 }
 
-.tamano-uno, .tamano-dos {
-    
-    width: 100%;
-    height: 100%;
-}
-
-
 .icons img {
     width: 35px;
     margin: 0 10px;
@@ -190,25 +152,28 @@ summary{
     transform: scale(1.2);
 }
 
-.galeria {
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    flex-wrap: wrap; /* Permitir que los elementos se ajusten en varias líneas */
-    margin-top: 100px;
-    
+.button {
+    width: 100%;
+    height: 100%;
 }
 
+
+.galeria {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-top: 130px;
+}
 
 
 .galeria article {
     display: inline-block;
     margin-right: 50px;
-    margin-bottom: 30px; /* Agregar margen inferior para evitar superposición */
+    margin-bottom: 30px; 
 }
 
 .galeria article img {
     width: 200px;
-    height: auto;
     transition: all 0.5s ease;
 }
 
@@ -220,9 +185,8 @@ summary{
     text-align: center;
     color: #102544;
     font-size: 18px;
-    font-family: "Abhaya Libre", serif;
     font-weight: 700;
-    /* text-align: center; */
+    margin-top: 20px;    
 }
 
 
@@ -230,107 +194,76 @@ summary{
 
 /* u_info_general.html */
 
-.hed-i .logo {
-    width: 250px; /* tamaño del logo */
-    height: auto;
-}
-  
-.hed-i h1 {
-    background-color: #193A6A;
-    padding: 10px;
-    font-size: 27px;
-    color: white; /* Agrega color de texto blanco para el título */
+.info-section {
+    background-color: #f8f8f8;
+    padding: 60px 0;
 }
 
-.navegacion {
-  display: flex;
-  justify-content: end;
-    margin-top: -45px;
-}
-
-.navegacion ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;   
-}
-
-.navegacion .item {
-    float: left;
-    position: relative;
-}
-
-.navegacion .item a {
-    color: #fff;
-    padding: 15px 25px; /* Más padding para los enlaces principales */
-    display: block;
-    font-size: 18px;
-    text-decoration: none;
-    
-}
-
-
-
- 
-
-
-.center {
-    display: flex;
-    text-align: center;
+.container {
+    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    max-width: 1200px;
-    /* justify-content: center; */
-    
+    padding: 0 20px;
 }
-  
-.center hr {
- border-top: 2px solid #ED9B51;
-margin: 9px 0 20px 537px;
-width: 70px;
-    
-}
-  
-  
-.center h2 {
+
+.section {
     text-align: center;
-    padding: 10px;
-    color: #193A6A;
-    font-size: 22px;
-    font-weight: 700;
+    margin-bottom: 40px;
 }
-  
-.center p {
+
+.section h2 {
+    font-size: 28px;
+    color: #333;
+    margin-top: 50px;
+}
+
+.raya {
+    width: 120px;
+    height: 3px;
+    background-color: #ED9B51;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.info-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.info-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
     text-align: justify;
-    margin: 0 10%;
-    max-width: 1200px;
-    padding: 20px;
 }
-  
 
 
 
 
 /* u_registroMascotas.html y  u_registrousuario.html  */
 
-.r-hed {
-
+.styles-header {
+    display: flex;
     font-size: 15px;
     font-weight: 600;
 }
 
-.r-hed, img {
+.styles-header, img {
+    display: flex;
     width: 250px;
     height: auto; 
 }
 
 .text{
- background-color: #193A6A;
- color: #fff;
- width: 1366px;
- height: auto;
- text-align: center;
- font-size: 26px;
- padding: 7px;
+  display: flex;
+  background-color: #193A6A;
+  color: #fff;
+  width:100%;
+  text-align: center;
+  font-size: 26px;
+  padding: 7px;
 
 }
 
@@ -414,25 +347,25 @@ label {
 
 .ancho {
     padding: 7px;
-    width: 250px; /* el ancho del boton */
-    border-radius: 20px;/* para redondear un poco el boton */
-    border: none;/* para quitarle el bordde */
+    width: 250px; 
+    border-radius: 20px;
+    border: none;
     font-size: 15px;
 }
 
 .link {
-    margin-top: 3px;/* margen superior */
-    text-align: center;/* texto en el medio */
+    margin-top: 3px;
+    text-align: center;
 }
 
 button {
-    background-color: #193A6A;/* color del boton  */
-    color:#fff;/* color de letra del boton */
+    background-color: #193A6A;
+    color:#fff;
     transition: all 0.3s ease;
 }
 
 button:hover {
-    transform: translateY(-5px);/* para mover el elemento 5 píxeles hacia arriba a lo largo del eje Y.  */
+    transform: translateY(-5px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);/* sombra al boton de continuar */
     background-color: #1F57A9;/* color de fondo cuando lo tocan */
 }
@@ -555,7 +488,7 @@ button:hover {
 }
 
 .title {
-   margin-bottom: 10px; /*para que el h3 este sepado del p */
+   margin-bottom: 10px; 
    margin-left: 130px;
    margin-top: -50px;
    color: #193A6A;
