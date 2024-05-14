@@ -120,6 +120,8 @@ summary {
 
 }
 
+
+
 .text-pag-b {
     display: flex;
     background-color: #102544;
@@ -238,7 +240,6 @@ summary {
     color: #555;
     text-align: justify;
 }
-
 
 
 
@@ -598,6 +599,41 @@ button:hover {
    
 }
 
+/* u_info_general.html */
+
+@media (max-width: 600px) {
+
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+
+    .nav-alto {
+    width: 60%;
+  }
+
+  .foto-nom {
+    width: 20%;
+  }
+
+  .lista-menu .item {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .despliegue {
+    width: 200px;
+    height: 75px;
+  }
+
+  .desplegados {
+    font-size: 17px;
+    height: 37px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+
+}
 
 
 
