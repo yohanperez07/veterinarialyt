@@ -61,6 +61,8 @@ figure{
     border-radius: 50%;
 
 }
+
+
 summary{
     color: #fff;
     width: 200px;
@@ -573,7 +575,7 @@ tbody tr{
     }
     .conten-header .nav-alto{
     /* background-color: #4AD818;/ */
-    width: 55%;
+    /* width: 55%; */
     display: flex;
 }
 
@@ -669,16 +671,43 @@ tbody tr{
 }
 
 
+
+
 /*Diseño pantallas de telefono----------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 600px){
      .logo img{
         width: 90%;
     }
-
-        .conten-header{
-        background-color: #0325e9;
+.nav-alto{
+        justify-content: end;
+        margin-right: 10px;
     }
+    .menu-icono div {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+}
+    .lista-menu{
+        display: none;
+    }
+    /* estilo de el header para telefonos  */
+    /* .conten-header{
+        z-index: 1;
+        height: 100%;
+        width: 50%;
+        justify-content: start;
+        flex-direction: column;
+    }
+    /* .foto-nom{
+        justify-content: start;
+        background-color: #4AD818;
+    } */
+    .lista-menu{
+        flex-direction: column;
+    } */
+
    
      /* diseño de perfil de usuario-------------------------------------------- */
     .contenido-perfil {
@@ -727,22 +756,6 @@ tbody tr{
 
 
     /* tabla de citas agendadas, listado de usuarios y registro de usuarios */
-    .menu-nav,ul{
-        flex-direction: column;
-        align-items: start;
-        height: 110px;
-      
-    }
-    .menu-nav ul{
-        height: 150px;
-        margin-top: 15px;
-      
-        
-    }
-    .menu-nav li,h1{
-        margin: 0 0 10px px;
-
-    }
     .con-tabla{
         margin-top: 0;
     }
@@ -764,4 +777,18 @@ tbody tr{
     /* diseño de perfil de usuario */
    
 
+}
+
+
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icon div {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
 }

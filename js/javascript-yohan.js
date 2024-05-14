@@ -12,6 +12,12 @@ function nom(dato) {
 }
 
 
+function toggleMenu() {
+    var menu = document.getElementById("lista-menu");
+    menu.classList.toggle("active");
+}
+
+
 
 
 
