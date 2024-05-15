@@ -13,8 +13,9 @@ function nom(dato) {
 
 
 function toggleMenu() {
-    var menu = document.getElementById("lista-menu");
+    var menu = document.getElementById("menu");
     menu.classList.toggle("active");
+    // alert("hoa")
 }
 
 

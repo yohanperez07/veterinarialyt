@@ -670,6 +670,24 @@ tbody tr{
     
 }
 
+.menu-icono {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-icono div {
+    width: 35px;
+    height: 5px;
+    background-color: #ff0000;
+    margin: 6px 0;
+}
+
+ /* .lista-menu {
+    display: none;
+    padding: 0;
+} */
+
+
 
 
 
@@ -683,15 +701,35 @@ tbody tr{
         justify-content: end;
         margin-right: 10px;
     }
-    .menu-icono div {
-    width: 35px;
-    height: 5px;
-    background-color: #ffffff;
-    margin: 6px 0;
-}
+
+   
+
+
+
+   .menu-icono{
+    /* color: #2b69c5; */
+    /* z-index: 1; */
+    /* background-color: #000; */
+        display: block;
+    }
+    .menu-icono div.active{
+        /* background-color: #ad6262; */
+        z-index: 5;
+    }
     .lista-menu{
         display: none;
     }
+    .lista-menu.active {
+        display: none;
+        display: block;
+        z-index: 1;
+        /* height: 1000px; */
+        background-color: #333;
+        margin-top: 500px;
+        /* width: 10px; */
+    }
+   
+    
     /* estilo de el header para telefonos  */
     /* .conten-header{
         z-index: 1;
