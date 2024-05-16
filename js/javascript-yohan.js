@@ -13,7 +13,7 @@ function nom(dato) {
 
 
 function toggleMenu() {
-    var menu = document.getElementById("menu");
+    var menu = document.getElementById("menus");
     menu.classList.toggle("active");
     // alert("hoa")
 }

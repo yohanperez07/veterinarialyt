@@ -68,6 +68,7 @@ summary{
     width: 200px;
 }
 .conten-header .nav-alto{
+    /* position: relative; */
     /* background-color: #4AD818;/ */
     width: 53%;
     display: flex;
@@ -675,18 +676,6 @@ tbody tr{
     cursor: pointer;
 }
 
-.menu-icono div {
-    width: 35px;
-    height: 5px;
-    background-color: #ff0000;
-    margin: 6px 0;
-}
-
- /* .lista-menu {
-    display: none;
-    padding: 0;
-} */
-
 
 
 
@@ -698,8 +687,11 @@ tbody tr{
         width: 90%;
     }
 .nav-alto{
-        justify-content: end;
+    width: 100%;
+        justify-content: space-around;
         margin-right: 10px;
+        background-color: #2b69c5;
+        
     }
 
    
@@ -707,44 +699,34 @@ tbody tr{
 
 
    .menu-icono{
-    /* color: #2b69c5; */
-    /* z-index: 1; */
-    /* background-color: #000; */
+    position: absolute;
         display: block;
-    }
-    .menu-icono div.active{
-        /* background-color: #ad6262; */
-        z-index: 5;
+        /* z-index: 3; */
+        top:8%;
+        /* display: flex; */
+        /* align-items: center; */
+        /* background-color: #2b69c5; */
     }
     .lista-menu{
         display: none;
     }
+
     .lista-menu.active {
-        display: none;
+        /* display: none; */
         display: block;
         z-index: 1;
-        /* height: 1000px; */
+       
         background-color: #333;
-        margin-top: 500px;
-        /* width: 10px; */
+        margin-top: 200px;
+    
+    }
+    .foto-nom{
+        background-color: #4AD818;
+        width: 25%;
+        font-size: 13px;
     }
    
     
-    /* estilo de el header para telefonos  */
-    /* .conten-header{
-        z-index: 1;
-        height: 100%;
-        width: 50%;
-        justify-content: start;
-        flex-direction: column;
-    }
-    /* .foto-nom{
-        justify-content: start;
-        background-color: #4AD818;
-    } */
-    .lista-menu{
-        flex-direction: column;
-    } */
 
    
      /* diseño de perfil de usuario-------------------------------------------- */
