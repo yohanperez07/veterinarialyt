@@ -675,6 +675,14 @@ tbody tr{
     display: none;
     cursor: pointer;
 }
+.menu-icono div {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    border-radius: 3px;
+}
+
 
 
 
@@ -688,9 +696,10 @@ tbody tr{
     }
 .nav-alto{
     width: 100%;
-        justify-content: space-around;
+        justify-content: end;
+        align-items: center;
         margin-right: 10px;
-        background-color: #2b69c5;
+        /* background-color: #2b69c5; */
         
     }
 
@@ -725,6 +734,7 @@ tbody tr{
         width: 25%;
         font-size: 13px;
     }
+ 
    
     
 
