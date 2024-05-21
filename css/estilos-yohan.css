@@ -698,7 +698,7 @@ tbody tr{
     width: 100%;
         justify-content: end;
         align-items: center;
-        margin-right: 10px;
+        /* margin-right: 10px; */
         /* background-color: #2b69c5; */
         
     }
@@ -710,27 +710,21 @@ tbody tr{
    .menu-icono{
     position: absolute;
         display: block;
-        /* z-index: 3; */
-        top:8%;
-        /* display: flex; */
-        /* align-items: center; */
-        /* background-color: #2b69c5; */
     }
     .lista-menu{
         display: none;
     }
 
     .lista-menu.active {
-        /* display: none; */
         display: block;
+        background-color: #193A6A;
+        height: 100px;
+        /* width: 10px; */
         z-index: 1;
-       
-        background-color: #333;
-        margin-top: 200px;
+        margin-top:55%;
     
     }
     .foto-nom{
-        background-color: #4AD818;
         width: 25%;
         font-size: 13px;
     }
@@ -785,6 +779,11 @@ tbody tr{
 
 
 
+
+
+
+
+
     /* tabla de citas agendadas, listado de usuarios y registro de usuarios */
     .con-tabla{
         margin-top: 0;
@@ -811,7 +810,7 @@ tbody tr{
 
 
 
-.menu-icon {
+/* .menu-icon {
     display: none;
     cursor: pointer;
 }
@@ -821,4 +820,4 @@ tbody tr{
     height: 5px;
     background-color: #333;
     margin: 6px 0;
-}
+} */
