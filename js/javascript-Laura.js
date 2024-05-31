@@ -21,3 +21,9 @@ if(user=="admin" && pass=="1212"){
 
 
 }
+// Trabajado por yohan
+function toggleMenu() {
+    var menu = document.getElementById("menus");
+    menu.classList.toggle("active");
+    // alert("hoa")
+}

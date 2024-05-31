@@ -28,13 +28,28 @@
         
  <!-- <div class="navegacion"> -->
     <nav class="nav-alto">
-          <ul class="lista-menu">
-              <li><a class="item" href="inicio.html">INICIO</a></li>
-              <li><a  class="item" href="u_servicios.html">SERVICIOS</a></li>
-              <li><a class="item" href="#">ADOPCION</a></li>
-              <li >
+        <div class="menu-icono" onclick="toggleMenu()">
+            <figure class="icono-conten"><img class="iconos" src="./recursos/icon/menu.svg" alt="icono"></figure>
+           
+            <!-- <div></div>
+            <div></div>
+            <div></div> -->
+            <!-- <figure>
+                <img src="./recursos/icon/menu.svg" alt="">
+            </figure> -->
+
+        </div>
+         <!-- <div id="menus" class="lista-menu"> -->
+             <ul  id="menus" class="lista-menu">
+              <li class="listas.."><a class="item" href="inicio.html">INICIO</a></li>
+              <li class="listas.."><a  class="item" href="u_servicios.html">SERVICIOS</a></li>
+              <li class="listas.."><a class="item" href="#">ADOPCION</a></li>
+              <li class="listas.."><a class="item menu-cell" href="u_info_general.html">INFORMACION GENERAL</a></li>
+              <li class="listas.."><a class="item menu-cell" href="#">CERRAR SESIÓN</a></li>
+
+              <li  class="listas..">
                 <details>
-                    <summary> <a  class="item "  href="#">CONFIGURACION</a></summary>
+                    <summary > <a  class="item "  href="#">CONFIGURACION</a></summary>
                     <ul class="despliegue">
                         <li class="desplegados border-desple"  ><a  href="u_info_general.html">Información general</a></li>
                         <li class="desplegados"><a  href="#" id="cerrarSesion">Cerrar Sesión</a></li>
@@ -42,6 +57,7 @@
                 </details>
               </li>
           </ul>
+         <!-- </div> -->
     </nav>
  <!-- </div> -->
         </div>
