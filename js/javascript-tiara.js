@@ -22,3 +22,4 @@ function clickMenu() {
     menu.classList.toggle("active");
  
 }
+
