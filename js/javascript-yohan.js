@@ -13,7 +13,7 @@ function nom(dato) {
 
 
 // Trabajado por yohan
-function toggleMenu() {
+function  clickMenu() {
     var menu = document.getElementById("menus");
     menu.classList.toggle("active");
     // alert("hoa")

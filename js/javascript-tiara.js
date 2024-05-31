@@ -16,4 +16,9 @@ document.getElementById("botonEnviar")
     });
 
 
-// 
+// Trabajado por yohan
+function clickMenu() {
+    var menu = document.getElementById("menus");
+    menu.classList.toggle("active");
+ 
+}
