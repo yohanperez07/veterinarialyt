@@ -30,6 +30,10 @@ figure{
      cursor: pointer;  /*Presenta la manita cuando estes en el logo */ 
 
 }
+a{
+    text-decoration: none;
+    color: #fff;
+}
 
 
 
@@ -88,6 +92,7 @@ summary{
 }
 .lista-menu{
     width: 100%;
+    color: #fff;
     /* background-color: #D9D9D9; */
     display: flex;
     /* justify-content: space-between; */
@@ -225,6 +230,7 @@ label{
 
 li{
      list-style: none;
+     text-decoration: none;
      width: 80%;
      font-size: 23px;
 }
