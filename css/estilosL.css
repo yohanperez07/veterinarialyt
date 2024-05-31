@@ -30,15 +30,12 @@
 
 }
 
-a{
-    text-decoration: none;
-}
 
-/* li{
+li{
     list-style: none;
     width: 80%;
     font-size: 23px;
-} */
+}
 .conten-header{
     width: 100%;
     height: 50px;
@@ -133,7 +130,7 @@ summary{
     
 }
 .desplegados {
-   
+    
     font-size: 18px;
     width: 100%;
     height: 40px;
@@ -142,6 +139,7 @@ summary{
  
 }
 .desplegados a{
+    color: #fff;
        margin-left: 10px;
 
 }
