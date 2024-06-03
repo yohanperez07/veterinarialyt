@@ -35,7 +35,9 @@ a{
 
 
 /* estilos del header trabajado por yohan ------------------------------------------------------------------------------- */
-
+.logo{
+    width: 25%;
+}
 .header-alto{
     width: 100%;
 
@@ -147,12 +149,70 @@ summary{
 /* hasta aqui la parte trabajadas por yohan */
 
 
-.text-pag-b {
+.bajo-header{
+    display: flex;
+    height: 50px;
+   justify-content: space-between;
+   align-items: center;
+   background-color: #193A6A;
+}
+
+.con-botones{
+    display: flex;
+    justify-content: space-between;
+}
+.text-pag-b{
+    margin-left: 10px;
+}
+
+.botones{
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    margin-bottom: 80px;
+    
+}
+.galeria{
+    margin-top: 40px;
+    /* background-color: #974040; */
+    display: flex;
+    justify-content: space-around;
+
+}
+.imagen-admin{
+    height: 220px;
+
+}
+.h3-admi{
+    color: #193A6A;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+
+}
+.admin-cuerpo{
+    /* background-color: #333; */
+
+}
+/* .con-cuerpo-p{
+    width: 100px;
+    background-color: #0486f0;
+    text-align: center;
+} */
+
+/* .foto img:hover {
+    transform: scale(1.1);
+} */
+
+/* .text-pag-b {
     display: flex;
     background-color: #102544;
     padding: 10px;
     width: 100%;
     font-size: 25px;
+    /* z-index: 1; */
+    /* height: 50px;
 }
 
 
@@ -178,22 +238,22 @@ summary{
 .icons img:hover {
     transform: scale(1.2);
 }
-
+/*
 .button {
     width: 100%;
     height: 100%;
-}
+} */
 
-
+/* 
 .galeria {
     display: flex;
-    justify-content: center; 
-    flex-wrap: wrap; 
-    margin-top: 130px;
-}
+    background-color: #666;
+    justify-content: center;  */
+    /* flex-wrap: wrap;  */
+    /* margin-top: 130px; */
 
 
-.galeria article {
+/* .galeria article {
     display: inline-block;
     margin-right: 50px;
     margin-bottom: 30px; 
@@ -215,7 +275,7 @@ summary{
     font-weight: 700;
     margin-top: 20px;    
 }
-
+ */ */
 
 
 

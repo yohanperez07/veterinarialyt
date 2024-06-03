@@ -399,7 +399,7 @@ tbody tr{
 
 }
 
-/* Estilos de listado de mascotas y usurarios ------------------------------------------------------------------*/
+/* Estilos de listado de mascotas y usuarios ------------------------------------------------------------------*/
 
 
 
@@ -456,12 +456,9 @@ tbody tr{
 
 
 /* pagina de codigo de verificacion--------------------------------------------------------------------------- */
-.logos img{
-     width: 250px;/* tamano del logo  */
-    height: auto;
-}
 
-.head-recu{
+
+/* .head-recu{
     display: flex;
     flex-direction: column;
 }
@@ -519,8 +516,8 @@ tbody tr{
 
 }
 /* pagina del codigo de verificacion */
-.nueva-con{
-    display: flex;
+/* .nueva-con{ */
+    /* display: flex;
     flex-direction: column;
     height: 100%;
  
@@ -574,7 +571,7 @@ tbody tr{
 }
 .con-contras a:hover{
     color: #ED9B51;
-}
+}  */
 
 
 /* tabletas y pantallas medianas */
