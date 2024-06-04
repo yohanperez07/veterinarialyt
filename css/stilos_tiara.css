@@ -35,9 +35,9 @@ a{
 
 
 /* estilos del header trabajado por yohan ------------------------------------------------------------------------------- */
-.logo{
+/* .logo{
     width: 25%;
-}
+} */
 .header-alto{
     width: 100%;
 
@@ -148,6 +148,7 @@ summary{
 
 /* hasta aqui la parte trabajadas por yohan */
 
+/* Estilos del admin  */
 
 .bajo-header{
     display: flex;
@@ -191,10 +192,43 @@ summary{
     margin-top: 20px;
 
 }
-.admin-cuerpo{
-    /* background-color: #333; */
+.h3-modida{
+    transform: translate(-10px);
 
 }
+
+/* Estilos de citas agendadas del admin */
+
+.main-agen-admin{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+
+}
+table{
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    width: 75%;
+    border-collapse: collapse;/*Fusionar los bordes  */
+
+}
+th{
+    background-color: #193A6A;
+    color: #FFF;
+    font-weight: 800;
+}
+th,td{
+    padding: 15px;
+    font-size: 10pxs;
+}
+.gris{
+       background-color: #D9D9D9;
+}
+.ver-mas{
+    color: #2C7CBE;
+}
+
 /* .con-cuerpo-p{
     width: 100px;
     background-color: #0486f0;
