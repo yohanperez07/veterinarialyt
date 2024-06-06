@@ -197,7 +197,7 @@ summary{
 
 }
 
-/* Estilos de citas agendadas del admin */
+/* Estilos de citas agendadas del admin yohan */
 
 .main-agen-admin{
     display: flex;
@@ -228,6 +228,62 @@ th,td{
 .ver-mas{
     color: #2C7CBE;
 }
+
+/* estilos de la pagina de despligue de citas agendadas */
+.main-despligue{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conten-despligue{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/* efecto de sombra  */
+    border: 5px;/* un borde alrededor del elemento*/
+    width: 70%;/*  ancho del elemento */
+    /* height: 640px;altura del elemento  */
+
+}
+.Cita-pendiente{
+   color: #193A6A;/* color de el tituolo de el formulario */
+   font-size: 26px;/* tamano de la letra  */
+   font-weight: 750;/* ancho de la letra para que el background llegue hasta el final de la pagina */
+   padding-bottom: 9px;/* agrega algo de espacio a la izquierda del elemento */
+   border-bottom: 2px solid #ED9B51;/* borde inferior al elemento */
+   margin-top: 10px;
+
+}
+.conten-lista-desplie{
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+ 
+}
+.encabeza{
+    font-size: 17px;
+    margin-top: 5px;
+    font-weight: 550;
+    color:#193A6A ;
+}
+.ul-despliegue{
+    width: 50%;
+}
+.conten-encabeza{
+    margin-top: 5px;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 2px solid #585555;
+    background-color: #faf9f9;
+    width: 70%;
+}
+
+
+
 
 /* .con-cuerpo-p{
     width: 100px;
