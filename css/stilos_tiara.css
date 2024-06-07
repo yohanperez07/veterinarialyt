@@ -14,7 +14,7 @@
     font-family: "Abhaya Libre", serif;
 }
 
-
+/* hola */
 header {
     color: #fff;
     font-size: 20px;
@@ -281,6 +281,30 @@ th,td{
     background-color: #faf9f9;
     width: 70%;
 }
+.conten-descripcion{
+    background-color: #f3efef;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    height: 150px;
+    margin-left: 20px;
+    
+
+}
+.h2-descripcion{
+    font-size: 30px;
+    color: #193A6A;
+
+    
+
+}
+.descripcion{
+    width: 60%;
+    font-size: 20px;
+    margin-top: 10px;
+  
+}
+
+
 
 
 
