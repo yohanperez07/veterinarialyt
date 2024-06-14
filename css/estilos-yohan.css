@@ -1094,7 +1094,42 @@ tbody tr{
    
 
     } 
- 
+     
+    /* media queries del header */
+
+  @media (max-height: 600px) {
+    .barra-lateral .logo-pagina {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .barra-lateral {
+        position: fixed;
+        left: -250px;
+    }
+
+    .max-barra-lateral {
+        left: 0;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 20px; /* Ajuste del padding para pantallas pequeñas */
+    }
+
+    main.min-main {
+        margin-left: 0;
+    }
+
+    .servicio-contenedor {
+        margin-left: 0; /* Ajuste del margen para pantallas pequeñas */
+    }
+}
    
     
 
