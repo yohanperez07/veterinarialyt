@@ -1,60 +1,46 @@
+<!-- HECHA POR LAURA -->
 
-   <!-- HECHO POR LAURA -->
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iniciar seccion | Petvet</title>
+    <title>Iniciar sesión | Petvet</title>
     <link rel="icon" href="imagenes/icon.png">
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="imagenes/perrito.png">
-    <script src="js/javascript-Laura.js"></script> 
+    <script src="js/javascript-Laura.js"></script>
+    <script src="script.js"></script> <!-- Asumiendo que script.js es necesario aquí -->
 </head>
-
 <body>
-    <script src="script.js"></script>
-    <!-- El contenedor-formulario es el PADRE -->
     <div class="contenedor-formulario contenedor">
-        <!-- El contenedor solo, lo que hara es central el contedido o HIJO -->
-        <div class="imagen-fomulario">
-         
+        <div class="imagen-formulario">
+            <!-- Puedes colocar una imagen aquí si lo deseas -->
         </div>
 
         <form class="formulario">
-           
             <div class="input">
-
-                <img  class="logo"   src="imagenes/logo.png">
-
-                <label for="usuario">Usuario :</label>
+                <img class="logo" src="imagenes/logo.png" alt="Logo Petvet">
+                <label for="usuario">Usuario:</label>
                 <br>
                 <input placeholder="Ingresa tu nombre" type="text" id="usuario">
             </div>
 
             <div class="input">
-                <label for="contraseña">Password :</label>
+                <label for="contraseña">Contraseña:</label>
                 <br>
                 <input placeholder="Ingresa tu contraseña" type="password" id="contraseña">
             </div>
-            <!-- <div>
-                <input type="button" value="INCIAR SECCION" onclick="guardar()">
-            </div> -->
 
-          <div class="iniciarSeccion">
-            <a onclick="guardar()">INCIAR SESION</a>
-          </div>
+            <div class="iniciar-sesion">
+                <a href="#" onclick="guardar()">INICIAR SESIÓN</a>
+            </div>
 
-          <div class="password-olvidada">
-            <p>
-                <!-- <a href="u.recupera-cuenta.html">¿Olvidaste tu contraseña?</a>  -->
-                <a href="u_registrousuario.html">¿Aun no tienes cuenta?</a></p>
-         </div>
-
+            <div class="password-olvidada">
+                <p><a href="u_recupera-cuenta.html">¿Olvidaste tu contraseña?</a></p>
+                <p><a href="u_registrousuario.html">¿Aún no tienes cuenta?</a></p>
+            </div>
         </form>
-
     </div>
 </body>
-
 </html>
