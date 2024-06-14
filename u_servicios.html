@@ -9,54 +9,83 @@
     <title>Pagina de los Servicios</title>
     <link rel="icon" href="imagenes/icon.png">
       <link rel="stylesheet" href="css/stilos_tiara.css">
-      <script src="./js/javascript-tiara.js"></script>
         
 </head>
 <body>
-    <header class="stylos-header">
-        <div class="panel-menu">
-        <nav class="panel">
-                <ul class="menu-list">
-                    <li class="menu-li">
-                        <img src="recursos/iconos/circulo-de-usuario.svg" alt="Usuario" class="icon">
-                        <a href="#" class="menu-li-letra">Perfil</a>
+        <header>
+        <div class="menu">
+             <img src="recursos/icon/menu.svg" alt="">   
+            
+            
+        </div>
+        <div class="barra-lateral ">
+            <div>
+                <div class="logo-pagina">
+                    <img src="imagenes/icon.png" id="logo" alt="">
+                    <span>Petvet</span>
+                </div>
+                <button class="boton-cita" onclick="agendarCita()">
+                    <img src="recursos/icon/mas.svg" alt="">
+                    <span>Agendar cita</span>
+                </button>
+            </div>
+
+            <nav class="navegacion">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="recursos/icon/inicio.svg" alt="Inicio" class="icon">
+                            <span>Inicio</span>
+                        </a>
                     </li>
-                    <li class="menu-li">
-                        <img src="recursos/iconos/inicio.svg" alt="Inicio" class="icon">
-                        <a href="#" class="menu-li-letra">Inicio</a>
+                    <li>
+                        <a href="#">
+                            <img src="recursos/icon/citasAgendadas.svg" alt="Inicio" class="icon">
+                            <span>Citas Agendadas<span>
+                        </a>
                     </li>
-                    <li class="menu-li">
-                        <img src="recursos/iconos/citasAgendadas.svg" alt="Citas Agendadas" class="icon">
-                        <a href="#" class="menu-li-letra">Citas Agendadas</a>
+                    <li>
+                        <a href="#">
+                            <img src="recursos/icon/guarderia.svg" alt="Inicio" class="icon">
+                            <span>Guarderia</span>
+                        </a>
                     </li>
-                    <li class="menu-li">
-                        <img src="recursos/iconos/agendarCita.svg" alt="Agendar Citas" class="icon">
-                        <a href="#" class="menu-li-letra">Agendar Citas</a>
+                    <li>
+                        <a href="#">
+                            <img src="recursos/icon/adopcion.svg" alt="Inicio" class="icon">
+                            <span>Adopción</span>
+                        </a>
                     </li>
-                    <li class="menu-li">
-                        <img src="recursos/iconos/guarderia.svg" alt="Guardería" class="icon">
-                        <a href="#" class="menu-li-letra">Guardería</a>
+                    <li>
+                        <a href="#">
+                            <img src="recursos/icon/informacion.svg" alt="Inicio" class="icon">
+                            <span>Información</span>
+                        </a>
                     </li>
-                    <li class="menu-li"> 
-                        <img src="recursos/iconos/adopcion.svg" alt="Adopción" class="icon">
-                        <a href="#" class="menu-li-letra">Adopción</a>
-                    </li>
-                    <li class="menu-li">
-                        <img src="recursos/iconos/informacion.svg" alt="Información" class="icon">
-                        <a href="#" class="menu-li-letra">Información</a>
-                    </li>
-                    <li class="menu-li">
-                        <img src="recursos/iconos/cerrar-sesion.svg" alt="Cerrar sesión" class="icon">
-                        <a href="#" class="menu-li-letra">Cerrar sesión</a>
-                    </li>
-                </ul>
-            </nav> 
+            </nav>
+
+            <div>
+                <div class="linea"></div>
+
+            <div class="usuario">
+                <img src="imagenes/user-.png" alt="">
+                <div class="info-usuario">
+                    <div class="nombre-email">
+                        <span class="nombre">Maria Lopez</span>
+                        <span class="email">marial@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+
         </div>
     </header>
-    
-
 
     <main>
+         <section class="servicio-adomicilio">
+            <h2>¡Disfruta de nuestros servicios están disponibles a domicilio!</h2>
+            <p>Queremos hacer más conveniente para ti y tus mascotas el acceso a los cuidados veterinarios. No dudes en contactarnos para programar una cita en la comodidad de tu hogar.</p>
+        </section>
         <section class="servicio-contenedor">
             <article class="servicio-card">
                 <div class="icon-img">
@@ -115,11 +144,8 @@
                 </div>
             </article>
         </section>
-        <section class="servicio-adomicilio">
-            <h2>¡Disfruta de nuestros servicios están disponibles a domicilio!</h2>
-            <p>Queremos hacer más conveniente para ti y tus mascotas el acceso a los cuidados veterinarios. No dudes en contactarnos para programar una cita en la comodidad de tu hogar.</p>
-        </section>
     </main>
+    <script src="js/header.js"></script>
  </body>
  </html>
 
