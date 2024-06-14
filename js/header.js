@@ -33,4 +33,8 @@ function agendarCita () {
     window.location.href = "u_agendarCita.html";
 }
 
+function irAPerfil() {
+    window.location.href = "u.perfil.html";
+}
+
 

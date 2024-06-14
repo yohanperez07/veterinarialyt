@@ -204,6 +204,8 @@ body {
     background-color: var(--color-linea);
 }
 
+
+
 .barra-lateral .usuario {
     width: 100%;
     display: flex;
@@ -216,6 +218,13 @@ body {
     border-radius: 20%;
     margin-top: 10px;
 }
+
+.barra-lateral .usuario a {
+    display: flex; 
+    align-items: center; 
+    text-decoration: none; 
+}
+
 
 .barra-lateral .usuario .info-usuario {
     width: 100%;
@@ -240,6 +249,12 @@ body {
 
 .barra-lateral .usuario .email {
     font-size: 13px;
+}
+
+.nombre-email {
+    display: flex; 
+    flex-direction: column; 
+    margin-left: 10px; 
 }
 
 main {
