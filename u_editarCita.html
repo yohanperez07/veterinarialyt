@@ -166,4 +166,159 @@
     </main>
 </div>
 </body>
+</html><!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenido a PetVet, tu veterinaria de confianza dedicada al cuidado integral de tu mascota.">
+    <title>Agendar cita</title>
+    <link rel="icon" href="imagenes/icon.png">
+    <link rel="stylesheet" href="css/estilosL.css">
+    <script src="js/codigoparacerrasesion.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <img src="recursos/icon/menu.svg" alt="Menú">
+        </div>
+        <div class="barra-lateral">
+            <div>
+                <div class="logo-pagina">
+                    <img src="imagenes/icon.png" id="logo" alt="Logo PetVet">
+                    <span>Petvet</span>
+                </div>
+                <button class="boton-cita" onclick="agendarCita()">
+                    <img src="recursos/icon/mas.svg" alt="Agendar cita">
+                    <span>Agendar cita</span>
+                </button>
+            </div>
+
+            <nav class="navegacion">
+                <ul>
+                    <li>
+                        <a href="u_servicios.html">
+                            <img src="recursos/icon/inicio.svg" alt="Inicio" class="icon">
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="citas-agendadas.html">
+                            <img src="recursos/icon/citasAgendadas.svg" alt="Citas Agendadas" class="icon">
+                            <span>Citas Agendadas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="u_guarderia.html">
+                            <img src="recursos/icon/guarderia.svg" alt="Guarderia" class="icon">
+                            <span>Guarderia</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="adopcion.html">
+                            <img src="recursos/icon/adopcion.svg" alt="Adopción" class="icon">
+                            <span>Adopción</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="u_info_general.html">
+                            <img src="recursos/icon/informacion.svg" alt="Información" class="icon">
+                            <span>Información</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="linea"></div>
+
+            <div class="usuario">
+                <a href="#" onclick="irAPerfil()">
+                    <img src="imagenes/user-.png" alt="Usuario">
+                    <div class="info-usuario">
+                        <div class="nombre-email">
+                            <span class="nombre">Maria Lopez</span>
+                            <span class="email">marial@gmail.com</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="box">
+        <main>
+            <h3 class="encabezado">Datos Generales</h3>
+            <form class="formulario">
+
+                <div class="form-1">
+                    <label for="nombre">Nombre :</label><br>
+                    <input type="text" id="nombre" placeholder="Nombre" name="nombre" class="form-input" required><br>
+
+                    <label for="correo">Correo electrónico :</label><br>
+                    <input type="email" id="email" name="email" placeholder="Correo electrónico" class="form-input" required><br>
+
+                    <label for="fecha">Fecha :</label><br>
+                    <input type="date" id="fecha" name="fecha" class="form-input" required><br>
+
+                    <label for="servicio">Servicios :</label><br>
+                    <select id="servicio" name="servicio" class="form-input" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="chequeos">Chequeos Generales</option>
+                        <option value="higiene">Higiene</option>
+                        <option value="vacunas">Vacunas</option>
+                        <option value="nutricion">Nutrición</option>
+                    </select><br>
+                </div>
+
+                <div class="form-2">
+                    <label for="apellido">Apellido :</label><br>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellido" class="form-input" required><br>
+
+                    <label for="tel">Teléfono:</label><br>
+                    <input type="tel" id="tel" name="tel" placeholder="Teléfono" class="form-input" required><br>
+
+                    <label for="turno">Elige tu turno:</label><br>
+                    <select id="turno" name="turno" class="form-input" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="mañana">Mañana</option>
+                        <option value="tarde">Tarde</option>
+                    </select><br>
+
+                    <label for="horario">Horario :</label><br>
+                    <select id="horario" name="horario" class="form-input" required>
+                        <option value="">Elige la hora</option>
+                        <optgroup label="Mañana">
+                            <option value="9:00-9:30">9:00am - 9:30am</option>
+                            <option value="9:30-10:00">9:30am - 10:00am</option>
+                            <option value="10:00-10:30">10:00am - 10:30am</option>
+                            <option value="10:30-11:00">10:30am - 11:00am</option>
+                            <option value="11:00-11:30">11:00am - 11:30am</option>
+                            <option value="12:00-12:30">12:00pm - 12:30pm</option>
+                        </optgroup>
+                        <optgroup label="Tarde">
+                            <option value="14:00-14:30">2:00pm - 2:30pm</option>
+                            <option value="14:30-15:00">2:30pm - 3:00pm</option>
+                            <option value="15:00-15:30">3:00pm - 3:30pm</option>
+                            <option value="15:30-16:00">3:30pm - 4:00pm</option>
+                            <option value="16:00-16:30">4:00pm - 4:30pm</option>
+                            <option value="16:30-17:00">4:30pm - 5:00pm</option>
+                            <option value="17:00-17:45">5:00pm - 5:45pm</option>
+                        </optgroup>
+                    </select><br>
+                </div>
+
+                <div class="boton">
+                    <textarea class="mensaje" placeholder="Motivo de la cita :" name="motivo"></textarea><br>
+                    <button type="submit" class="ancho">Editar</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <script src="js/header.js"></script>
+</body>
+
 </html>
