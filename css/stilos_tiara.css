@@ -261,12 +261,7 @@ main.min-main {
 @import "reset.css";
 
 
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Abhaya Libre", serif;
-}
+
 
 header {
     color: #fff;
@@ -300,7 +295,9 @@ a{
     justify-content: space-between;
 }
 .text-pag-b{
+    font-size: 15px;
     margin-left: 10px;
+    font-size: 13px;
 }
 
 .botones{
@@ -316,6 +313,8 @@ a{
 
 }
 .galeria{
+    /* width: 100%; */
+    margin-left: 0;
     margin-top: 40px;
     /* background-color: #974040; */
     display: flex;
@@ -342,6 +341,9 @@ a{
 }
 
 /* Estilos de citas agendadas del admin yohan */
+.citas-ad{
+    margin-left: 0;
+}
 
 .main-agen-admin{
     display: flex;
@@ -376,6 +378,7 @@ th,td{
 /* estilos de la pagina de despligue de citas agendadas */
 .main-despligue{
     display:flex;
+    margin-left: 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -391,6 +394,10 @@ th,td{
     /* height: 640px;altura del elemento  */
 
 }
+li{
+    list-style-type:none;
+}
+
 .Cita-pendiente{
    color: #193A6A;
    font-size: 26px;
@@ -402,6 +409,7 @@ th,td{
 }
 .pendiente{
     margin-left: 30px;
+    font-size: 30px;
 }
 .conten-lista-desplie{
     margin-left: 50px;

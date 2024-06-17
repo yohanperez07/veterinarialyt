@@ -1,3 +1,4 @@
+
 /* Estilos de header - Tiara  */
 
 :root{
@@ -11,6 +12,30 @@
     --color-linea:rgb(180,180,180);
     --color-scroll:rgb(192,192,192);
     --color-scroll-hover:rgb(134,134,134);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+}
+
+main {
+    margin-left: 250px;
+    padding: 30px;
+    transition: margin-left 0.5s ease; 
+}
+
+main.min-main {
+    margin-left: 80px;
 }
 
 
@@ -35,19 +60,9 @@
 }
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: #f9f9f9;
-}
+
+
 
 .menu {
     position: fixed;
@@ -265,15 +280,7 @@ body {
     margin-left: 10px; 
 }
 
-main {
-    margin-left: 250px;
-    padding: 30px;
-    transition: margin-left 0.5s ease; 
-}
 
-main.min-main {
-    margin-left: 80px;
-}
 /* fin de estilos de header - Tiara */
 
 
@@ -532,9 +539,10 @@ input{
 
 
 
-/*Estilos de la parte superior citas agendadas  -----------------------------------------------------------------------------*/
+/*Estilos de la parte superior citas agedadas  -----------------------------------------------------------------------------*/
 
-.menu-nav{
+
+/* .menu-nav{
     background-color: #193A6A;
     display: flex;
     height: 40px;
@@ -554,7 +562,7 @@ input{
 }
 .menu-nav li{
      /* width:10%; */
-     margin-right: 20px;
+     /* margin-right: 20px;
     display: flex;
     
 }
@@ -573,7 +581,7 @@ input{
 }
 .Menu a:hover{
     color: #ED9B51;
-}
+}  */
 /* Cuerpo de Citas agendadas --------------------------------------------------------------------------------*/
 
 
@@ -588,13 +596,13 @@ input{
     margin-right: 10px;
 }
 
-.agen  {
-    color: #FFF;
+.agen {
+    color: #ff0000;
     width: 90%;
     margin-top: 20px;
     /* background-color: #193A6A; */
     display: flex;
-    align-items: center;
+
     justify-content:end;
 
     
@@ -605,9 +613,9 @@ input{
     align-items: center;
     justify-content: center;
     /* background-color: #193A6A; */
-    font-size: 20px;
+    font-size: clamp(1.10em, 2vw,1em );
     height: 50px;
-    border-radius: 8px;
+    border-radius: 5px;
     width: 15%;
     background: linear-gradient(315deg, #17345f, #1b3e71);
 
@@ -625,7 +633,7 @@ input{
 
 
 table{
-    font-size: 20px;
+    font-size: clamp(1em, 1.5vw, 1.3em );
     margin-top: 20px;
     text-align: center;
     width: 90%;
@@ -637,15 +645,18 @@ th{
     color: #fff;
 }
 th,td{
-    padding:20px;
+    padding:17px;
 }
 
 thead{
     background-color: #193A6A;
 }
 
-tbody .gris{
-    background-color: #D9D9D9;
+.blanco{
+    background-color: #fff;
+}
+.gris{
+    background-color: #e7e6e6;
 }
 tbody tr{
     padding: 20px;
@@ -851,259 +862,21 @@ tbody tr{
 }  */
 
 
-/* tabletas y pantallas medianas */
 
-@media screen and (min-width:601px) and (max-width:900px){
-
-    /* estilos de tablet del header */
-
-
-    .foto-nom{
-        width: 21%;
-    }
-      .foto-nom a{
-        font-size: 12px;
-    }
-    .lista-menu .item{
-        font-size: 13px;
-    }
-    .conten-header .nav-alto{
-    display: flex;
-    }
-
-
-    .logo img{
-        width: 50%;
-        margin-bottom: 20px;
-    }
-    /* tabla de citas agendadas, listado de usuarios y registro de usuarios */
-    .Menu a{
-       font-size: 13px;
-      
-    }
-    .menu-nav ul{
-     margin-right: 10px;
-      
-        
-    }
-    .con-agendadas h1 {
-        font-size: 24px;
-       
-    }
-
-    .con-tabla{
-        margin-top: 0;
-    }
-    
-    table{
-        width: 95%;
-        font-size: 12px;
-
-    }
-    .agen a{
-    font-size: 12px;
-    height: 30px;
-    width: 18%;
-    
-}
-
-
-
-     /* diseño de perfil de usuario */
-    .contenido-perfil {
-        width: 80%;
-       
-    }
-    .agregar img {
-        height: 45%;
-        width: 27%;
-
-    }
-    .alto-perfil h1{
-        font-size: 40px;
-    }
-     .alto-perfil .flecha {
-        width: 35%;
-        /* height: 100%; */
-     }
-     li{
-     list-style: none;
-     width: 80%;
-     font-size: 17px;
-    }
-    .ajustes{
-    font-size: 15px;
-    }
-    label{
-        font-size: 17px;
-        width: 150px;
-    }
-    .agregar h2{
-        font-size: 25px;
-    }
-
-
-     
-  
-    
-
-    
-}
-
-
-
-
-
-
-
-
-/*Diseño pantallas de telefono----------------------------------------------------------------------------------------------------------- */
-
-@media screen and (max-width: 600px){
-     .logo {
-        width: 60%;
-    }
-.nav-alto{
-    /* width: 100%; */
-        justify-content: end;
-        align-items: center;
-        /* margin-right: 10px; */
-        /* background-color: #2b69c5; */
-        
-    }
-   .menu-icono{
-    /* background-color: #2b69c5; */
-    position: absolute;
-        display: block;
-    }
-    .lista-menu{
-        display: none;
-    }
-    details{
-        display: none;
-    }
-
-    .lista-menu.active {
-        display: block;
-        /* display: flex; */
-        /* flex-direction: column; */
-        margin-top: 82%;
-        background-color: #193A6A;
-        width: 200px;
-        border-radius: 5px;
-        /* transform: translate(-100px); */
-        /* margin-right: 30px; */
-        z-index: 1;
-        /* margin-top:55%; */
-    
-    }
-    .lista-menu.active a{
-        display: flex;
-        color: #FFF;
-        width: 190px;
-        /* flex-direction: row-reverse; */
-        /* flex-wrap: nowrap; */
-        /* background-color: #4AD818; */
-        padding: 0px;
-        /* justify-content: end; */
-
-        font-size: 13px;
-        margin: 5px;
-    }
-    .lista-menu.active a:hover{
-        height: inherit;
-        /* background-color: #FF0000; */
-    }
-    .foto-nom{
-        width: 25%;
-        font-size: 13px;
-    }
-   
-
-          
-     /* diseño de perfil de usuario-------------------------------------------- */
-    .contenido-perfil {
-        width: 80%;
-        height: 90%;
-       
-    }
-    .agregar img {
-        height: 45%;
-        width: 45%;
-
-    }
-    .alto-perfil h1{
-        font-size: 20px;
-    }
-
-     .alto-perfil .flecha {
-        width: 50%;
-        height: 30px;
-     }
-     [alt*="editar"]{
-        width: 15px;
-     }
-    
-
-     li{
-     list-style: none;
-     font-size: 10px;
-    }
-   
-    .ajustes{
-    font-size: 7px;
-    }
-    label{
-        font-size: 15px;
-        width: 120px;
-    }
-    .agregar h2{
-        font-size: 20px;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-    /* tabla de citas agendadas, listado de usuarios y registro de usuarios */
-    .con-tabla{
-        margin-top: 0;
-    }
-    
-    table{
-        width: 90%;
-        font-size: 10px;
-
-    }
-    .agen{
-    
-    font-size: 15px;
-         
-        
-    }
-    th,td{
-         padding: 10px;
-    }
-   
-
-    } 
      
     /* media queries del header */
 
   @media (max-height: 600px) {
+
+     
+    /* media queries del header */
     .barra-lateral .logo-pagina {
         margin-bottom: 5px;
     }
 }
 
 @media (max-width: 600px) {
+   
     .barra-lateral {
         position: fixed;
         left: -250px;
@@ -1129,8 +902,44 @@ tbody tr{
     .servicio-contenedor {
         margin-left: 0; /* Ajuste del margen para pantallas pequeñas */
     }
+
+    /* Tabla de citas agendadas */
+     th,td{
+     /* font-size: clamp(0.6em, 0.9vw, 1.5em ); */
+     font-size: 12px;
+     padding-right: 3px;
+     padding-left:3px;
+
+    }
+       .agen a{
+        font-size: clamp(0.9em, 1vw, 4em );
+        height: 30px;
+        width: 80px;
+    }
 }
    
+
+
+
+@media (min-width: 601px) and (max-width: 1000px){
+    /* Citas agendadas */
+    .barra-lateral{
+        width: 200px;
+        /* background-color: #193A6A; */
+    }
+    th,td{
+     font-size: clamp(0.6em, 0.9vw, 1.5em );
+     /* font-size: 8px; */
+     padding-right: 3px;
+     padding-left:3px;
+
+    }
+    .agen a{
+        font-size: clamp(0.9em, 1vw, 4em );
+        height: 30px;
+        width: 80px;
+    }
+}
     
 
  
