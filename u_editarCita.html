@@ -16,16 +16,16 @@
 <body>
     <header>
         <div class="menu">
-            <img src="recursos/icon/menu.svg" alt="">
+            <img src="recursos/icon/menu.svg" alt="Menú">
         </div>
-        <div class="barra-lateral ">
+        <div class="barra-lateral">
             <div>
                 <div class="logo-pagina">
-                    <img src="imagenes/icon.png" id="logo" alt="">
+                    <img src="imagenes/icon.png" id="logo" alt="Logo PetVet">
                     <span>Petvet</span>
                 </div>
                 <button class="boton-cita" onclick="agendarCita()">
-                    <img src="recursos/icon/mas.svg" alt="">
+                    <img src="recursos/icon/mas.svg" alt="Agendar cita">
                     <span>Agendar cita</span>
                 </button>
             </div>
@@ -39,19 +39,28 @@
                         </a>
                     </li>
                     <li>
-                        <a href="citas-agendadas.html">
+                         <a href="u_citas-agendadas.html">
                             <img src="recursos/icon/citasAgendadas.svg" alt="Citas Agendadas" class="icon">
-                            <span>Citas Agendadas<span>
+                            <span>Citas Agendadas</span>
                         </a>
                     </li>
+
+                      <li>
+                        <a href="#">
+                            <img src="recursos/icon/guaderia-pendiente.svg" alt="citas de guarderia pendienre" class="icon">
+                            <span>Citas Guardería<pan>
+                        </a>
+                    </li>
+
                     <li>
                         <a href="u_guarderia.html">
-                            <img src="recursos/icon/guarderia.svg" alt="Guarderia" class="icon">
-                            <span>Guarderia</span>
+                            <img src="recursos/icon/guarderia.svg" alt="Guardería" class="icon">
+                            <span>Guardería</span>
                         </a>
                     </li>
+
                     <li>
-                        <a href="adopcion.html">
+                        <a href="u_adopcion.html">
                             <img src="recursos/icon/adopcion.svg" alt="Adopción" class="icon">
                             <span>Adopción</span>
                         </a>
@@ -62,25 +71,24 @@
                             <span>Información</span>
                         </a>
                     </li>
+                    
+                </ul>
             </nav>
 
-            <div>
-                <div class="linea"></div>
+            <div class="linea"></div>
 
             <div class="usuario">
-              <a href="#" onclick="irAPerfil()">
-                <img src="imagenes/user-.png" alt="">
-                   <div class="info-usuario">
-                   <div class="nombre-email">
-                      <span class="nombre">Maria Lopez</span>
-                      <span class="email">marial@gmail.com</span>
+                <a href="#" onclick="irAPerfil()">
+                    <img src="imagenes/user-.png" alt="Usuario">
+                    <div class="info-usuario">
+                        <div class="nombre-email">
+                            <span class="nombre">Maria Lopez</span>
+                            <span class="email">marial@gmail.com</span>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
-    </a>
-</div>
-
-
-</div>
     </header>
 
    
@@ -287,27 +295,6 @@
                         <option value="tarde">Tarde</option>
                     </select><br>
 
-                    <label for="horario">Horario :</label><br>
-                    <select id="horario" name="horario" class="form-input" required>
-                        <option value="">Elige la hora</option>
-                        <optgroup label="Mañana">
-                            <option value="9:00-9:30">9:00am - 9:30am</option>
-                            <option value="9:30-10:00">9:30am - 10:00am</option>
-                            <option value="10:00-10:30">10:00am - 10:30am</option>
-                            <option value="10:30-11:00">10:30am - 11:00am</option>
-                            <option value="11:00-11:30">11:00am - 11:30am</option>
-                            <option value="12:00-12:30">12:00pm - 12:30pm</option>
-                        </optgroup>
-                        <optgroup label="Tarde">
-                            <option value="14:00-14:30">2:00pm - 2:30pm</option>
-                            <option value="14:30-15:00">2:30pm - 3:00pm</option>
-                            <option value="15:00-15:30">3:00pm - 3:30pm</option>
-                            <option value="15:30-16:00">3:30pm - 4:00pm</option>
-                            <option value="16:00-16:30">4:00pm - 4:30pm</option>
-                            <option value="16:30-17:00">4:30pm - 5:00pm</option>
-                            <option value="17:00-17:45">5:00pm - 5:45pm</option>
-                        </optgroup>
-                    </select><br>
                 </div>
 
                 <div class="boton">

@@ -29,28 +29,38 @@
                     <span>Agendar cita</span>
                 </button>
             </div>
+
             <nav class="navegacion">
                 <ul>
                     <li>
-                        <a href="u_servicios.html">
+                         <a href="u_servicios.html">
                             <img src="recursos/icon/inicio.svg" alt="Inicio" class="icon">
                             <span>Inicio</span>
                         </a>
                     </li>
                     <li>
-                        <a href="citas-agendadas.html">
+                      <a href="u_citas-agendadas.html">
                             <img src="recursos/icon/citasAgendadas.svg" alt="Citas Agendadas" class="icon">
                             <span>Citas Agendadas</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="u_guarderia.html">
-                            <img src="recursos/icon/guarderia.svg" alt="Guarderia" class="icon">
-                            <span>Guarderia</span>
+
+                      <li>
+                        <a href="#l">
+                            <img src="recursos/icon/guaderia-pendiente.svg" alt="citas de guarderia pendienre" class="icon">
+                            <span>Citas Guardería<pan>
                         </a>
                     </li>
+
                     <li>
-                        <a href="adopcion.html">
+                        <a href="u_guarderia.html">
+                            <img src="recursos/icon/guarderia.svg" alt="Guardería" class="icon">
+                            <span>Guardería</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="u_adopcion.html">
                             <img src="recursos/icon/adopcion.svg" alt="Adopción" class="icon">
                             <span>Adopción</span>
                         </a>
@@ -61,9 +71,12 @@
                             <span>Información</span>
                         </a>
                     </li>
+                    
                 </ul>
             </nav>
+
             <div class="linea"></div>
+
             <div class="usuario">
                 <a href="#" onclick="irAPerfil()">
                     <img src="imagenes/user-.png" alt="Usuario">
@@ -82,25 +95,38 @@
         <main>
             <h3 class="encabezado">Agenda tu cita</h3>
             <form class="formulario">
-
                 <div class="form-1">
                     <label for="nombre">Nombre :</label><br>
-                    <input type="text" id="nombre" placeholder="Nombre" name="nombre" class="form-input" required><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="form-input" required><br>
 
-                    <label for="correo">Correo electrónico :</label><br>
+                    <label for="email">Correo electrónico :</label><br>
                     <input type="email" id="email" name="email" placeholder="Correo electrónico" class="form-input" required><br>
 
                     <label for="fecha">Fecha :</label><br>
                     <input type="date" id="fecha" name="fecha" class="form-input" required><br>
 
-                    <label for="servicio">Servicios :</label><br>
-                    <select id="servicio" name="servicio" class="form-input" required>
-                        <option value="">Seleccione una opción</option>
-                        <option value="chequeos">Chequeos Generales</option>
-                        <option value="higiene">Higiene</option>
-                        <option value="vacunas">Vacunas</option>
-                        <option value="nutricion">Nutrición</option>
-                    </select><br>
+                        <legend>Selecciona los servicios:</legend>
+                        <label>
+                            <input type="checkbox" name="servicios" value="vacunas"> Vacunas básicas y refuerzos
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="servicios" value="banos"> Baños
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="servicios" value="exámenesLaboratorio"> Exámenes de laboratorio
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="servicios" value="lavadoDental"> Lavado Dental
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="servicios" value="cortePelo"> Peluquería y Corte de uñas
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="servicios" value="medicamentosBásicos"> Medicamentos básicos
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="servicios" value="tratamientosParásitos"> Tratamientos contra parásitos
+                        </label><br>
                 </div>
 
                 <div class="form-2">
@@ -117,37 +143,15 @@
                         <option value="tarde">Tarde</option>
                     </select><br>
 
-                    <label for="horario">Horario :</label><br>
-                    <select id="horario" name="horario" class="form-input" required>
-                        <option value="">Elige la hora</option>
-                        <optgroup label="Mañana">
-                            <option value="9:00-9:30">9:00am - 9:30am</option>
-                            <option value="9:30-10:00">9:30am - 10:00am</option>
-                            <option value="10:00-10:30">10:00am - 10:30am</option>
-                            <option value="10:30-11:00">10:30am - 11:00am</option>
-                            <option value="11:00-11:30">11:00am - 11:30am</option>
-                            <option value="12:00-12:30">12:00pm - 12:30pm</option>
-                        </optgroup>
-                        <optgroup label="Tarde">
-                            <option value="14:00-14:30">2:00pm - 2:30pm</option>
-                            <option value="14:30-15:00">2:30pm - 3:00pm</option>
-                            <option value="15:00-15:30">3:00pm - 3:30pm</option>
-                            <option value="15:30-16:00">3:30pm - 4:00pm</option>
-                            <option value="16:00-16:30">4:00pm - 4:30pm</option>
-                            <option value="16:30-17:00">4:30pm - 5:00pm</option>
-                            <option value="17:00-17:45">5:00pm - 5:45pm</option>
-                        </optgroup>
-                    </select><br>
-                </div>
+                    <label for="motivo">Motivo de la cita :</label><br>
+                    <textarea id="motivo" class="mensaje" placeholder="Motivo de la cita" name="motivo"></textarea><br>
 
-                <div class="boton">
-                    <textarea class="mensaje" placeholder="Motivo de la cita :" name="motivo"></textarea><br>
                     <button type="submit" class="ancho">Enviar</button>
                 </div>
             </form>
-            <script src="js/header.js"></script>
         </main>
     </div>
+    <script src="js/header.js"></script>
 </body>
 
 </html>

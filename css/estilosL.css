@@ -1104,7 +1104,7 @@ h3{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 6px;
     display: flex;
-    width: 15rem;
+    width: 16rem;
     height: 29rem;
     flex-direction: column;
     overflow: hidden;
@@ -1174,10 +1174,10 @@ h3{
 
 
 .whatsapp-icon img {
-    width: 50px; /* Ajusta el tamaño según tus necesidades */
+    width: 50px; 
     border-radius: 200px;
     margin-right: -10px; /* Espacio entre el ícono y el borde derecho */
-    margin-top: 3px;
+    /* margin-top: 10px; */
 }
 
 .whatsapp-icon1 {
@@ -1185,10 +1185,10 @@ h3{
     justify-content: flex-end;
 }
 .whatsapp-icon1 img {
-    width: 50px; /* Ajusta el tamaño según tus necesidades */
+    width: 50px; 
     border-radius: 200px;
     margin-right: -10px; /* Espacio entre el ícono y el borde derecho */
-    margin-top: 15px;
+    /* margin-top: 20px; */
 }
 
 /* media queries del header */
