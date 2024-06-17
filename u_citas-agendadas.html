@@ -1,0 +1,154 @@
+<!-- HECHA POR YOHAN -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página para visualizar citas pendientes en Petvet">
+    <title>Citas pendientes</title>
+    <link rel="stylesheet" href="./css/estilos-yohan.css">
+    <link rel="icon" href="./imagenes/icon.png">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img src="recursos/icon/menu.svg" alt="Menú">
+        </div>
+        <div class="barra-lateral">
+            <div>
+                <div class="logo-pagina">
+                    <img src="imagenes/icon.png" id="logo" alt="Logo PetVet">
+                    <span>Petvet</span>
+                </div>
+                <button class="boton-cita" onclick="agendarCita()">
+                    <img src="recursos/icon/mas.svg" alt="Agendar cita">
+                    <span>Agendar cita</span>
+                </button>
+            </div>
+
+            <nav class="navegacion">
+                <ul>
+                    <li>
+                         <a href="u_servicios.html">
+                            <img src="recursos/icon/inicio.svg" alt="Inicio" class="icon">
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="recursos/icon/citasAgendadas.svg" alt="Citas Agendadas" class="icon">
+                            <span>Citas Agendadas</span>
+                        </a>
+                    </li>
+
+                      <li>
+                        <a href="#">
+                            <img src="recursos/icon/guaderia-pendiente.svg" alt="citas de guarderia pendienre" class="icon">
+                            <span>Citas Guardería<pan>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="u_guarderia.html">
+                            <img src="recursos/icon/guarderia.svg" alt="Guardería" class="icon">
+                            <span>Guardería</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="u_adopcion.html">
+                            <img src="recursos/icon/adopcion.svg" alt="Adopción" class="icon">
+                            <span>Adopción</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="u_info_general.html">
+                            <img src="recursos/icon/informacion.svg" alt="Información" class="icon">
+                            <span>Información</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+
+            <div class="linea"></div>
+
+            <div class="usuario">
+                <a href="#" onclick="irAPerfil()">
+                    <img src="imagenes/user-.png" alt="Usuario">
+                    <div class="info-usuario">
+                        <div class="nombre-email">
+                            <span class="nombre">Maria Lopez</span>
+                            <span class="email">marial@gmail.com</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="con-agendadas">
+        <div class="con-tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Tanda</th>
+                        <th>Servicios</th>
+                        <th>Mascota</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>04/06/2024</td>
+                        <td>Tarde</td>
+                        <td>Chequeo General</td>
+                        <td>Perro</td>
+                        <td>
+                            <a href="u_editarCita.html" class="verde">Editar Citas</a>
+                            <a href="#" class="roja">Eliminar cita</a>
+                        </td>
+                    </tr>
+                    <tr class="gris">
+                        <td>07/06/2024</td>
+                        <td>Mañana</td>
+                        <td>Chequeo General</td>
+                        <td>Perro</td>
+                        <td>
+                            <a href="u_editarCita.html" class="verde">Editar Citas</a>
+                            <a href="#" class="roja">Eliminar cita</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>08/06/2024</td>
+                        <td>Mañana</td>
+                        <td>Chequeo General</td>
+                        <td>Gato</td>
+                        <td>
+                            <a href="u_editarCita.html" class="verde">Editar Citas</a>
+                            <a href="#" class="roja">Eliminar cita</a>
+                        </td>
+                    </tr>
+                    <tr class="gris">
+                        <td>15/06/2024</td>
+                        <td>Tarde</td>
+                        <td>Chequeo General</td>
+                        <td>Gato</td>
+                        <td>
+                            <a href="u_editarCita.html" class="verde">Editar Citas</a>
+                            <a href="#" class="roja">Eliminar cita</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="agen">
+            <a href="agendarCita.html">Registrar nueva cita</a>
+        </div>
+    </main>
+
+    <script src="js/header.js"></script>
+</body>
+</html>
