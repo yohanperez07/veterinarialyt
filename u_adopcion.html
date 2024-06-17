@@ -13,19 +13,22 @@
 </head>
 
 <body>
-    <header>
+     <header>
         <div class="menu">
             <img src="recursos/icon/menu.svg" alt="Menú">
         </div>
         <div class="barra-lateral">
-            <div class="logo-pagina">
-                <img src="imagenes/icon.png" id="logo" alt="Logo">
-                <span>Petvet</span>
+            <div>
+                <div class="logo-pagina">
+                    <img src="imagenes/icon.png" id="logo" alt="Logo PetVet">
+                    <span>Petvet</span>
+                </div>
+                <button class="boton-cita" onclick="agendarCita()">
+                    <img src="recursos/icon/mas.svg" alt="Agendar cita">
+                    <span>Agendar cita</span>
+                </button>
             </div>
-            <button class="boton-cita" onclick="agendarCita()">
-                <img src="recursos/icon/mas.svg" alt="Agregar cita">
-                <span>Agendar cita</span>
-            </button>
+
             <nav class="navegacion">
                 <ul>
                     <li>
@@ -35,17 +38,26 @@
                         </a>
                     </li>
                     <li>
-                        <a href="citas-agendadas.html">
+                        <a href="u_citas-agendadas.html">
                             <img src="recursos/icon/citasAgendadas.svg" alt="Citas Agendadas" class="icon">
                             <span>Citas Agendadas</span>
                         </a>
                     </li>
+
+                      <li>
+                        <a href="#l">
+                            <img src="recursos/icon/guaderia-pendiente.svg" alt="citas de guarderia pendienre" class="icon">
+                            <span>Citas Guardería<pan>
+                        </a>
+                    </li>
+
                     <li>
                         <a href="u_guarderia.html">
                             <img src="recursos/icon/guarderia.svg" alt="Guardería" class="icon">
                             <span>Guardería</span>
                         </a>
                     </li>
+
                     <li>
                         <a href="adopcion.html">
                             <img src="recursos/icon/adopcion.svg" alt="Adopción" class="icon">
@@ -58,9 +70,12 @@
                             <span>Información</span>
                         </a>
                     </li>
+                    
                 </ul>
             </nav>
+
             <div class="linea"></div>
+
             <div class="usuario">
                 <a href="#" onclick="irAPerfil()">
                     <img src="imagenes/user-.png" alt="Usuario">
@@ -74,15 +89,7 @@
             </div>
         </div>
     </header>
-
-    <main>
-        <div class="adopt-container">
-            <div class="texto">
-                <h1 class="h1">¡Adopta un Amigo Fiel!</h1>
-                <p class="p">¡Dale a un perro la oportunidad de encontrar un hogar amoroso!</p>
-            </div>
-        </div>
-
+      <main>
         <div class="padre">
             <article class="hijo">
                 <div class="hijo__preview">
