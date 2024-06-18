@@ -376,8 +376,14 @@ th,td{
 .gris{
        background-color: #D9D9D9;
 }
+.eliminar-a{
+   color:#FF0000 ;
+   font-weight: 550;
+
+}
 .ver-mas{
     color: #2C7CBE;
+    font-weight: 550;
 }
 
 /* estilos de la pagina de despligue de citas agendadas */
