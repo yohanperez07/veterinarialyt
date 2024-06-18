@@ -260,183 +260,94 @@ main.min-main {
 /* fin de estilos de header - Tiara */
 
 
+
+
+
+
 /* HECHO POR LAURA */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/* PAG DE INICIO */
-.logo, .logo img{
-    /* tamaños del las imagenes de el logo */
-     height: 10%;
-    width: 20%;
-    margin-left:20px ;    
-     cursor: pointer;  /*Presenta la manita cuando estes en el logo */ 
-}
-
-
-h2{
-    margin-top: 25px;
-    margin-bottom: 25px;
-   text-align: center;  /* Centrar el texto (Los mejores amigo de tu mejor amigo) */
-   font-size: 40px; /* Tamaño de las letras */
-   color: #193A6A; /* Color de las letras */
-}
-
-.panel{
-    display: flex; /*mover las img en el centro */
-    justify-content: space-evenly; /* colocarlas en lineas y con espacios  */
-    padding-top: 20px; /* Espacio hacia arriba */
-    margin-bottom: 100px; /* Espacio hacia abajo */
-   
-}
-
-
-.SegundaParte{
-    padding: 4px 5%; /* Ajuntando de los lados */
-    padding-top: 10px;  /* Espacio hacia arriba */
-}
-
-.imagen-panel{
-    text-align: center; /* Los parrafos se centren con las img */
-    font-size: 20px; /* Tamaño de las letras */
-    color: #193A6A;  /* Color de las letras */
-    font-weight: bold; /* Poner las letras en negrita */
-    padding-top: 10px;  /* Espacio hacia arriba para la sombra */
-    padding-bottom: 10px;  /* Espacio de abajo para la sombra */
-    /* border: 1px solid; */
-}
-
-
-
-section, footer{
-    padding-top: 360px; /* Tamaño de la img de fondo */
-    background: url(../imagenes/fondo2.jpg);/* img de fondo */
-    background-size: cover; /* Para que la img se adapte a su posicion normal */ 
-    background-attachment: fixed;  /* esto es para mantener fijo el efecto defondo, que es la img para desplazarla. */
-    position: relative; /* permiten desplazar la img desde su posición original sin afectar el diseño de los demas elementos en la página. */
-  
-}
-
-
-footer {
-    height: 400px;  /* espacio de arriba */
-    padding: 30px 30px; /* relleno de los lados */
-}
-
-
-
-.box-icons{
-    padding-top: 180px; /* Espacio de arriba */
-    display: flex; /*poder mover los iconos y letras al centro */
-    justify-content: space-evenly;/* colocarlas en lineas y con espacios  */
-    padding-bottom: 40px;/* Espacio hacia abajo */
-}
-
-
-.content{
-    text-align: center; /* poner los iconos centrados */
-}
-
-.content h4{
-    color: #19396a;  /* letras azules */
-    padding-top: 9px;  /* Espacio hacia arriba */ 
-}
-
-.bx {
-    font-size: 40px;/* Tamaño de los iconos */
-}
-
-
-
-
-
-.encabezado {
-   color: #193A6A;/* color de el tituolo de el formulario */
-   font-size: 26px;/* tamano de la letra  */
-   font-weight: 750;/* ancho de la letra para que el background llegue hasta el final de la pagina */
-   padding-bottom: 9px;/* agrega algo de espacio a la izquierda del elemento */
-   border-bottom: 2px solid #ED9B51;/* borde inferior al elemento */
-   margin-left: -25px;/* agrega algo de espacio a la izquierda del element */
-   margin-right: -30px;
-   margin-top: 10px;
-}
-
 .box {
-    border: 1px solid #E6E6E6;/*  borde del elemento para que tenga 1 píxel de ancho, sea sólido (sin puntos ni rayas) y de color blanco. */
-    padding: 30px;/* cantidad de espacio del elmento  */
-    margin: 30px  auto;/* maren del elemento 20px arriba y abajo y auto a la izquierda y derecha */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/* efecto de sombra  */
-    border: 5px;/* un borde alrededor del elemento*/
-    width: 90%;/*  ancho del elemento */
-    height: 640px;/*altura del elemento  */
+  background-color: #fff;
+  border: 1px solid #ddd;
+
 }
 
 
 
 label {
-    color: #193A6A;/* color de la letra  */
     font-weight: 600;/* grosor de la letra  */
     font-size: 15px;/* tamano de la letra */
 }
 
-
+.favor{
+    text-align: center;/* centrar el texto */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
 
 .form-1{
-    margin-left: 10px ;/* margen izquierdo */
-    margin-top: 15px;/* margen superior */
-    width: 530px;/* ancho de los inputs */
+    font-weight: 600;
+    font-size: 20px;
+    width: 500px;/* ancho de los inputs */
+    margin-left: 100px;
 }
 
 .form-2 {
-    margin-left: 600px;/* para mover a la izquierda */
-    margin-top: -280px;/* para mover arriba */
-    width: 530px;/* ancho de los inputs */
-   
+    font-weight: 600;
+    font-size: 20px;
+    width: 500px;
+    margin-left: 550px;/* para mover a la izquierda */
+    margin-top: -510px;/* para mover arriba */
 }
 
+
 .form-input {
-    /* border-color: white; */
+    border-color: #f9f9f9;
+    margin-top: 24px; /* cambipo */
     display: flex;/* para que sea flexible */
-    width: 100%;/* el ancho que quiero que tenga, en este caso use el porciento porque era mas efeciente */
-    padding: 8px;/* el tamano de los input */
+    width: 65%;/* el ancho que quiero que tenga,*/
+    padding: 6px;/* el tamano de los input */
 }
 
 
 textarea {
-    margin-top: 15px;  /* espacio de arriba */
-    width: 98%; /*   tamaño del cuadro*/
+    margin-top: 20px;  /* espacio de arriba */
+    width: 80%; /*   tamaño del cuadro*/
     resize: none;/* no darle la opcion al usuario de que lo haga mas grande el cuadro  */
-    min-height: 140px; /* Espacio minimo haca arriba */
-   border: 1px solid;/* border: none; */
-  
+    min-height: 130px; /* Espacio minimo del cuadro*/
+}
+
+.mss {
+  height: 50px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 80%;
+  margin-left: 100px;
 }
 
 
 .ancho {
-    padding: 8px;/* cantidad de espacio del elmento  */
+    padding: 10px;/* cantidad de espacio del elmento  */
     width: 100px; /* el ancho del boton */
     border-radius: 5px;/* para redondear un poco el boton */
     border: none;/* para quitarle el bordde */
+    margin-top: 20px;
+    margin-left: 20px;
 }
-
 
 .link {
     margin-top: 3px;/* margen superior */
     text-align: center;/* texto en el medio */
 }
 
-
 button {
     display: block; /* colocar el botton debajo */
     background-color: #193A6A;/* color del boton  */
     color:#fff;/* color de letra del boton */
 }
-
 
 button:hover {
     transform: translateY(-2px);/* para mover el elemento 5 píxeles hacia arriba a lo largo del eje Y.  */
@@ -445,11 +356,9 @@ button:hover {
     cursor: pointer; /* presente la manita */
 }
 
-
 a {
     color: #193A6A; /* color del link */
 }
-
 
 .a-2{
     color: #fff; /* color de la letra  */
@@ -463,6 +372,7 @@ a {
 .imagen-panel:hover {
     transform: scale(1.1);
 }
+
 
 /* RECUPERAR- CUENTA */
 
@@ -537,95 +447,6 @@ h3{
 
 @media screen and (max-width: 600px) {
 
-    /* LOGO, TITULO */
-    .hed-s  .logo {
-       width: 135px;
-       height: auto; 
-       margin-left: 10px;
-    }
-
-    .hed-s h1 {
-       background-color: #193A6A;
-       padding: 5px;
-    }
-    
-
-    h2{
-        text-align: center; 
-        font-size: 33px; 
-        color: #193A6A; 
-     }
-
-     
-
-     /*MENU Y FOTO*/
-
-     .hed-s .usuario{
-        
-       margin-bottom: -9px;
-       margin-left: 4px; /* Despegar un poco de los menus */
-       border-radius: 50%;
-      }
-
-    
-
-     .menu  {
-    
-     display: flex;
-     height: 50px;
-     justify-content: end;
-     align-items: center;
-     }
-
-     .menu ul {
-   
-      display: flex;
-      margin-left: 175px;
-      }
-
-     .menu li {
-    
-      display: flex;
-      margin: 8px;
-     }
-
-     .hed-s .links{
-     color: white;
-      font-size: 12.5px;
-     }
-
-     .maria{
-        margin-bottom: 5px;
-        color: #fff;
-        font-size: 12px;
-        text-decoration: none;
-        margin-left: 3px;
-        transition: all 0.3s ease;
-    }
-
-     /* IMAGENES DEL CENTRO */
-
-
-     .imagen-panel{
-     margin-bottom: 5px;
-      }
-
-      .panel {
-      display: flex;
-      flex-direction: column; 
-      align-items: center;
-      }
-    
-      section, footer{
-      padding-top: 150px; 
-      background: url(../imagenes/fondo2.jpg);
-      background-size:contain; 
-      background-attachment:fixed;
-
-
-      
-
-     }
 
      .encabezado {
         color: #193A6A;/* color de el tituolo de el formulario */
@@ -733,22 +554,6 @@ h3{
 
 
 
-
-
-
-
-
-
-
-
-
-    /* LOGO, TITULO */
-    /* .hed-s  .logo {
-        width: 200px;
-        height: auto; 
-        margin-left: 10px;
-     } */
- 
      .hed-s h1 {
         background-color: #193A6A;
         padding: 5px;
@@ -1053,11 +858,7 @@ h3{
 
  /* ADOCCION */
  /* LAURA C. */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+
 
 /* ANUNCIO DE LA ADPCION */
 
@@ -1155,8 +956,9 @@ h3{
 
 .hijo__title{
     font-size: 20px;
-    margin-right: 150px;
-
+    margin-right: 140px;
+    color: #193A6A;
+    margin-top: 25px;
 }
 
 .hijo__descrip {
