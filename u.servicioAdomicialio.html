@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DServicios a domicilio</title>
+    <link rel="stylesheet" href="./css/estilos-yohan.css">
+    <link rel="icon" href="./imagenes/icon.png">
+</head>
+<!-- Hecho por yohan -->
+<body>
+    <header>
+        <div class="menu">
+            <img src="recursos/icon/menu.svg" alt="Menú">
+        </div>
+        <div class="barra-lateral">
+            <div>
+                <div class="logo-pagina">
+                    <img src="imagenes/icon.png" id="logo" alt="Logo PetVet">
+                    <span>Petvet</span>
+                </div>
+                <button class="boton-cita" onclick="agendarCita()">
+                    <img src="recursos/icon/mas.svg" alt="Agendar cita">
+                    <span>Agendar cita</span>
+                </button>
+            </div>
+
+            <nav class="navegacion">
+                <ul>
+                    <li>
+                        <a href="#inicio">
+                            <img src="recursos/icon/inicio.svg" alt="Inicio" class="icon">
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="u_citas-agendadas.html">
+                            <img src="recursos/icon/citasAgendadas.svg" alt="Citas Agendadas" class="icon">
+                            <span>Citas Agendadas</span>
+                        </a>
+                    </li>
+
+                      <li>
+                        <a href="#">
+                            <img src="recursos/icon/guaderia-pendiente.svg" alt="citas de guarderia pendienre" class="icon">
+                            <span>Citas Guardería<pan>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="u_guarderia.html">
+                            <img src="recursos/icon/guarderia.svg" alt="Guardería" class="icon">
+                            <span>Guardería</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="u_adopcion.html">
+                            <img src="recursos/icon/adopcion.svg" alt="Adopción" class="icon">
+                            <span>Adopción</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="u_info_general.html">
+                            <img src="recursos/icon/informacion.svg" alt="Información" class="icon">
+                            <span>Información</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+
+            <div class="linea"></div>
+
+            <div class="usuario">
+                <a href="#" onclick="irAPerfil()">
+                    <img src="imagenes/user-.png" alt="Usuario">
+                    <div class="info-usuario">
+                        <div class="nombre-email">
+                            <span class="nombre">Maria Lopez</span>
+                            <span class="email">marial@gmail.com</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="izquierdo-servi">
+        <form >
+        <label for="nom">Nombre:</label>
+        <input type="text" placeholder="Escriba su nombre" id="nom" autocomplete="off" autofocus required >
+        <label for="correo">Corre:</label>
+        <input type="email" placeholder="Escriba su email" id="correo" required>
+        <label for="fecha">Fecha:</label>
+        <input type="date" required id="Fecha">
+        <label for="direccion">Direccion:</label>
+        <input type="text" placeholder="Escriba su direccion" required maxlength="200">
+        </form>
+
+
+
+        </div>
+        <div class="derecho-servi">
+            <form >
+                <label for="ape">Apellido:</label>
+                <input type="text" placeholder="Escriba su Apellido" id="ape" autocomplete="off"  required>
+                <label for="Tanda">Tanda:</label>
+                <select name="Tanda" id="Tanda">
+                    <option value="">-Eliga una opcion</option>
+                    <option value="Mañana">Mañana</option>
+                    <option value="Tarde">Tarde</option>
+                </select>
+                <label for="mascota">Mascota:</label>
+                <select name="mascota" id="mascota">
+                    <option value="perro">Perro</option>
+                    <option value="gatos">gatos</option>
+                    <option value="roedores">roedores</option>
+                    <option value="">Aves</option>
+                </select>
+            </form>
+            <div class="con-servicios">
+              <div class="productos-servis-derecho">
+                <form >
+                      <!-- <h2>Vacunas a domicilio</h2> -->
+                <label for="servicios">Vacunas a domicilio:</label>
+                <input type="checkbox" id="servicios">Vacuna contra la rabia - RD$500<br>
+                <input type="checkbox" id="servicios">Vacuna contra el parvovirus 
+                <input type="checkbox" id="servicios">Vacuna contra el moquillo
+                <input type="checkbox" id="servicios">Vacuna refuerzo a polivalente
+                <input type="checkbox" id="servicios">Vacuna contra enfermedad de Lyme. 
+
+                </form>
+
+              </div>
+              <div class="productos-servis-izquierdo">
+                <form >
+                      <!-- <h2>Vacunas a domicilio</h2> -->
+                <label for="servicios">Servicios a domicilio:</label>
+                <input type="checkbox" id="servicios">Vacuna contra la rabia - RD$500<br>
+                <input type="checkbox" id="servicios">Vacuna contra el parvovirus 
+                <input type="checkbox" id="servicios">Vacuna contra el moquillo
+                <input type="checkbox" id="servicios">Vacuna refuerzo a polivalente
+                <input type="checkbox" id="servicios">Vacuna contra enfermedad de Lyme. 
+
+                </form>
+
+              </div>
+                
+
+            </div>
+      
+
+
+        </div>
+       <form >
+        
+        
+    </main>
+
+    
+</body>
+</html>
