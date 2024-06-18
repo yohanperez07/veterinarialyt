@@ -10,19 +10,19 @@
     <link rel="stylesheet" href="./css/estilos-yohan.css">
     <link rel="icon" href="./imagenes/icon.png">
 </head>
-<body>
+<body class="body-agandadas">
     <header>
         <div class="menu">
-            <img src="recursos/icon/menu.svg" alt="Menú">
+            <img src="recursos/icon/menu.svg" alt="">
         </div>
         <div class="barra-lateral">
             <div>
                 <div class="logo-pagina">
-                    <img src="imagenes/icon.png" id="logo" alt="Logo PetVet">
+                    <img src="imagenes/icon.png" id="logo" alt="">
                     <span>Petvet</span>
                 </div>
                 <button class="boton-cita" onclick="agendarCita()">
-                    <img src="recursos/icon/mas.svg" alt="Agendar cita">
+                    <img src="recursos/icon/mas.svg" alt="">
                     <span>Agendar cita</span>
                 </button>
             </div>
@@ -30,7 +30,7 @@
             <nav class="navegacion">
                 <ul>
                     <li>
-                         <a href="u_servicios.html">
+                        <a href="u_servicios.html">
                             <img src="recursos/icon/inicio.svg" alt="Inicio" class="icon">
                             <span>Inicio</span>
                         </a>
@@ -41,23 +41,14 @@
                             <span>Citas Agendadas</span>
                         </a>
                     </li>
-
-                      <li>
-                        <a href="#">
-                            <img src="recursos/icon/guaderia-pendiente.svg" alt="citas de guarderia pendienre" class="icon">
-                            <span>Citas Guardería<pan>
-                        </a>
-                    </li>
-
                     <li>
                         <a href="u_guarderia.html">
-                            <img src="recursos/icon/guarderia.svg" alt="Guardería" class="icon">
+                            <img src="recursos/icon/guarderia.svg" alt="Guarderia" class="icon">
                             <span>Guardería</span>
                         </a>
                     </li>
-
                     <li>
-                        <a href="u_adopcion.html">
+                        <a href="adopcion.html">
                             <img src="recursos/icon/adopcion.svg" alt="Adopción" class="icon">
                             <span>Adopción</span>
                         </a>
@@ -68,7 +59,6 @@
                             <span>Información</span>
                         </a>
                     </li>
-                    
                 </ul>
             </nav>
 
@@ -76,7 +66,7 @@
 
             <div class="usuario">
                 <a href="#" onclick="irAPerfil()">
-                    <img src="imagenes/user-.png" alt="Usuario">
+                    <img src="imagenes/user-.png" alt="">
                     <div class="info-usuario">
                         <div class="nombre-email">
                             <span class="nombre">Maria Lopez</span>
@@ -90,7 +80,7 @@
 
     <main class="con-agendadas">
         <div class="con-tabla">
-            <table>
+            <table class="tablas-agendadas">
                 <thead>
                     <tr>
                         <th>Fecha</th>
@@ -101,7 +91,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr class="blanco">
                         <td>04/06/2024</td>
                         <td>Tarde</td>
                         <td>Chequeo General</td>
@@ -121,7 +111,7 @@
                             <a href="#" class="roja">Eliminar cita</a>
                         </td>
                     </tr>
-                    <tr>
+                    <tr class="blanco">
                         <td>08/06/2024</td>
                         <td>Mañana</td>
                         <td>Chequeo General</td>
@@ -145,7 +135,7 @@
             </table>
         </div>
         <div class="agen">
-            <a href="agendarCita.html">Registrar nueva cita</a>
+            <a href="agendarCita.html">Nueva cita</a>
         </div>
     </main>
 
