@@ -42,9 +42,9 @@
                     </li>
 
                       <li>
-                        <a href="#">
+                        <a href="u_guarderia.html">
                             <img src="recursos/icon/guaderia-pendiente.svg" alt="citas de guarderia pendienre" class="icon">
-                            <span>Citas Guardería<pan>
+                            <span>Citas Guardería</span>
                         </a>
                     </li>
 
@@ -87,63 +87,103 @@
         </div>
     </header>
     <main>
-        <div class="izquierdo-servi">
-        <form >
-        <label for="nom">Nombre:</label>
-        <input type="text" placeholder="Escriba su nombre" id="nom" autocomplete="off" autofocus required >
-        <label for="correo">Corre:</label>
-        <input type="email" placeholder="Escriba su email" id="correo" required>
-        <label for="fecha">Fecha:</label>
-        <input type="date" required id="Fecha">
-        <label for="direccion">Direccion:</label>
-        <input type="text" placeholder="Escriba su direccion" required maxlength="200">
+          <div class="serviAdomi-alto">
+             <h1 class="h1">¡Por favor de llenar!</h1>
+                  <p class="p">¡Completa este formulario antes de tu cita para el mejor cuidado de tu mascota! </p>
+
+          </div>
+        <div class="formularios-servicios">
+            <!-- <div class="izquierdo-servi columna-servi"> -->
+        <form  class="formulario-servicios">
+        <label class="label-servicios" for="nom">Nombre:</label>
+        <input class="input-servicios" type="text" placeholder="Escriba su nombre" id="nom" autocomplete="off" autofocus required >
+        <label class="label-servicios" for="correo">Corre:</label>
+        <input  class="input-servicios"type="email" placeholder="Escriba su email" id="correo" required>
+        <label class="label-servicios" for="fecha">Fecha:</label>
+        <input class="input-servicios" type="date" required id="fecha">
+        <labe class="label-servicios"l for="direccion">Direccion:</labe>
+        <input class="input-servicios" type="text" id="direccion" placeholder="Escriba su direccion" required maxlength="200">
         </form>
 
 
 
-        </div>
-        <div class="derecho-servi">
-            <form >
-                <label for="ape">Apellido:</label>
-                <input type="text" placeholder="Escriba su Apellido" id="ape" autocomplete="off"  required>
-                <label for="Tanda">Tanda:</label>
-                <select name="Tanda" id="Tanda">
+        <!-- </div> -->
+        <!-- <div class="derecho-servi columna-servi"> -->
+          
+            <form class="formulario-servicios" >
+                <label class="label-servicios" for="ape">Apellido:</label>
+                <input  class="input-servicios" type="text" placeholder="Escriba su Apellido" id="ape" autocomplete="off"  required>
+                <label class="label-servicios" for="Tanda">Tanda:</label>
+                <select  class="input-servicios"name="Tanda" id="Tanda">
                     <option value="">-Eliga una opcion</option>
                     <option value="Mañana">Mañana</option>
                     <option value="Tarde">Tarde</option>
                 </select>
-                <label for="mascota">Mascota:</label>
-                <select name="mascota" id="mascota">
+                <label class="label-servicios" for="mascota">Mascota:</label>
+                <select  class="input-servicios"name="mascotas" id="mascota">
                     <option value="perro">Perro</option>
                     <option value="gatos">gatos</option>
                     <option value="roedores">roedores</option>
                     <option value="">Aves</option>
                 </select>
             </form>
-            <div class="con-servicios">
-              <div class="productos-servis-derecho">
-                <form >
-                      <!-- <h2>Vacunas a domicilio</h2> -->
-                <label for="servicios">Vacunas a domicilio:</label>
-                <input type="checkbox" id="servicios">Vacuna contra la rabia - RD$500<br>
-                <input type="checkbox" id="servicios">Vacuna contra el parvovirus 
-                <input type="checkbox" id="servicios">Vacuna contra el moquillo
-                <input type="checkbox" id="servicios">Vacuna refuerzo a polivalente
-                <input type="checkbox" id="servicios">Vacuna contra enfermedad de Lyme. 
+        <!-- </div> -->
+        </div>
 
+
+            <div class="con-servicios">
+              <div class="productos-servis-derecho servicios-vacunas ">
+                <h2 class="h2-servicios">Vacunas</h2>
+                <form >
+                   <div>
+                     <label class="label-fondo" for="rabia">Vacuna contra la rabia - RD$500</label>
+                    <input type="checkbox" id="rabia">
+                   </div>
+
+                    <div>
+                        <label class="label-fondo" for="parvovirus">Vacuna contra el parvovirus - RD$500</label>
+                    <input type="checkbox" id="parvovirus">
+                    </div>
+
+                    <div>
+                        <label class="label-fondo" for="moquillo">Vacuna contra el moquillo - RD$500</label>
+                    <input type="checkbox" id="moquillo">
+                    </div>
+
+                    <div>
+                        <label  class="label-fondo"for="polivalente">Vacuna refuerzo a polivalente - RD$500</label>
+                    <input type="checkbox" id="polivalente">
+                    </div>
+
+                    <div>
+                        <label  class="label-fondo"for="Lyme">Vacuna contra  Lyme - RD$500</label>
+                    <input type="checkbox" id="Lyme">
+                    </div>
                 </form>
 
               </div>
-              <div class="productos-servis-izquierdo">
-                <form >
-                      <!-- <h2>Vacunas a domicilio</h2> -->
-                <label for="servicios">Servicios a domicilio:</label>
-                <input type="checkbox" id="servicios">Vacuna contra la rabia - RD$500<br>
-                <input type="checkbox" id="servicios">Vacuna contra el parvovirus 
-                <input type="checkbox" id="servicios">Vacuna contra el moquillo
-                <input type="checkbox" id="servicios">Vacuna refuerzo a polivalente
-                <input type="checkbox" id="servicios">Vacuna contra enfermedad de Lyme. 
+              <div class="productos-servis-izquierdo  servicios-vacunas">
+                <h2 class="h2-servicios">Servicios</h2>
+                <form>
+                    <div>
+                        <label class="label-fondo" for="baño">Baño a domicilio - RD$500</label>
+                    <input type="checkbox" id="baño" name="servicios">
+                    </div>
 
+                    <div>
+                        <label  class="label-fondo"for="paseos">Paseos a mascotas - RD$500</label>
+                    <input type="checkbox" id="paseos" name="servicios">
+                    </div>
+
+                    <div>
+                        <label class="label-fondo" for="corte">Corte de uñas - RD$500</label>
+                    <input type="checkbox" id="corte" name="servicios">
+                    </div>
+
+                    <div>
+                        <label  class="label-fondo"for="revisiones">Revisiones físicas - RD$500</label>
+                    <input type="checkbox" id="revisiones" name="servicios">
+                    </div>
                 </form>
 
               </div>
@@ -153,8 +193,8 @@
       
 
 
-        </div>
-       <form >
+        
+       
         
         
     </main>
