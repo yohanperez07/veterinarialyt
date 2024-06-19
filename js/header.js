@@ -1,3 +1,5 @@
+// CODIGO DE EL HEADER
+
 const logo = document.getElementById("logo");
 const barraLateral = document.querySelector(".barra-lateral");
 const spans = document.querySelectorAll("span");
@@ -37,4 +39,66 @@ function irAPerfil() {
     window.location.href = "u.perfil.html";
 }
 
+// CODIGO DE EL HEADER TERMINADO
 
+
+
+
+
+
+
+// Cambiar la foto de perfil en el header y en el modal
+const uploadPic = document.getElementById('upload-pic'); // Input para subir la foto
+const headerProfilePic = document.querySelector('.usuario img'); // Imagen de perfil en el header
+const modalProfilePic = document.getElementById('profile-pic'); // Imagen de perfil en el modal
+
+uploadPic.addEventListener('change', function() {
+    const file = this.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function() {
+            headerProfilePic.src = reader.result; // Cambiar la imagen de perfil en el header
+            modalProfilePic.src = reader.result; // Cambiar la imagen de perfil en el modal
+        }
+        reader.readAsDataURL(file); // Leer el archivo seleccionado como URL base64
+    }
+});
+
+
+
+
+
+
+// Función para abrir el modal
+function abrirModal() {
+    var modal = document.getElementById('modal');
+    modal.style.display = 'block'; // Mostrar el modal
+    document.body.style.overflow = 'hidden'; // Evitar scroll en el body detrás del modal
+}
+
+
+
+
+
+// Función para cerrar el modal
+function cerrarModal() {
+    var modal = document.getElementById('modal');
+    modal.style.display = 'none'; // Ocultar el modal
+    document.body.style.overflow = ''; // Restaurar scroll en el body
+}
+
+
+
+
+
+
+// Función para cerrar sesión
+const cerrarSesionBtn = document.getElementById('cerrar-sesion');
+cerrarSesionBtn.addEventListener('click', function() {
+    const confirmacion = confirm('¿Estás seguro de que deseas cerrar sesión?');
+
+    if (confirmacion) {
+        alert('Has cerrado sesión correctamente.');
+        window.location.href = 'index.html'; // Redirigir a la página de inicio de sesión
+    }
+});
