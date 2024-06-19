@@ -6,11 +6,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bienvenido a PetVet, tu veterinaria de confianza dedicada al cuidado integral de tu mascota.">
-    <title>Agendar cita</title>
+    <meta name="description" content="Descubre los servicios excepcionales de PetVet, tu clínica veterinaria de confianza. Ofrecemos atención médica integral para tus mascotas, desde consultas generales y vacunas hasta cirugías especializadas. Nuestro equipo dedicado está comprometido con el bienestar animal, proporcionando cuidados personalizados y servicios de calidad. Confía en PetVet para mantener a tus mascotas felices y saludables en cada etapa de sus vidas.">
+    <title>Página de los Servicios</title>
     <link rel="icon" href="imagenes/icon.png">
     <link rel="stylesheet" href="css/estilosL.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -33,20 +32,20 @@
             <nav class="navegacion">
                 <ul>
                     <li>
-                         <a href="u_servicios.html">
+                        <a href="u_servicios.html">
                             <img src="recursos/icon/inicio.svg" alt="Inicio" class="icon">
                             <span>Inicio</span>
                         </a>
                     </li>
                     <li>
-                      <a href="u_citas-agendadas.html">
+                        <a href="#">
                             <img src="recursos/icon/citasAgendadas.svg" alt="Citas Agendadas" class="icon">
                             <span>Citas Agendadas</span>
                         </a>
                     </li>
 
                       <li>
-                        <a href="#l">
+                        <a href="u_citas-agendadasGuarderia.html">
                             <img src="recursos/icon/guaderia-pendiente.svg" alt="citas de guarderia pendienre" class="icon">
                             <span>Citas Guardería<pan>
                         </a>
@@ -77,16 +76,39 @@
 
             <div class="linea"></div>
 
-            <div class="usuario">
-                <a href="#" onclick="irAPerfil()">
-                    <img src="imagenes/user-.png" alt="Usuario">
-                    <div class="info-usuario">
-                        <div class="nombre-email">
-                            <span class="nombre">Maria Lopez</span>
-                            <span class="email">marial@gmail.com</span>
+          <div class="usuario">
+            <a href="#" onclick="abrirModal()">
+                <img src="imagenes/user-.png" alt="Usuario">
+                <div class="info-usuario">
+                    <div class="nombre-email">
+                        <span class="nombre">Maria Lopez</span>
+                        <span class="email">marial@gmail.com</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <span class="close" onclick="cerrarModal()">&times;</span>
+                <div class="profile-container">
+                    <div class="profile-header">
+                        <div class="profile-pic-container">
+                            <img id="profile-pic" src="default-profile.jpg" alt="">
+                        </div>
+                        <div class="profile-info">
+                            <h1>Maria Lopez</h1>
+                            <p>Email: <span id="email">marial@gmail.com</span></p>
+                            <p>Teléfono: <span id="telefono">809 456 7890</span></p>
+                            <p>Mascota: <span id="mascota">Perro</span></p>
                         </div>
                     </div>
-                </a>
+                    <div class="accion">
+                        <input type="file" id="upload-pic" accept="image/*" onchange="changeProfilePic()">
+                        <label for="upload-pic">Cambiar foto de perfil</label>
+                        <button class="boton-cs-perfil" id="cerrar-sesion">Cerrar Sesión</button>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
